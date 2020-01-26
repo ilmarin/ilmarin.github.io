@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on Илья Маринин</title>
+    <link>https://ilmarin.github.io/tags/bash/</link>
+    <description>Recent content in bash on Илья Маринин</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Sat, 18 Nov 2017 23:30:13 +0500</lastBuildDate>
+    
+	<atom:link href="https://ilmarin.github.io/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Примитивный скрипт закачки файлов на сервер</title>
+      <link>https://ilmarin.github.io/post/simple_deploy/</link>
+      <pubDate>Sat, 18 Nov 2017 23:30:13 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/post/simple_deploy/</guid>
+      <description>Очень лень закачивать блог на сервер, тыкая в GUI FileZilla.
+После некоторого гугления получился такой код:
+#/bin/bash HOST=&#39;hostname&#39; USER=&#39;username&#39; PASSWD=&#39;password&#39; LOCALPATH=&#39;/path_to_my_local_folder&#39; DIR=&#39;/path_to_my_server_folder&#39; sshpass -p &amp;quot;$PASSWD&amp;quot; scp -r $LOCALPATH $USER@$HOST:$DIR  Не забываем дать скрипту права на исполнение:
+$ chmod +x ./deploy.sh  Скрипт рекурсивно закачивает указанную папку на сервер. Если настроить ключи (что мне пока делать лень), то можно обойтись без sshpass и пароля соответственно.
+Свой блог теперь закачиваю на сервер именно таким образом.</description>
+    </item>
+    
+    <item>
+      <title>Закончилось место на сервере</title>
+      <link>https://ilmarin.github.io/post/cannot-create-temp/</link>
+      <pubDate>Sun, 16 Apr 2017 11:19:59 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/post/cannot-create-temp/</guid>
+      <description>Начал замечать странности в поведении динамических сайтов на своем сервере. Залогинился и увидел, что перестало работать автодополнение команд. bash ругался таким текстом:
+cannot create temp file for here-document: No space left on device
+Первым делом решил посмотреть какие папки сколько места занимают. Перейдя в корневой раздел, выполнил:
+$ sudo du -h --max-depth=1 ./  Папка tmp не разрослась и в целом все в пределах нормы.
+В итоге выполнил
+$ sudo apt-get autoremove -y  Оказалось, что лишних зависимостей в сумме набежало почти на гигабайт.</description>
+    </item>
+    
+  </channel>
+</rss>

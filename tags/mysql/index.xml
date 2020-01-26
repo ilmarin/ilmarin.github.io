@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysql on Илья Маринин</title>
+    <link>https://ilmarin.github.io/tags/mysql/</link>
+    <description>Recent content in mysql on Илья Маринин</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Thu, 02 Mar 2017 21:34:25 +0500</lastBuildDate>
+    
+	<atom:link href="https://ilmarin.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Установка пустого пароля для root-пользователя в MySQL 5.7</title>
+      <link>https://ilmarin.github.io/post/mysql57-empty-root/</link>
+      <pubDate>Thu, 02 Mar 2017 21:34:25 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/post/mysql57-empty-root/</guid>
+      <description>Для локальной разработки с MySQL очень удобно использовать пустой пароль root-пользователя. Раньше его можно было задать пустым сразу при установке и спокойно работать. Начиная с версии MySQL 5.7 поведение изменилось.
+Теперь, если при установке указывается пустой пароль пользователя root, то изменяется схема подключения для него с TCP/IP на локальный socket. Сделано это, как не трудно догадаться, в целях безопасности.
+Выражается, например, в том, что команды вроде
+$ mysql -uroot  отказываются работать.</description>
+    </item>
+    
+  </channel>
+</rss>

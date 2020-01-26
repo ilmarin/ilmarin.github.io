@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta property="og:title" content=" Неочевидные моменты при работе с assets в Yii2 &middot;  Илья Маринин" />
+        <meta property="og:site_name" content="Илья Маринин" />
+        <meta property="og:url" content="https://ilmarin.github.io/post/yii2-assets/" />
+        <link rel="shortcut icon" href="https://ilmarin.github.io/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://ilmarin.github.io/favicon.ico" type="image/x-icon">
+
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:published_time" content="2017-02-24T15:29:39&#43;05:00" />
+        <meta property="og:article:tag" content="yii" />
+        <meta property="og:article:tag" content="php" />
+        
+
+        
+            <meta property="og:description" content="Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс." />
+        
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@ilya_marinin" />
+        <meta name="twitter:creator" content="@ilya_marinin" />
+        <meta name="twitter:title" content="Неочевидные моменты при работе с assets в Yii2" />
+        <meta name="twitter:description" content="Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс." />
+        <meta name="twitter:url" content="https://ilmarin.github.io/post/yii2-assets/" />
+    
+
+        <title> Неочевидные моменты при работе с assets в Yii2 &middot;  Илья Маринин - блог о программировании</title>
+
+    
+        <meta name="description" content="Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс." />
+    
+
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        
+        
+
+    
+        <link href="https://ilmarin.github.ioindex.xml" rel="alternate" type="application/rss+xml" title="Илья Маринин" />
+    
+
+    
+        <link rel="canonical" href="https://ilmarin.github.io/post/yii2-assets/" />
+        <link rel="stylesheet" href="https://ilmarin.github.iocss/crisp.css?20170725">
+    </head>
+    <body>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-56828941-2', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <header id="header">
+            <a id="logo" href="https://ilmarin.github.io">
+                <img src="https://ilmarin.github.io/img/logo.jpg" alt="Илья Маринин" />
+            </a>
+            <a style="font-size: 1.9em" href="https://ilmarin.github.io">MARININ</a>
+            <p>Меня зовут Илья Маринин. Я веб-разработчик, а это мой личный блог. Если у вас есть пожелания или предложения, <a href="mailto:ilya(at)marinin.pw">напишите мне</a>.</p>
+
+            <div id="follow-icons">
+        <a href="http://github.com/ilmarin" rel="me"><i class="fa fa-github-square fa-2x"></i></a>
+	<a href="http://linkedin.com/in/ilya-marinin-bbb931a6" rel="me"><i class="fa fa-linkedin-square fa-2x"></i></a>
+	<a href="https://ilmarin.github.ioindex.xml" rel="me"><i class="fa fa-rss-square fa-2x"></i></a> 
+</div>  
+            
+        </header>
+
+    </head>
+    <div id="layout" class="pure-g">
+        <div class="sidebar pure-u-1 pure-u-md-1-6">
+            
+
+        </div>
+        <div class="content pure-u-1 pure-u-md-5-6">
+            <div class="article singlepage" id="" class="post">
+                <div class="post-stamp">
+                    <h1 class="post-title">Неочевидные моменты при работе с assets в Yii2</h1>
+                    <span class="post-date">Feb 24, 2017</span>
+                    
+
+                    <span class="taglist">
+                    
+                        &middot;
+                        
+                            <a href="https://ilmarin.github.io/tags/yii/">yii</a>
+                        
+                            <a href="https://ilmarin.github.io/tags/php/">php</a>
+                        
+                    
+                    </span>
+                </div>
+                
+
+<p>Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс. Работа с ним вкратце описана в <a href="http://www.yiiframework.com/doc-2.0/guide-structure-assets.html#combining-compressing-assets" target="_blank">документации</a>.</p>
+
+<p>Ниже перечислен ряд моментов, которые для меня оказались не очевидны.</p>
+
+<h2 id="advanced-шаблон-и-алиас-app">Advanced-шаблон и алиас @app</h2>
+
+<p>В проекте я использую <a href="https://github.com/yiisoft/yii2-app-advanced" target="_blank">advanced-шаблон</a>. Он позволяет разделять проект на три части:</p>
+
+<ul>
+<li>Для пользователя (frontend)</li>
+<li>Для администраторов и контент-менеджеров (backend)</li>
+<li>Для работы с cli-интерфейсом приложения (console)</li>
+</ul>
+
+<p>Для каждой из частей проекта так же предусмотрены алиасы <code>@frontend</code>, <code>@backend</code> и <code>@console</code> соответственно.</p>
+
+<p>Однако у моих ассетов во frontend-части в свойстве <code>sourcePath</code> был прописан алиас <code>@app</code> вместо <code>@frontend</code>.</p>
+
+<p>В этом не было ничего страшного до тех пор, пока не стало нужно выполнить минификацию ресурсов с помощью предоставляемого фреймворком инструментария.</p>
+
+<p>Как выяснилось, алиас <code>@app</code> для консоли в случае с advanced-шаблоном указывает на алиас <code>@console</code> и ассеты пытались распаковаться туда, что и сбивало с толку инструмент. Тот случай, когда неплохо бы лишний раз читать <a href="https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/structure-path-aliases.md" target="_blank">доки</a>. :)</p>
+
+<p><strong>Вывод:</strong> в случае использования advanced-шаблона, нужно проверить, что ассеты, расположенные во frontend/assets используют в <code>sourcePath</code> алиас <code>@frontend</code> вместо <code>@app</code>. Аналогично и для backend-части приложения.</p>
+
+<h2 id="ошибка-file-put-contents">Ошибка file_put_contents</h2>
+
+<p>Функция file_put_contents падает с ошибкой в случае несуществующего пути до папки.</p>
+
+<p><strong>Вывод:</strong> следует проверять, что все пути к папкам в конфиге сжатия ассетов верные.</p>
+
+<h2 id="невозможность-доступа-к-baseurl-ассета-после-минификации">Невозможность доступа к baseUrl ассета после минификации</h2>
+
+<p>На заре создания проекта я хранил всю frontend-статику в папке assets. Путь до папки с финальными ассетами я получал комбинацией:</p>
+
+<pre><code class="language-php">$asset = frontend\assets\AppAsset::register($this);
+echo $asset-&gt;baseUrl;
+</code></pre>
+
+<p>Оказалось, это плохая практика. После сжатия свойство <code>baseUrl</code> у ассетов зануляется и картинки, шрифты и прочие вещи, которые до этого прекрасно отображались, перестают работать в production-окружении (в dev-окружении все в порядке).</p>
+
+<p>Пришлось вынести папки со шрифтами и картинками в публичную часть сайта, а относительные пути в css переделать на абсолютные.</p>
+
+<p><strong>Вывод:</strong> в assets лучше хранить только то, что будем сжимать. Остальное выносить в публичную часть. К тому же так лишний раз не копируются большие объемы данных.</p>
+
+<h2 id="не-все-расширения-фреймворка-совместимы-с-инструментом-сжатия-ассетов">Не все расширения фреймворка совместимы с инструментом сжатия ассетов</h2>
+
+<p>Об этом прямо указывается в <a href="http://www.yiiframework.com/doc-2.0/guide-structure-assets.html#combining-compressing-assets" target="_blank">документации</a> в желтой сноске в конце параграфа <em>An Example</em>, но я помучался с этой ошибкой.</p>
+
+<p>Выглядит это так: ассеты прекрасно сжимаются, но на странице подключаются дважды (минифицированная версия и еще раз несовместимые ассеты из отдельной папки).</p>
+
+<p>В итоге эти расширения пришлось исключить из минификации, а подключаются они на странице отдельно как и раньше, что, конечно же, увеличивает число запросов к серверу.</p>
+
+<p><strong>Вывод:</strong> иметь в виду эту особенность при работе с расширениями использующими динамическое задание параметров ассетов в методе <code>init()</code>.</p>
+
+                
+                <div id="comments">
+    
+    
+    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = 'marinin-pw';
+      var disqus_identifier = 'https:\/\/ilmarin.github.io\/post\/yii2-assets\/';
+      var disqus_title = 'Неочевидные моменты при работе с assets в Yii2';
+      var disqus_url = 'https:\/\/ilmarin.github.io\/post\/yii2-assets\/';
+      function disqus_config() {
+        this.callbacks.onReady = [function() {
+              $.scrolline();   
+        }];  
+      };
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+    
+</div>
+
+                    <footer id="footer">
+        <section id="footer-message">
+            &copy; Илья Маринин. All rights reserved. Powered by <a href="http://gohugo.io" target="_blank">Hugo</a>. <a href="https://github.com/kathyqian/crisp-ghost-theme" target="_blank">Crisp</a> theme by <a href="http://kathyqian.com" target="_blank">Kathy Qian</a> (ported by <a href="http://profiles.google.com/thibault.normand">Thibault Normand</a>).
+        </section>
+    </footer>
+
+    <script>
+      (function(c,f){asyncLoader=function(i,h){i.foreach(function(k,j){e(j,d(j),h)});if(typeof h.callback=="function"){var g=setInterval(function(){if(f.readyState==="complete"){clearInterval(g);h.callback()}},10)}};var d=function(g){var h=g.split(".");return h[h.length-1]},e=function(h,i,g){switch(i){case"js":a(h,g);break;case"css":b(h);break;default:break}},a=function(i,h){var g=document.createElement("script");g.type="text/javascript";g.async=true;g.src=i;document.getElementsByTagName("head")[0].appendChild(g)},b=function(g){var h=document.createElement("link");h.type="text/css";h.rel="stylesheet";h.href=g;document.getElementsByTagName("head")[0].appendChild(h)};Array.prototype.foreach=function(h){for(var g=0;g<this.length;g++){h(g,this[g])}}})(this,document);
+
+      var WebFontConfig={google:{families:["Open Sans:400italic,700italic,400,700","Merriweather:700&amp;subset=cyrillic"]}};
+      asyncLoader([
+        "//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css",
+        "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js",
+        "//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js",
+        "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"        
+      ],{
+        callback:function(){
+          asyncLoader([
+            "https:\/\/ilmarin.github.iocss/rrssb.css",
+            "https:\/\/ilmarin.github.iojs/gist.min.js", 
+            "https:\/\/ilmarin.github.iojs/rrssb.min.js",                           
+            "https:\/\/ilmarin.github.iojs/jquery.scrolline.js",
+            "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"
+          ], { callback:function() {
+              hljs.initHighlighting();
+          }});
+        }
+      });
+    </script>
+    <script type="text/javascript">(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter32796715 = new Ya.Metrika({
+                id:32796715,
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true
+            });
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/32796715" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+	</body>
+</html>
+            </div>
+        </div>
+    </body>
+</html>
+

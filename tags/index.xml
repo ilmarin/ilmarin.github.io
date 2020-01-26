@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Илья Маринин</title>
+    <link>https://ilmarin.github.io/tags/</link>
+    <description>Recent content in Tags on Илья Маринин</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Wed, 30 Jan 2019 17:53:19 +0500</lastBuildDate>
+    
+	<atom:link href="https://ilmarin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>codelobster</title>
+      <link>https://ilmarin.github.io/tags/codelobster/</link>
+      <pubDate>Wed, 30 Jan 2019 17:53:19 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/codelobster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://ilmarin.github.io/tags/docker/</link>
+      <pubDate>Tue, 27 Feb 2018 15:54:49 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://ilmarin.github.io/tags/vim/</link>
+      <pubDate>Wed, 31 Jan 2018 11:52:02 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>netbeans</title>
+      <link>https://ilmarin.github.io/tags/netbeans/</link>
+      <pubDate>Sat, 27 Jan 2018 20:36:21 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/netbeans/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>https://ilmarin.github.io/tags/php/</link>
+      <pubDate>Sat, 27 Jan 2018 20:36:21 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xdebug</title>
+      <link>https://ilmarin.github.io/tags/xdebug/</link>
+      <pubDate>Sat, 27 Jan 2018 20:36:21 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/xdebug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>разное</title>
+      <link>https://ilmarin.github.io/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</link>
+      <pubDate>Sun, 21 Jan 2018 20:12:54 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/%D1%80%D0%B0%D0%B7%D0%BD%D0%BE%D0%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yii</title>
+      <link>https://ilmarin.github.io/tags/yii/</link>
+      <pubDate>Sun, 07 Jan 2018 15:40:09 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/yii/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>книги</title>
+      <link>https://ilmarin.github.io/tags/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/</link>
+      <pubDate>Sat, 06 Jan 2018 14:05:04 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://ilmarin.github.io/tags/hugo/</link>
+      <pubDate>Sat, 25 Nov 2017 10:00:24 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bash</title>
+      <link>https://ilmarin.github.io/tags/bash/</link>
+      <pubDate>Sat, 18 Nov 2017 23:30:13 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>codeception</title>
+      <link>https://ilmarin.github.io/tags/codeception/</link>
+      <pubDate>Sat, 01 Jul 2017 13:41:35 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/codeception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>selenium</title>
+      <link>https://ilmarin.github.io/tags/selenium/</link>
+      <pubDate>Sat, 01 Jul 2017 13:41:35 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/selenium/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://ilmarin.github.io/tags/mysql/</link>
+      <pubDate>Thu, 02 Mar 2017 21:34:25 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

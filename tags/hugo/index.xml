@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on Илья Маринин</title>
+    <link>https://ilmarin.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on Илья Маринин</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Sat, 25 Nov 2017 10:00:24 +0500</lastBuildDate>
+    
+	<atom:link href="https://ilmarin.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Добавление тегов к постам в Hugo</title>
+      <link>https://ilmarin.github.io/post/hugo_tags/</link>
+      <pubDate>Sat, 25 Nov 2017 10:00:24 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/post/hugo_tags/</guid>
+      <description>Hugo - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал здесь.
+Ниже я опишу как добавить к постам теги.
+Первым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:
+[taxonomies] tag = &amp;quot;tags&amp;quot;  Для YAML-конфига соответственно нужно написать:
+taxonomies: tag: &amp;quot;tags&amp;quot;  Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами +++, пишем:</description>
+    </item>
+    
+    <item>
+      <title>Блог на Hugo за пару минут</title>
+      <link>https://ilmarin.github.io/post/hugo-blog/</link>
+      <pubDate>Tue, 21 Feb 2017 15:29:39 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/post/hugo-blog/</guid>
+      <description>Что и зачем Hugo - это генератор статических сайтов, написанный на языке Go.
+Я нашел его чрезвычайно удобным для ведения собственного блога.
+Для меня преимущества перед устаревшими системами вроде Wordpress очевидны:
+ Низкие требования к хостингу (не нужен ни php, ни mysql) Безопасность Для написания постов не обязательно быть online Скорость работы Написание постов в разметке Markdown, а не html  Преимущества перед другими генераторами статических сайтов вроде Jekyll:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on Илья Маринин</title>
+    <link>https://ilmarin.github.io/tags/vim/</link>
+    <description>Recent content in vim on Илья Маринин</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <lastBuildDate>Wed, 31 Jan 2018 11:52:02 +0500</lastBuildDate>
+    
+	<atom:link href="https://ilmarin.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Допиливание Vim</title>
+      <link>https://ilmarin.github.io/post/healthy-vim/</link>
+      <pubDate>Wed, 31 Jan 2018 11:52:02 +0500</pubDate>
+      
+      <guid>https://ilmarin.github.io/post/healthy-vim/</guid>
+      <description>Vim &amp;mdash; отличный редактор, позволяющий очень быстро выполнять рутинные операции с текстом. Однако для комфортной работы Vim требует базовой настройки и периода привыкания. В данной заметке я приведу список изменений, которые позволят комфортно использовать Vim для любых операций, а не только для редактирования различных файлов настроек.
+Перечень тем:
+ создание файла настроек .vimrc; установка менеджера плагинов; корректная работа с переключение раскладки; установка набора сниппетов для более быстрого редактирования кода и разметки; добавление проверки орфографии; применение темы оформления; корректный перенос текста.</description>
+    </item>
+    
+  </channel>
+</rss>
