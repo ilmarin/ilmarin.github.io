@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>docker on Илья Маринин</title>
-    <link>https://ilmarin.github.io/tags/docker/</link>
+    <link>https://www.marinin.pw/tags/docker/</link>
     <description>Recent content in docker on Илья Маринин</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <lastBuildDate>Tue, 27 Feb 2018 15:54:49 +0500</lastBuildDate>
     
-	<atom:link href="https://ilmarin.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.marinin.pw/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Как связать два docker-контейнера</title>
-      <link>https://ilmarin.github.io/post/docker-network/</link>
+      <link>https://www.marinin.pw/post/docker-network/</link>
       <pubDate>Tue, 27 Feb 2018 15:54:49 +0500</pubDate>
       
-      <guid>https://ilmarin.github.io/post/docker-network/</guid>
+      <guid>https://www.marinin.pw/post/docker-network/</guid>
       <description>Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.
 Для этого в docker есть функционал по работе с сетью &amp;mdash; docker network.
 Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.
@@ -26,10 +26,10 @@ $ docker network create -d bridge api $ docker network connect --alias app api 5
     
     <item>
       <title>Отладка кода в docker-контейнере из NetBeans</title>
-      <link>https://ilmarin.github.io/post/netbeans-docker-xdebug/</link>
+      <link>https://www.marinin.pw/post/netbeans-docker-xdebug/</link>
       <pubDate>Sat, 27 Jan 2018 20:36:21 +0500</pubDate>
       
-      <guid>https://ilmarin.github.io/post/netbeans-docker-xdebug/</guid>
+      <guid>https://www.marinin.pw/post/netbeans-docker-xdebug/</guid>
       <description>Я уже немного писал о NetBeans тут . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, здесь.
 Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.
 Для успешной отладки следует:

@@ -11,9 +11,9 @@
 
         <meta property="og:title" content=" Отладка кода в docker-контейнере из NetBeans &middot;  Илья Маринин" />
         <meta property="og:site_name" content="Илья Маринин" />
-        <meta property="og:url" content="https://ilmarin.github.io/post/netbeans-docker-xdebug/" />
-        <link rel="shortcut icon" href="https://ilmarin.github.io/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="https://ilmarin.github.io/favicon.ico" type="image/x-icon">
+        <meta property="og:url" content="https://www.marinin.pw/post/netbeans-docker-xdebug/" />
+        <link rel="shortcut icon" href="https://www.marinin.pw/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="https://www.marinin.pw/favicon.ico" type="image/x-icon">
 
     
         <meta property="og:type" content="article" />
@@ -33,7 +33,7 @@
         <meta name="twitter:creator" content="@ilya_marinin" />
         <meta name="twitter:title" content="Отладка кода в docker-контейнере из NetBeans" />
         <meta name="twitter:description" content="Отладка кода в docker-контейнера, отдалка cli-скрипта внутри контейнера" />
-        <meta name="twitter:url" content="https://ilmarin.github.io/post/netbeans-docker-xdebug/" />
+        <meta name="twitter:url" content="https://www.marinin.pw/post/netbeans-docker-xdebug/" />
     
 
         <title> Отладка кода в docker-контейнере из NetBeans &middot;  Илья Маринин - блог о программировании</title>
@@ -49,12 +49,12 @@
         
 
     
-        <link href="https://ilmarin.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Илья Маринин" />
+        <link href="https://www.marinin.pw/index.xml" rel="alternate" type="application/rss+xml" title="Илья Маринин" />
     
 
     
-        <link rel="canonical" href="https://ilmarin.github.io/post/netbeans-docker-xdebug/" />
-        <link rel="stylesheet" href="https://ilmarin.github.io/css/crisp.css?20170725">
+        <link rel="canonical" href="https://www.marinin.pw/post/netbeans-docker-xdebug/" />
+        <link rel="stylesheet" href="https://www.marinin.pw/css/crisp.css?20170725">
     </head>
     <body>
         <script>
@@ -67,16 +67,16 @@
             ga('send', 'pageview');
         </script>
         <header id="header">
-            <a id="logo" href="https://ilmarin.github.io/">
-                <img src="https://ilmarin.github.io/img/logo.jpg" alt="Илья Маринин" />
+            <a id="logo" href="https://www.marinin.pw/">
+                <img src="https://www.marinin.pw/img/logo.jpg" alt="Илья Маринин" />
             </a>
-            <a style="font-size: 1.9em" href="https://ilmarin.github.io/">MARININ</a>
+            <a style="font-size: 1.9em" href="https://www.marinin.pw/">MARININ</a>
             <p>Меня зовут Илья Маринин. Я веб-разработчик, а это мой личный блог. Если у вас есть пожелания или предложения, <a href="mailto:ilya(at)marinin.pw">напишите мне</a>.</p>
 
             <div id="follow-icons">
         <a href="http://github.com/ilmarin" rel="me"><i class="fa fa-github-square fa-2x"></i></a>
 	<a href="http://linkedin.com/in/ilya-marinin-bbb931a6" rel="me"><i class="fa fa-linkedin-square fa-2x"></i></a>
-	<a href="https://ilmarin.github.io/index.xml" rel="me"><i class="fa fa-rss-square fa-2x"></i></a> 
+	<a href="https://www.marinin.pw/index.xml" rel="me"><i class="fa fa-rss-square fa-2x"></i></a> 
 </div>  
             
         </header>
@@ -98,20 +98,20 @@
                     
                         &middot;
                         
-                            <a href="https://ilmarin.github.io/tags/netbeans/">netbeans</a>
+                            <a href="https://www.marinin.pw/tags/netbeans/">netbeans</a>
                         
-                            <a href="https://ilmarin.github.io/tags/xdebug/">xdebug</a>
+                            <a href="https://www.marinin.pw/tags/xdebug/">xdebug</a>
                         
-                            <a href="https://ilmarin.github.io/tags/php/">php</a>
+                            <a href="https://www.marinin.pw/tags/php/">php</a>
                         
-                            <a href="https://ilmarin.github.io/tags/docker/">docker</a>
+                            <a href="https://www.marinin.pw/tags/docker/">docker</a>
                         
                     
                     </span>
                 </div>
                 
 
-<p>Я уже немного писал о NetBeans <a href="https://ilmarin.github.io/post/netbeans_hotkeys">тут</a> . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, <a href="https://netbeans.org/kb/docs/php/debugging_ru.html" target="_blank">здесь</a>.</p>
+<p>Я уже немного писал о NetBeans <a href="https://www.marinin.pw/post/netbeans_hotkeys">тут</a> . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, <a href="https://netbeans.org/kb/docs/php/debugging_ru.html" target="_blank">здесь</a>.</p>
 
 <p>Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.</p>
 
@@ -197,9 +197,9 @@ xdebug.idekey=netbeans-xdebug
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_shortname = 'marinin-pw';
-      var disqus_identifier = 'https:\/\/ilmarin.github.io\/post\/netbeans-docker-xdebug\/';
+      var disqus_identifier = 'https:\/\/www.marinin.pw\/post\/netbeans-docker-xdebug\/';
       var disqus_title = 'Отладка кода в docker-контейнере из NetBeans';
-      var disqus_url = 'https:\/\/ilmarin.github.io\/post\/netbeans-docker-xdebug\/';
+      var disqus_url = 'https:\/\/www.marinin.pw\/post\/netbeans-docker-xdebug\/';
       function disqus_config() {
         this.callbacks.onReady = [function() {
               $.scrolline();   
@@ -234,10 +234,10 @@ xdebug.idekey=netbeans-xdebug
       ],{
         callback:function(){
           asyncLoader([
-            "https:\/\/ilmarin.github.io\/css/rrssb.css",
-            "https:\/\/ilmarin.github.io\/js/gist.min.js", 
-            "https:\/\/ilmarin.github.io\/js/rrssb.min.js",                           
-            "https:\/\/ilmarin.github.io\/js/jquery.scrolline.js",
+            "https:\/\/www.marinin.pw\/css/rrssb.css",
+            "https:\/\/www.marinin.pw\/js/gist.min.js", 
+            "https:\/\/www.marinin.pw\/js/rrssb.min.js",                           
+            "https:\/\/www.marinin.pw\/js/jquery.scrolline.js",
             "//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"
           ], { callback:function() {
               hljs.initHighlighting();
