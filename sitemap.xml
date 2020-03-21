@@ -3,31 +3,60 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.marinin.pw/post/codelobster/</loc>
-    <lastmod>2019-01-30T17:53:19+05:00</lastmod>
+    <loc>https://www.marinin.pw/tags/</loc>
+    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.marinin.pw/tags/</loc>
-    <lastmod>2019-01-30T17:53:19+05:00</lastmod>
+    <loc>https://www.marinin.pw/tags/homestead/</loc>
+    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/tags/laravel/</loc>
+    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/tags/php/</loc>
+    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/tags/symfony/</loc>
+    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/post/homestead_extend/</loc>
+    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/</loc>
+    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/post/</loc>
+    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/post/codelobster/</loc>
+    <lastmod>2019-01-30T17:53:19+05:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.marinin.pw/tags/codelobster/</loc>
     <lastmod>2019-01-30T17:53:19+05:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.marinin.pw/</loc>
-    <lastmod>2019-01-30T17:53:19+05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.marinin.pw/post/</loc>
-    <lastmod>2019-01-30T17:53:19+05:00</lastmod>
   </url>
   
   <url>
@@ -54,12 +83,6 @@
   
   <url>
     <loc>https://www.marinin.pw/tags/netbeans/</loc>
-    <lastmod>2018-01-27T20:36:21+05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.marinin.pw/tags/php/</loc>
     <lastmod>2018-01-27T20:36:21+05:00</lastmod>
     <priority>0</priority>
   </url>

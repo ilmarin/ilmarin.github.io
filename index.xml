@@ -6,10 +6,23 @@
     <description>Recent content on Илья Маринин</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Wed, 30 Jan 2019 17:53:19 +0500</lastBuildDate>
+    <lastBuildDate>Sat, 21 Mar 2020 17:19:07 +0300</lastBuildDate>
     
 	<atom:link href="https://www.marinin.pw/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Добавление новых php-расширений в Homestead</title>
+      <link>https://www.marinin.pw/post/homestead_extend/</link>
+      <pubDate>Sat, 21 Mar 2020 17:19:07 +0300</pubDate>
+      
+      <guid>https://www.marinin.pw/post/homestead_extend/</guid>
+      <description>Homestead &amp;mdash; это набор конфигов от Laravel виртуальной машины на базе Vagrant.
+Новичкам иногда сложно сходу добавить новый функционал в виртуальную машину на базе Homestead.
+Для примера дан простой набор шагов по добавлению php-расширения APCu в Homestead. Оно используется, например, в Symfony.
+Настраиваем Homestead Находим в папке с Homestead файл after.sh и добавляем нужные строки:
+#Install APCu sudo apt-get -y \ -o Dpkg::Options::=&amp;quot;--force-confdef&amp;quot; \ -o Dpkg::Options::=&amp;quot;--force-confold&amp;quot; \ install php-apcu  Пересобираем виртуальную машину В терминале в папке с Homestead выполянем:</description>
+    </item>
     
     <item>
       <title>CodeLobster IDE – бесплатный PHP, HTML, CSS, JavaScript редактор</title>
