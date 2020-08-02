@@ -3,6 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.marinin.pw/post/github_pages/</loc>
+    <lastmod>2020-08-02T17:54:28+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/</loc>
+    <lastmod>2020-08-02T17:54:28+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.marinin.pw/post/</loc>
+    <lastmod>2020-08-02T17:54:28+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.marinin.pw/tags/</loc>
     <lastmod>2020-03-21T17:19:07+03:00</lastmod>
     <priority>0</priority>
@@ -34,17 +50,6 @@
   
   <url>
     <loc>https://www.marinin.pw/post/homestead_extend/</loc>
-    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.marinin.pw/</loc>
-    <lastmod>2020-03-21T17:19:07+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.marinin.pw/post/</loc>
     <lastmod>2020-03-21T17:19:07+03:00</lastmod>
   </url>
   
