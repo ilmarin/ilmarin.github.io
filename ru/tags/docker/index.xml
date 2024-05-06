@@ -18,6 +18,17 @@
 Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.
 Пишем:
 $ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть.</description>
+      <content:encoded><![CDATA[<p>Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.</p>
+<p>Для этого в docker есть функционал по работе с сетью — <code>docker network</code>.</p>
+<p>Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.</p>
+<p>Пишем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker network create -d bridge api
+</span></span><span style="display:flex;"><span>$ docker network connect --alias app api <span style="color:#ae81ff">53</span>
+</span></span><span style="display:flex;"><span>$ docker network connect --alias service api 4с
+</span></span></code></pre></div><p>Первая команда создает новую сеть. Вторая и третья команды по очереди добавляют в нее существующие контейнеры. Параметр <code>alias</code> задает имя контейнера по которому к нему можно будет легко обратиться.</p>
+<p>Теперь мы можем войти, например, в контейнер app и вызывать по http api контейнера service.</p>
+<p>Подробнее про <code>docker network</code> можно прочесть <a href="https://docs.docker.com/network/">здесь</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Отладка кода в docker-контейнере из NetBeans</title>
@@ -28,6 +39,49 @@ $ docker network create -d bridge api $ docker network connect --alias app api 5
 Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.
 Для успешной отладки следует:
 Настроить docker-контейнер с Xdebug внутри; Настроить Xdebug внутри контейнера; Настроить NetBeans. При обычной отладке с использованием браузера и при отладке cli-скрипта настройки будут слегка отличаться.</description>
+      <content:encoded><![CDATA[<p>Я уже немного писал о NetBeans <a href="/post/netbeans_hotkeys">тут</a> . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, <a href="https://netbeans.org/kb/docs/php/debugging_ru.html">здесь</a>.</p>
+<p>Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.</p>
+<p>Для успешной отладки следует:</p>
+<ol>
+<li>Настроить docker-контейнер с Xdebug внутри;</li>
+<li>Настроить Xdebug внутри контейнера;</li>
+<li>Настроить NetBeans.</li>
+</ol>
+<p>При обычной отладке с использованием браузера и при отладке cli-скрипта настройки будут слегка отличаться. Итак, поехали.</p>
+<h2 id="настройка-контейнера">Настройка контейнера</h2>
+<p>Установку Xdebug внутрь контейнера мы обсуждать не будем. Эти настройки можно найти, например, <a href="https://github.com/apparena/docker-php7-xdebug/blob/master/Dockerfile">тут</a>.</p>
+<p>Интереснее настройки самого Xdebug.</p>
+<p>В случае с обычной отладкой:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">xdebug.remote_enable</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xdebug.remote_connect_back</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xdebug.idekey</span><span style="color:#f92672">=</span><span style="color:#e6db74">netbeans-xdebug</span>
+</span></span></code></pre></div><p>Расшифровка:</p>
+<ul>
+<li><code>xdebug.remote_enable</code> — разрешает удаленную отладку.</li>
+<li><code>xdebug.remote_connect_back</code> — автоматическое установление соединения с хостом, который иницирует удаленную отладку. Если не указывать эту опцию, то нужно использовать <code>xdebug.remote_host</code>, где следует указать ip вашего хоста из виртуального docker-адаптера.</li>
+<li><code>xdebug.idekey</code> — ключ для соединения. Значение <code>netbeans-xdebug</code> задано в NetBeans по умолчанию. Можно не задавать эту опцию и использовать <code>xdebug.remote_autostart=1</code>, но тогда Xdebug будет стартовать в каждом скрипте, даже если это не нужно, что скажется на производительности.</li>
+</ul>
+<h2 id="настройка-netbeans">Настройка NetBeans</h2>
+<p>Для успешной отладки NetBeans должен знать как сопоставить между собой пути внутри docker-контейнера и пути в хостовой машине.</p>
+<p>Идем в <strong>Свойства проекта</strong>, далее <strong>Выполнить настройку → Дополнительно</strong>. Внизу в разделе <strong>Отображение пути</strong> добавляем наше сопоставление.</p>
+<p>Теперь, если запустить отладку проекта, то отладчик должен автоматически остановить выполнение на первой строке скрипта точки входа в приложение (если активирована соответствующая настройка в IDE).</p>
+<p>Если ничего не произошло и вас отключена опция NetBeans <strong>Остановить в первой строчке</strong>, то удостоверьтесь, что поставили breakpoint где-то по пути выполнения скрипта. Если ни одного breakpoint не установлено, то следует установить его, остановить отладку и запустить снова.</p>
+<h2 id="отладка-cli-скрипта">Отладка cli-скрипта</h2>
+<p>Для отладки cli-скрипта все немного иначе. Главное отличие в том, что опция <code>xdebug.remote_connect_back=1</code> нам не нужна, ведь соединения от хостовой машины не будет. Вместо этого NetBeans будет ожидать обращений от приложения.</p>
+<p>Для начала настроим NetBeans.</p>
+<p>Идем по уже известному пути <strong>Свойства проекта → Выполнить настройку</strong>. Здесь добавляем новую конфигурацию, нажав <strong>Создать&hellip;</strong>. Далее жмем <strong>Дополнительно</strong> и указываем опцию <strong>Не открывать браузер</strong>.</p>
+<p>После настройки, кликаем правой кнопкой по проекту, выбираем <strong>Установить конфигурацию</strong> и задаем вариант, который только что создали.</p>
+<p>Теперь можно нажать <strong>Отладка проекта</strong> или просто <strong>Ctrl+F5</strong>. Браузер не должен открыться.</p>
+<p>Идем в меню <strong>Окно → IDE и сервис → Терминал</strong>. В появившемся терминале выполняем вход в docker-контейнер, выполнив что-то вроде:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker exec -ti %container_id% bash
+</span></span></code></pre></div><p><strong>%container_id%</strong> в данном случае id контейнера с вашим приложением.</p>
+<p>Теперь самое интересное. Выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ export XDEBUG_CONFIG<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;remote_enable=1 remote_mode=req remote_port=9000 remote_host=%remote_host_ip% remote_connect_back=0 idekey=netbeans-xdebug&#34;</span>
+</span></span></code></pre></div><p>Обратите внимание на указанный <strong>remote_host</strong>. Именно по этому адресу Xdebug будет ломиться в отладчик. Проставьте свое значение на место <strong>%remote_host_ip%</strong>.</p>
+<p>Теперь можно запустить какой-нибудь cli-скрипт. Например, миграции yii:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./yii migrate
+</span></span></code></pre></div><p>Если отладчик NetBeans запущен, то он должен отловить это событие и прервать выполнение на первой строке скрипта точки входа.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

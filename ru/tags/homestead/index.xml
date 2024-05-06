@@ -18,6 +18,28 @@
 Для примера дан простой набор шагов по добавлению php-расширения APCu в Homestead. Оно используется, например, в Symfony.
 Настраиваем Homestead Находим в папке с Homestead файл after.sh и добавляем нужные строки:
 #Install APCu sudo apt-get -y \ -o Dpkg::Options::=&amp;#34;--force-confdef&amp;#34; \ -o Dpkg::Options::=&amp;#34;--force-confold&amp;#34; \ install php-apcu Пересобираем виртуальную машину В терминале в папке с Homestead выполянем:</description>
+      <content:encoded><![CDATA[<p><a href="https://laravel.com/docs/6.x/homestead">Homestead</a> — это набор конфигов от сообщества <a href="https://laravel.com/">Laravel</a> виртуальной машины на базе <a href="https://www.vagrantup.com/">Vagrant</a>.</p>
+<p>Новичкам иногда сложно сходу добавить новый функционал в виртуальную машину на базе Homestead.</p>
+<p>Для примера дан простой набор шагов по добавлению php-расширения <a href="https://www.php.net/manual/ru/book.apcu.php">APCu</a> в Homestead. Оно используется, например, в <a href="https://symfony.com/">Symfony</a>.</p>
+<h2 id="настраиваем-homestead">Настраиваем Homestead</h2>
+<p>Находим в папке с Homestead файл <code>after.sh</code> и добавляем нужные строки:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#Install APCu</span>
+</span></span><span style="display:flex;"><span>sudo apt-get -y <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -o Dpkg::Options::<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--force-confdef&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -o Dpkg::Options::<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--force-confold&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    install php-apcu
+</span></span></code></pre></div><h2 id="пересобираем-виртуальную-машину">Пересобираем виртуальную машину</h2>
+<p>В терминале в папке с Homestead выполянем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vagrant destroy
+</span></span><span style="display:flex;"><span>$ vagrant up --provision
+</span></span></code></pre></div><h2 id="проверяем-результат">Проверяем результат</h2>
+<p>Там же выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vagrant ssh
+</span></span></code></pre></div><p>Внутри виртуальной машины выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ php -m | grep apcu
+</span></span></code></pre></div><p>Мы должны увидеть в выводе <code>apcu</code>.</p>
+<p>Аналогичным образом можно установить остальные недостающие расширения.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

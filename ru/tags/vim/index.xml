@@ -16,6 +16,141 @@
       <description>Vim — отличный редактор, позволяющий очень быстро выполнять рутинные операции с текстом. Однако для комфортной работы Vim требует базовой настройки и периода привыкания. В данной заметке я приведу список изменений, которые позволят комфортно использовать Vim для любых операций, а не только для редактирования различных файлов настроек.
 Перечень тем:
 создание файла настроек .vimrc; установка менеджера плагинов; корректная работа с переключение раскладки; установка набора сниппетов для более быстрого редактирования кода и разметки; добавление проверки орфографии; применение темы оформления; корректный перенос текста.</description>
+      <content:encoded><![CDATA[<p>Vim — отличный редактор, позволяющий очень быстро выполнять рутинные операции с текстом. Однако для комфортной работы Vim требует базовой настройки и периода привыкания. В данной заметке я приведу список изменений, которые позволят комфортно использовать Vim для любых операций, а не только для редактирования различных файлов настроек.</p>
+<p>Перечень тем:</p>
+<ul>
+<li>создание файла настроек .vimrc;</li>
+<li>установка менеджера плагинов;</li>
+<li>корректная работа с переключение раскладки;</li>
+<li>установка набора сниппетов для более быстрого редактирования кода и разметки;</li>
+<li>добавление проверки орфографии;</li>
+<li>применение темы оформления;</li>
+<li>корректный перенос текста.</li>
+</ul>
+<p>Все настройки я буду описывать применительно к Ubuntu 16.04.</p>
+<h2 id="создание-файла-настроек">Создание файла настроек</h2>
+<p>Первым делом нам нужно создать файл настроек редактора, если такового еще нет. Именно в нем мы будем прописывать наши настройки.</p>
+<p>Открываем Vim и выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>:e ~/.vimrc
+</span></span><span style="display:flex;"><span>:r $VIMRUNTIME/vimrc_example.vim
+</span></span><span style="display:flex;"><span>:w
+</span></span></code></pre></div><p>Файл настроек создан.</p>
+<h2 id="установка-менеджера-плагинов">Установка менеджера плагинов</h2>
+<p>Vim поддерживает плагины, которые сильно расширяют его функциональность. Проблема в том, что вручную управлять плагинами неудобно и папка .vim быстро превращается в бардак. Менеджер плагинов автоматизирует установку расширений и сам чистит ненужные плагины.</p>
+<p>Установим менеджер плагинов Vim-plug:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</span></span></code></pre></div><h2 id="корректное-переключение-раскладки">Корректное переключение раскладки</h2>
+<p>Главная проблема Vim для русскоязычных пользователей — постоянная необходимость переключать раскладку при работе с текстом.</p>
+<p>Решений этой проблемы как минимум три.</p>
+<p>Самый простой вариант прописать в .vimrc:</p>
+<pre tabindex="0"><code>set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,
+фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+</code></pre><p>Проблема с этим вариантом в том, что для пунктуации маппинг не работает.</p>
+<p>Второе по сложности решениие описано <a href="https://habrahabr.ru/post/98393/">здесь</a>. Оно плохо тем, что приходится запоминать новую комбинацию клавиш для переключениия раскладки.</p>
+<p>Самый радикальный же вариант (он же самый сложный) подробно описан <a href="https://habrahabr.ru/post/175709/">тут</a>. Здесь я приведу его краткую версию для Ubuntu.</p>
+<h3 id="установка-xkb-switch">Установка xkb-switch</h3>
+<p>Нам понадобится выполнить следующие команды:</p>
+<pre tabindex="0"><code>$ git clone https://github.com/ierton/xkb-switch
+$ cd xkb-switch
+$ sudo apt-get install build-essential cmake libx11-dev libxext-dev libxtst-dev libxkbfile-dev
+$ mkdir build &amp;&amp; cd build
+$ cmake ..
+$ make
+$ sudo make install
+</code></pre><p>Проверяем работу программы:</p>
+<pre tabindex="0"><code>$ xkb-switch
+</code></pre><p>Если все хорошо и программа выполняется, то переходим к настройке Vim.</p>
+<p>До этого мы не настраивали менеджер плагинов, который установили ранее. Этим и займемся.</p>
+<h3 id="настройка-vim">Настройка Vim</h3>
+<p>Открываем .vimrc и пишем внизу:</p>
+<pre tabindex="0"><code>call plug#begin(&#39;~/.vim/plugged&#39;)
+
+Plug &#39;lyokha/vim-xkbswitch&#39;
+
+let g:XkbSwitchEnabled = 1
+let g:XkbSwitchIMappings = [&#39;ru&#39;]
+
+call plug#end()
+</code></pre><p>Сохраняем изменения, выполнив <code>:w</code>.</p>
+<p>Применяем новый конфиг:</p>
+<pre tabindex="0"><code>:so ~/.vimrc
+</code></pre><p>Для установки плагина выполняем:</p>
+<pre tabindex="0"><code>:PlugInstall
+</code></pre><p>После завершений устновки выходим из окна, нажав <strong>q</strong>. Можно вовсе закрыть Vim, выполнив <strong>ZZ</strong>.</p>
+<h3 id="проверка-работы-плагина">Проверка работы плагина</h3>
+<p>Открываем Vim. Входим в режим вставки, нажав <strong>i</strong>.</p>
+<p>Переключаем раскладку на русскую и вводим текст. Нажимаем <strong>ESC</strong>. Видим, что раскалдка после нажатия <strong>ESC</strong> переключилась на английскую автоматически. Теперь, если мы снова войдем в режим редактирования, то менять раскладку на русскую уже не нужно. Очень удобно.</p>
+<h2 id="установка-сниппетов">Установка сниппетов</h2>
+<p>Сниппеты — это маленькие кусочки кода, которые работают как аналог <a href="/post/netbeans_hotkeys">шаблонов кода</a> в NetBeans.</p>
+<h3 id="установка-расширений">Установка расширений</h3>
+<p>В .vimrc прописываем над <code>call plug#end()</code>:</p>
+<pre tabindex="0"><code>Plug &#39;SirVer/ultisnips&#39; | Plug &#39;honza/vim-snippets&#39;
+
+&#34; Trigger configuration. Do not use &lt;tab&gt; if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger=&#34;&lt;tab&gt;&#34;
+let g:UltiSnipsJumpForwardTrigger=&#34;&lt;c-b&gt;&#34;
+let g:UltiSnipsJumpBackwardTrigger=&#34;&lt;c-z&gt;&#34;
+</code></pre><p>Сохраняем файл, применяем конфигурацию и выполняем <code>:PlugInstall</code>.</p>
+<p>Сами правила для сниппетов можно посмотреть на <a href="https://github.com/honza/vim-snippets">странице</a> плагина.</p>
+<p>Для разыменовывания сниппета нажимаем <strong>Tab</strong>, для перемещения по доступным для заполнения местам вперед и назад жмем <strong>Ctrl+b</strong> и <strong>Ctrl+z</strong>.</p>
+<h3 id="проверка-работы">Проверка работы</h3>
+<p>Создаем файл:</p>
+<pre tabindex="0"><code>$ vim test.sh
+</code></pre><p>Входим в режим вставки и вводим <code>#!</code>. Жмем <strong>Tab</strong> и видим, что конструкция разыменовалась в <code>#!/bin/bash</code>.</p>
+<h2 id="проверка-орфографии">Проверка орфографии</h2>
+<p>Подробная инструкция есть, например, <a href="http://funix.ru/programs_utilities/proverka-orfografii-v-vim.html">здесь</a>. Ниже краткие выдержки.</p>
+<p>Идем на специальный <a href="ftp://ftp.vim.org/pub/vim/runtime/spell/">сервер</a> и берем оттуда файлы <strong>ru.utf-8.spl</strong> и <strong>ru.utf-8.sug</strong>.</p>
+<p>Файлы нам нужно скопировать в папку <strong>~/.vim/spell</strong>.</p>
+<p>Теперь настроим Vim. В .vimrc пишем:</p>
+<pre tabindex="0"><code>:setlocal spell spelllang=ru_ru,en_us
+</code></pre><p>Или для поклонников буквы «ё» можно прописать:</p>
+<pre tabindex="0"><code>:setlocal spell spelllang=ru_yo,en_us
+</code></pre><p>Команды по работе со словарями хорошо описаны по ссылке выше. Вот их краткий перечень:</p>
+<ul>
+<li>
+<p><strong>]s</strong> — устанавливает курсор на следующее выделенное слово</p>
+</li>
+<li>
+<p><strong>[s</strong> — устанавливает курсор на предыдущее выделенное слово.</p>
+</li>
+<li>
+<p><strong>zg</strong> — добавляет слово, находящееся под курсором;</p>
+</li>
+<li>
+<p><strong>zG</strong> — то же, что и zg, но слово будет добавлено только для текущей сессии работы;</p>
+</li>
+<li>
+<p><strong>zw</strong> — то же, что и zg, однако слово будет помечено как ошибочно-написанное;</p>
+</li>
+<li>
+<p><strong>zW</strong> — то же, что и zw, однако слово будет добавлено только для текущей сессии работы.</p>
+</li>
+<li>
+<p><strong>zug</strong> и <strong>zuw</strong> — отменяет действие zg и zw соответственно;</p>
+</li>
+<li>
+<p><strong>zuG</strong> и <strong>zuW</strong> — отменяет действие zG и zW соответственно.</p>
+</li>
+</ul>
+<h2 id="смена-темы-оформления">Смена темы оформления</h2>
+<p>Энтузиастами сделано много тем оформления для Vim. Мне нравится <a href="https://github.com/danilo-augusto/vim-afterglow">Afterglow</a> — порт одноименной темы из Sublime Text.</p>
+<p>Для установки темы в .vimrc пропишем перед <code>call plug#end()</code>:</p>
+<pre tabindex="0"><code>Plug &#39;danilo-augusto/vim-afterglow&#39;
+</code></pre><p>Сохраняем файл, применяем новую версию настроек и устанавливаем плагин.</p>
+<p>Теперь прописываем в конце файла .vimrc:</p>
+<pre tabindex="0"><code>colorscheme afterglow
+</code></pre><p>Сохраняем изменения, применяем новые настройки. Оформление должно измениться.</p>
+<p>Если оформление не изменилось, то возможно в терминале установлена восьмицветовая схема. Можно дописать в .vimrc следующее:</p>
+<pre tabindex="0"><code>set t_Co=256
+</code></pre><p>Изменения нужно сохранить и применить новые настройки.</p>
+<h2 id="корректный-перенос-текста">Корректный перенос текста</h2>
+<p>Изначально Vim переносит текст по буквам. Это неудобно для редактирования текстов. Для переноса текста по словам, нужно прописать в .vimrc:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>set wrap linebreak
+</span></span></code></pre></div><h2 id="заключение">Заключение</h2>
+<p>Vim — очень гибкий редактор, который каждый может приспособить под свои нужды. В данном случае я рассматривал Vim как редактор «по умолчанию», который можно использовать как для редактирования кода, так и для написания небольших текстов вроде постов в блог.</p>
+<p>Вообще Vim можно приспособить под разные нужды и использовать, например, для таких вещей как навигация по файлам и их массовое переименование, но эти темы выходят за рамки заметки.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

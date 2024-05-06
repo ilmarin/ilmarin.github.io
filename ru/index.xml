@@ -17,6 +17,12 @@
 На днях случился анонс очередного шага на пути к технологической сингулярности, а именно GitHub Copilot Workspaces.
 Если вкратце, то эта штука позволит командам программистов еще быстрее разрабатывать приложения в общем рабочем пространстве.
 Copilot здесь уже не только помогает писать код, но и составяет спецификации и план работ.</description>
+      <content:encoded><![CDATA[<p>Еще одна вещь, произошедшая за то время пока я ничего тут не писал — революция нейросетей и больших языковых моделей, начиная с ChatGPT.</p>
+<p>На днях случился <a href="https://github.blog/2024-04-29-github-copilot-workspace/">анонс</a> очередного шага на пути к технологической сингулярности, а именно GitHub Copilot Workspaces.</p>
+<p>Если вкратце, то эта штука позволит командам программистов еще быстрее разрабатывать приложения в общем рабочем пространстве.</p>
+<p>Copilot здесь уже не только помогает писать код, но и составяет спецификации и план работ.</p>
+<p>Сам я для личных нужд вместо Copilot использую <a href="https://codeium.com/">Codeium</a>, но выглядит крайне интересно. Ждем.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Новое начало</title>
@@ -27,6 +33,16 @@ Copilot здесь уже не только помогает писать код
 За последние три с лишним года в моей жизни произошли изменения и на блог оставалось не так много времени.
 Я успел сменить две страны проживания, жениться, поменять работу и уйти с работы. На горизонте смена стека разработки и выход на работу уже за рубежом.
 Иногда я думал как вернуться к написанию статей и заметок, но чувствовал себя заложником формата. Раньше я хотел писать здесь сугубо о программировании, но быстро понял, что мне тесно в этих рамках.</description>
+      <content:encoded><![CDATA[<p>Давно ничего сюда не писал.</p>
+<p>За последние три с лишним года в моей жизни произошли изменения и на блог оставалось не так много времени.</p>
+<p>Я успел сменить две страны проживания, жениться, поменять работу и уйти с работы. На горизонте смена стека разработки и выход на работу уже за рубежом.</p>
+<p>Иногда я думал как вернуться к написанию статей и заметок, но чувствовал себя заложником формата. Раньше я хотел писать здесь сугубо о программировании, но быстро понял, что мне тесно в этих рамках.</p>
+<p>Так что в блоге грядут изменения (старожилы уже заметили, что изменилось оформление, но это не главное).</p>
+<p>Во-первых, я буду меньше писать о работе и программировании.</p>
+<p>Во-вторых, будет больше постов обо мне и моей жизни. А также прочитанных книгах, просмотренных фильмах, поездках и т.д.</p>
+<p>В-третьих, я начну писать на английском. Посты о разработке станут первыми кандидатами.</p>
+<p>По плану записей на английском со временем станет больше, а на русском меньше.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>GitHub Pages для статичного сайта</title>
@@ -36,6 +52,17 @@ Copilot здесь уже не только помогает писать код
       <description>Давно использую GitHub Pages для хостинга блога и вполне доволен.
 Инструмент позволяет бесплатно:
 Разместить собственную страницу или блог, Использовать встроенный Jekyll (или не использовать), Перенаправить собственный домен, Настроить собственную страницу 404, Использовать git submodules (удобно, когда папка с исходниками проекта внутри репозитория блога). Тех, кто тоже заинтересовался, приглашаю ознакомиться с репозиторием моего блога.</description>
+      <content:encoded><![CDATA[<p>Давно использую <a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites">GitHub Pages</a> для хостинга блога и вполне доволен.</p>
+<p>Инструмент позволяет бесплатно:</p>
+<ul>
+<li><a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-github-pages-site">Разместить</a> собственную страницу или блог,</li>
+<li><a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll">Использовать</a> встроенный Jekyll (или <a href="https://docs.github.com/en/github/working-with-github-pages/about-github-pages#static-site-generators">не использовать</a>),</li>
+<li><a href="https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site">Перенаправить</a> собственный домен,</li>
+<li><a href="https://docs.github.com/en/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site">Настроить</a> собственную страницу 404,</li>
+<li><a href="https://docs.github.com/en/github/working-with-github-pages/using-submodules-with-github-pages">Использовать</a> git <a href="https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D0%BE%D0%B4%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8">submodules</a> (удобно, когда папка с исходниками проекта внутри репозитория блога).</li>
+</ul>
+<p>Тех, кто тоже заинтересовался, приглашаю ознакомиться с <a href="https://github.com/ilmarin/blog">репозиторием</a> моего блога.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Добавление новых php-расширений в Homestead</title>
@@ -47,6 +74,28 @@ Copilot здесь уже не только помогает писать код
 Для примера дан простой набор шагов по добавлению php-расширения APCu в Homestead. Оно используется, например, в Symfony.
 Настраиваем Homestead Находим в папке с Homestead файл after.sh и добавляем нужные строки:
 #Install APCu sudo apt-get -y \ -o Dpkg::Options::=&amp;#34;--force-confdef&amp;#34; \ -o Dpkg::Options::=&amp;#34;--force-confold&amp;#34; \ install php-apcu Пересобираем виртуальную машину В терминале в папке с Homestead выполянем:</description>
+      <content:encoded><![CDATA[<p><a href="https://laravel.com/docs/6.x/homestead">Homestead</a> — это набор конфигов от сообщества <a href="https://laravel.com/">Laravel</a> виртуальной машины на базе <a href="https://www.vagrantup.com/">Vagrant</a>.</p>
+<p>Новичкам иногда сложно сходу добавить новый функционал в виртуальную машину на базе Homestead.</p>
+<p>Для примера дан простой набор шагов по добавлению php-расширения <a href="https://www.php.net/manual/ru/book.apcu.php">APCu</a> в Homestead. Оно используется, например, в <a href="https://symfony.com/">Symfony</a>.</p>
+<h2 id="настраиваем-homestead">Настраиваем Homestead</h2>
+<p>Находим в папке с Homestead файл <code>after.sh</code> и добавляем нужные строки:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#Install APCu</span>
+</span></span><span style="display:flex;"><span>sudo apt-get -y <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -o Dpkg::Options::<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--force-confdef&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -o Dpkg::Options::<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;--force-confold&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    install php-apcu
+</span></span></code></pre></div><h2 id="пересобираем-виртуальную-машину">Пересобираем виртуальную машину</h2>
+<p>В терминале в папке с Homestead выполянем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vagrant destroy
+</span></span><span style="display:flex;"><span>$ vagrant up --provision
+</span></span></code></pre></div><h2 id="проверяем-результат">Проверяем результат</h2>
+<p>Там же выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ vagrant ssh
+</span></span></code></pre></div><p>Внутри виртуальной машины выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ php -m | grep apcu
+</span></span></code></pre></div><p>Мы должны увидеть в выводе <code>apcu</code>.</p>
+<p>Аналогичным образом можно установить остальные недостающие расширения.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>CodeLobster IDE – бесплатный PHP, HTML, CSS, JavaScript редактор</title>
@@ -57,6 +106,54 @@ Copilot здесь уже не только помогает писать код
 В этой статье мы рассмотрим бесплатный кросс-платформенный редактор для веб- разработки - CodeLobster IDE. Он уже долгое время присутствует на рынке и завоевал очень большое количество пользователей.
 CodeLobster IDE предназначен для редактирования PHP, HTML, CSS и JavaScript файлов. Он подсвечивает код в зависимости от синтаксиса, показывает подсказки для тэгов, функций и их параметров. Этот редактор очень хорошо работает со смешанным кодом.
 Если Вы вставите РНР код в какой-нибудь HTML шаблон, то редактор корректно подсветит и HTML и PHP части, то же самое будет со вставками CSS и JavaScript кода.</description>
+      <content:encoded><![CDATA[<p><em>Текст ниже носит рекламный характер.</em></p>
+<p>В этой статье мы рассмотрим бесплатный кросс-платформенный редактор для веб-
+разработки - CodeLobster IDE. Он уже долгое время присутствует на рынке и завоевал очень
+большое количество пользователей.</p>
+<p><a href="http://www.codelobster.com/">CodeLobster IDE</a> предназначен для редактирования PHP, HTML, CSS и JavaScript файлов. Он
+подсвечивает код в зависимости от синтаксиса, показывает подсказки для тэгов, функций и
+их параметров. Этот редактор очень хорошо работает со смешанным кодом.</p>
+<p>Если Вы вставите РНР код в какой-нибудь HTML шаблон, то редактор корректно подсветит
+и HTML и PHP части, то же самое будет со вставками CSS и JavaScript кода.
+В IDE есть интеллектуальная система автодополнения кода для функций, тэгов, атрибутов и
+т.д., которая значительно ускоряет работу и оберегает от возможных ошибок.</p>
+<p>CodeLobster IDE предоставляет контекстную помощь по всем поддерживаемым языкам. Для
+этого он использует актуальную информацию и документацию с официальных сайтов.
+Поэтому мы можем сразу увидеть описание любого HTML тэга, CSS атрибута, PHP или
+JavaScript функции по нажатии клавиши F1.</p>
+<p>Редактор поддерживает работу с XDebug и позволяет запускать PHP скрипты пошагово,
+двигаясь по строкам кода. Вы можете установить точку останова в любом месте и
+мониторить значения любых переменных при исполнении вашего кода.</p>
+<p><strong>Другие полезные возможности программы:</strong></p>
+<ul>
+<li>Подсветка парных тэгов и скобок – Вам никогда не придется считать количество
+открытых и закрытых круглых или фигурных скоб. Редактор сам позаботится об этом.</li>
+<li>Автоматическая подсветка типов кода, возможность выделения прямоугольных
+блоков, возможность сворачивания кода, закладки, сниппеты, специальное окно со
+структурой файла и всего проекта и т.д.</li>
+<li>Интерфейс приложения переведен на 17 языков, среди которых Английский, Русский,
+Немецкий, Французский, Испанский и т.д.</li>
+<li>CodeLobster IDE мульти-платформенная (кросс-платформенная) IDE, которая
+поддерживает следующие операционные системы: Windows 7, Windows 8, Windows
+10, Mac OS, Linux, Ubuntu, Fedora, Debian.</li>
+</ul>
+<p>В Профессиональной Версии есть несколько дополнительных возможностей. Например,
+возможность работы с проектами на удаленном сервере посредством встроенного
+ФТП/СФТП клиента. При этом можно легко выбирать файлы для редактирования,
+просматривать результаты и синхронизировать изменения в файлах на хостинге.</p>
+<p>Дополнительно Профессиональная Версия включает следующий набор дополнений:</p>
+<ul>
+<li>Полноценная поддержка JavaScript библиотек таких как jQuery, Node.js, AngularJS,
+BackboneJS, VueJS и MeteorJS.</li>
+<li>Большой набор расширений для работы с PHP фреймфорками - CakePHP, CodeIgniter,
+Laravel, Phalcon, Symfony, Twig и Yii.</li>
+<li>Плагины для работы с популярными ЦМС - Drupal, Joomla, Magento, WordPress.</li>
+</ul>
+<p>После многих лет работы можно с уверенностью сказать, что мульти-платформенный
+CodeLobster IDE показывает себя только с лучшей стороны. Он работает быстро,
+эффективно, и очень сильно облегчает работу, особенно с большими проектами.</p>
+<p>Вы можете скачать CodeLobster IDE с официального сайта <a href="http://codelobster.com/">http://codelobster.com/</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Как связать два docker-контейнера</title>
@@ -68,6 +165,17 @@ CodeLobster IDE предназначен для редактирования PHP
 Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.
 Пишем:
 $ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть.</description>
+      <content:encoded><![CDATA[<p>Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.</p>
+<p>Для этого в docker есть функционал по работе с сетью — <code>docker network</code>.</p>
+<p>Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.</p>
+<p>Пишем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker network create -d bridge api
+</span></span><span style="display:flex;"><span>$ docker network connect --alias app api <span style="color:#ae81ff">53</span>
+</span></span><span style="display:flex;"><span>$ docker network connect --alias service api 4с
+</span></span></code></pre></div><p>Первая команда создает новую сеть. Вторая и третья команды по очереди добавляют в нее существующие контейнеры. Параметр <code>alias</code> задает имя контейнера по которому к нему можно будет легко обратиться.</p>
+<p>Теперь мы можем войти, например, в контейнер app и вызывать по http api контейнера service.</p>
+<p>Подробнее про <code>docker network</code> можно прочесть <a href="https://docs.docker.com/network/">здесь</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Допиливание Vim</title>
@@ -77,6 +185,141 @@ $ docker network create -d bridge api $ docker network connect --alias app api 5
       <description>Vim — отличный редактор, позволяющий очень быстро выполнять рутинные операции с текстом. Однако для комфортной работы Vim требует базовой настройки и периода привыкания. В данной заметке я приведу список изменений, которые позволят комфортно использовать Vim для любых операций, а не только для редактирования различных файлов настроек.
 Перечень тем:
 создание файла настроек .vimrc; установка менеджера плагинов; корректная работа с переключение раскладки; установка набора сниппетов для более быстрого редактирования кода и разметки; добавление проверки орфографии; применение темы оформления; корректный перенос текста.</description>
+      <content:encoded><![CDATA[<p>Vim — отличный редактор, позволяющий очень быстро выполнять рутинные операции с текстом. Однако для комфортной работы Vim требует базовой настройки и периода привыкания. В данной заметке я приведу список изменений, которые позволят комфортно использовать Vim для любых операций, а не только для редактирования различных файлов настроек.</p>
+<p>Перечень тем:</p>
+<ul>
+<li>создание файла настроек .vimrc;</li>
+<li>установка менеджера плагинов;</li>
+<li>корректная работа с переключение раскладки;</li>
+<li>установка набора сниппетов для более быстрого редактирования кода и разметки;</li>
+<li>добавление проверки орфографии;</li>
+<li>применение темы оформления;</li>
+<li>корректный перенос текста.</li>
+</ul>
+<p>Все настройки я буду описывать применительно к Ubuntu 16.04.</p>
+<h2 id="создание-файла-настроек">Создание файла настроек</h2>
+<p>Первым делом нам нужно создать файл настроек редактора, если такового еще нет. Именно в нем мы будем прописывать наши настройки.</p>
+<p>Открываем Vim и выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>:e ~/.vimrc
+</span></span><span style="display:flex;"><span>:r $VIMRUNTIME/vimrc_example.vim
+</span></span><span style="display:flex;"><span>:w
+</span></span></code></pre></div><p>Файл настроек создан.</p>
+<h2 id="установка-менеджера-плагинов">Установка менеджера плагинов</h2>
+<p>Vim поддерживает плагины, которые сильно расширяют его функциональность. Проблема в том, что вручную управлять плагинами неудобно и папка .vim быстро превращается в бардак. Менеджер плагинов автоматизирует установку расширений и сам чистит ненужные плагины.</p>
+<p>Установим менеджер плагинов Vim-plug:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+</span></span></code></pre></div><h2 id="корректное-переключение-раскладки">Корректное переключение раскладки</h2>
+<p>Главная проблема Vim для русскоязычных пользователей — постоянная необходимость переключать раскладку при работе с текстом.</p>
+<p>Решений этой проблемы как минимум три.</p>
+<p>Самый простой вариант прописать в .vimrc:</p>
+<pre tabindex="0"><code>set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯЖ;ABCDEFGHIJKLMNOPQRSTUVWXYZ:,
+фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
+</code></pre><p>Проблема с этим вариантом в том, что для пунктуации маппинг не работает.</p>
+<p>Второе по сложности решениие описано <a href="https://habrahabr.ru/post/98393/">здесь</a>. Оно плохо тем, что приходится запоминать новую комбинацию клавиш для переключениия раскладки.</p>
+<p>Самый радикальный же вариант (он же самый сложный) подробно описан <a href="https://habrahabr.ru/post/175709/">тут</a>. Здесь я приведу его краткую версию для Ubuntu.</p>
+<h3 id="установка-xkb-switch">Установка xkb-switch</h3>
+<p>Нам понадобится выполнить следующие команды:</p>
+<pre tabindex="0"><code>$ git clone https://github.com/ierton/xkb-switch
+$ cd xkb-switch
+$ sudo apt-get install build-essential cmake libx11-dev libxext-dev libxtst-dev libxkbfile-dev
+$ mkdir build &amp;&amp; cd build
+$ cmake ..
+$ make
+$ sudo make install
+</code></pre><p>Проверяем работу программы:</p>
+<pre tabindex="0"><code>$ xkb-switch
+</code></pre><p>Если все хорошо и программа выполняется, то переходим к настройке Vim.</p>
+<p>До этого мы не настраивали менеджер плагинов, который установили ранее. Этим и займемся.</p>
+<h3 id="настройка-vim">Настройка Vim</h3>
+<p>Открываем .vimrc и пишем внизу:</p>
+<pre tabindex="0"><code>call plug#begin(&#39;~/.vim/plugged&#39;)
+
+Plug &#39;lyokha/vim-xkbswitch&#39;
+
+let g:XkbSwitchEnabled = 1
+let g:XkbSwitchIMappings = [&#39;ru&#39;]
+
+call plug#end()
+</code></pre><p>Сохраняем изменения, выполнив <code>:w</code>.</p>
+<p>Применяем новый конфиг:</p>
+<pre tabindex="0"><code>:so ~/.vimrc
+</code></pre><p>Для установки плагина выполняем:</p>
+<pre tabindex="0"><code>:PlugInstall
+</code></pre><p>После завершений устновки выходим из окна, нажав <strong>q</strong>. Можно вовсе закрыть Vim, выполнив <strong>ZZ</strong>.</p>
+<h3 id="проверка-работы-плагина">Проверка работы плагина</h3>
+<p>Открываем Vim. Входим в режим вставки, нажав <strong>i</strong>.</p>
+<p>Переключаем раскладку на русскую и вводим текст. Нажимаем <strong>ESC</strong>. Видим, что раскалдка после нажатия <strong>ESC</strong> переключилась на английскую автоматически. Теперь, если мы снова войдем в режим редактирования, то менять раскладку на русскую уже не нужно. Очень удобно.</p>
+<h2 id="установка-сниппетов">Установка сниппетов</h2>
+<p>Сниппеты — это маленькие кусочки кода, которые работают как аналог <a href="/post/netbeans_hotkeys">шаблонов кода</a> в NetBeans.</p>
+<h3 id="установка-расширений">Установка расширений</h3>
+<p>В .vimrc прописываем над <code>call plug#end()</code>:</p>
+<pre tabindex="0"><code>Plug &#39;SirVer/ultisnips&#39; | Plug &#39;honza/vim-snippets&#39;
+
+&#34; Trigger configuration. Do not use &lt;tab&gt; if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger=&#34;&lt;tab&gt;&#34;
+let g:UltiSnipsJumpForwardTrigger=&#34;&lt;c-b&gt;&#34;
+let g:UltiSnipsJumpBackwardTrigger=&#34;&lt;c-z&gt;&#34;
+</code></pre><p>Сохраняем файл, применяем конфигурацию и выполняем <code>:PlugInstall</code>.</p>
+<p>Сами правила для сниппетов можно посмотреть на <a href="https://github.com/honza/vim-snippets">странице</a> плагина.</p>
+<p>Для разыменовывания сниппета нажимаем <strong>Tab</strong>, для перемещения по доступным для заполнения местам вперед и назад жмем <strong>Ctrl+b</strong> и <strong>Ctrl+z</strong>.</p>
+<h3 id="проверка-работы">Проверка работы</h3>
+<p>Создаем файл:</p>
+<pre tabindex="0"><code>$ vim test.sh
+</code></pre><p>Входим в режим вставки и вводим <code>#!</code>. Жмем <strong>Tab</strong> и видим, что конструкция разыменовалась в <code>#!/bin/bash</code>.</p>
+<h2 id="проверка-орфографии">Проверка орфографии</h2>
+<p>Подробная инструкция есть, например, <a href="http://funix.ru/programs_utilities/proverka-orfografii-v-vim.html">здесь</a>. Ниже краткие выдержки.</p>
+<p>Идем на специальный <a href="ftp://ftp.vim.org/pub/vim/runtime/spell/">сервер</a> и берем оттуда файлы <strong>ru.utf-8.spl</strong> и <strong>ru.utf-8.sug</strong>.</p>
+<p>Файлы нам нужно скопировать в папку <strong>~/.vim/spell</strong>.</p>
+<p>Теперь настроим Vim. В .vimrc пишем:</p>
+<pre tabindex="0"><code>:setlocal spell spelllang=ru_ru,en_us
+</code></pre><p>Или для поклонников буквы «ё» можно прописать:</p>
+<pre tabindex="0"><code>:setlocal spell spelllang=ru_yo,en_us
+</code></pre><p>Команды по работе со словарями хорошо описаны по ссылке выше. Вот их краткий перечень:</p>
+<ul>
+<li>
+<p><strong>]s</strong> — устанавливает курсор на следующее выделенное слово</p>
+</li>
+<li>
+<p><strong>[s</strong> — устанавливает курсор на предыдущее выделенное слово.</p>
+</li>
+<li>
+<p><strong>zg</strong> — добавляет слово, находящееся под курсором;</p>
+</li>
+<li>
+<p><strong>zG</strong> — то же, что и zg, но слово будет добавлено только для текущей сессии работы;</p>
+</li>
+<li>
+<p><strong>zw</strong> — то же, что и zg, однако слово будет помечено как ошибочно-написанное;</p>
+</li>
+<li>
+<p><strong>zW</strong> — то же, что и zw, однако слово будет добавлено только для текущей сессии работы.</p>
+</li>
+<li>
+<p><strong>zug</strong> и <strong>zuw</strong> — отменяет действие zg и zw соответственно;</p>
+</li>
+<li>
+<p><strong>zuG</strong> и <strong>zuW</strong> — отменяет действие zG и zW соответственно.</p>
+</li>
+</ul>
+<h2 id="смена-темы-оформления">Смена темы оформления</h2>
+<p>Энтузиастами сделано много тем оформления для Vim. Мне нравится <a href="https://github.com/danilo-augusto/vim-afterglow">Afterglow</a> — порт одноименной темы из Sublime Text.</p>
+<p>Для установки темы в .vimrc пропишем перед <code>call plug#end()</code>:</p>
+<pre tabindex="0"><code>Plug &#39;danilo-augusto/vim-afterglow&#39;
+</code></pre><p>Сохраняем файл, применяем новую версию настроек и устанавливаем плагин.</p>
+<p>Теперь прописываем в конце файла .vimrc:</p>
+<pre tabindex="0"><code>colorscheme afterglow
+</code></pre><p>Сохраняем изменения, применяем новые настройки. Оформление должно измениться.</p>
+<p>Если оформление не изменилось, то возможно в терминале установлена восьмицветовая схема. Можно дописать в .vimrc следующее:</p>
+<pre tabindex="0"><code>set t_Co=256
+</code></pre><p>Изменения нужно сохранить и применить новые настройки.</p>
+<h2 id="корректный-перенос-текста">Корректный перенос текста</h2>
+<p>Изначально Vim переносит текст по буквам. Это неудобно для редактирования текстов. Для переноса текста по словам, нужно прописать в .vimrc:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>set wrap linebreak
+</span></span></code></pre></div><h2 id="заключение">Заключение</h2>
+<p>Vim — очень гибкий редактор, который каждый может приспособить под свои нужды. В данном случае я рассматривал Vim как редактор «по умолчанию», который можно использовать как для редактирования кода, так и для написания небольших текстов вроде постов в блог.</p>
+<p>Вообще Vim можно приспособить под разные нужды и использовать, например, для таких вещей как навигация по файлам и их массовое переименование, но эти темы выходят за рамки заметки.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Отладка кода в docker-контейнере из NetBeans</title>
@@ -87,6 +330,49 @@ $ docker network create -d bridge api $ docker network connect --alias app api 5
 Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.
 Для успешной отладки следует:
 Настроить docker-контейнер с Xdebug внутри; Настроить Xdebug внутри контейнера; Настроить NetBeans. При обычной отладке с использованием браузера и при отладке cli-скрипта настройки будут слегка отличаться.</description>
+      <content:encoded><![CDATA[<p>Я уже немного писал о NetBeans <a href="/post/netbeans_hotkeys">тут</a> . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, <a href="https://netbeans.org/kb/docs/php/debugging_ru.html">здесь</a>.</p>
+<p>Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.</p>
+<p>Для успешной отладки следует:</p>
+<ol>
+<li>Настроить docker-контейнер с Xdebug внутри;</li>
+<li>Настроить Xdebug внутри контейнера;</li>
+<li>Настроить NetBeans.</li>
+</ol>
+<p>При обычной отладке с использованием браузера и при отладке cli-скрипта настройки будут слегка отличаться. Итак, поехали.</p>
+<h2 id="настройка-контейнера">Настройка контейнера</h2>
+<p>Установку Xdebug внутрь контейнера мы обсуждать не будем. Эти настройки можно найти, например, <a href="https://github.com/apparena/docker-php7-xdebug/blob/master/Dockerfile">тут</a>.</p>
+<p>Интереснее настройки самого Xdebug.</p>
+<p>В случае с обычной отладкой:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#a6e22e">xdebug.remote_enable</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xdebug.remote_connect_back</span><span style="color:#f92672">=</span><span style="color:#e6db74">1</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">xdebug.idekey</span><span style="color:#f92672">=</span><span style="color:#e6db74">netbeans-xdebug</span>
+</span></span></code></pre></div><p>Расшифровка:</p>
+<ul>
+<li><code>xdebug.remote_enable</code> — разрешает удаленную отладку.</li>
+<li><code>xdebug.remote_connect_back</code> — автоматическое установление соединения с хостом, который иницирует удаленную отладку. Если не указывать эту опцию, то нужно использовать <code>xdebug.remote_host</code>, где следует указать ip вашего хоста из виртуального docker-адаптера.</li>
+<li><code>xdebug.idekey</code> — ключ для соединения. Значение <code>netbeans-xdebug</code> задано в NetBeans по умолчанию. Можно не задавать эту опцию и использовать <code>xdebug.remote_autostart=1</code>, но тогда Xdebug будет стартовать в каждом скрипте, даже если это не нужно, что скажется на производительности.</li>
+</ul>
+<h2 id="настройка-netbeans">Настройка NetBeans</h2>
+<p>Для успешной отладки NetBeans должен знать как сопоставить между собой пути внутри docker-контейнера и пути в хостовой машине.</p>
+<p>Идем в <strong>Свойства проекта</strong>, далее <strong>Выполнить настройку → Дополнительно</strong>. Внизу в разделе <strong>Отображение пути</strong> добавляем наше сопоставление.</p>
+<p>Теперь, если запустить отладку проекта, то отладчик должен автоматически остановить выполнение на первой строке скрипта точки входа в приложение (если активирована соответствующая настройка в IDE).</p>
+<p>Если ничего не произошло и вас отключена опция NetBeans <strong>Остановить в первой строчке</strong>, то удостоверьтесь, что поставили breakpoint где-то по пути выполнения скрипта. Если ни одного breakpoint не установлено, то следует установить его, остановить отладку и запустить снова.</p>
+<h2 id="отладка-cli-скрипта">Отладка cli-скрипта</h2>
+<p>Для отладки cli-скрипта все немного иначе. Главное отличие в том, что опция <code>xdebug.remote_connect_back=1</code> нам не нужна, ведь соединения от хостовой машины не будет. Вместо этого NetBeans будет ожидать обращений от приложения.</p>
+<p>Для начала настроим NetBeans.</p>
+<p>Идем по уже известному пути <strong>Свойства проекта → Выполнить настройку</strong>. Здесь добавляем новую конфигурацию, нажав <strong>Создать&hellip;</strong>. Далее жмем <strong>Дополнительно</strong> и указываем опцию <strong>Не открывать браузер</strong>.</p>
+<p>После настройки, кликаем правой кнопкой по проекту, выбираем <strong>Установить конфигурацию</strong> и задаем вариант, который только что создали.</p>
+<p>Теперь можно нажать <strong>Отладка проекта</strong> или просто <strong>Ctrl+F5</strong>. Браузер не должен открыться.</p>
+<p>Идем в меню <strong>Окно → IDE и сервис → Терминал</strong>. В появившемся терминале выполняем вход в docker-контейнер, выполнив что-то вроде:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker exec -ti %container_id% bash
+</span></span></code></pre></div><p><strong>%container_id%</strong> в данном случае id контейнера с вашим приложением.</p>
+<p>Теперь самое интересное. Выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ export XDEBUG_CONFIG<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;remote_enable=1 remote_mode=req remote_port=9000 remote_host=%remote_host_ip% remote_connect_back=0 idekey=netbeans-xdebug&#34;</span>
+</span></span></code></pre></div><p>Обратите внимание на указанный <strong>remote_host</strong>. Именно по этому адресу Xdebug будет ломиться в отладчик. Проставьте свое значение на место <strong>%remote_host_ip%</strong>.</p>
+<p>Теперь можно запустить какой-нибудь cli-скрипт. Например, миграции yii:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./yii migrate
+</span></span></code></pre></div><p>Если отладчик NetBeans запущен, то он должен отловить это событие и прервать выполнение на первой строке скрипта точки входа.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Подключение жестких дисков при старте системы в Ubuntu</title>
@@ -99,6 +385,21 @@ $ sudo blkid В моем случае это жесткий диск с файл
 Создаем точку монтирования:
 $ sudo mkdir /media/trash Далее открываем /etc/fstab, сделав резервную копию:
 $ sudo nano -Bw /etc/fstab В файл прописываем что-то вроде:</description>
+      <content:encoded><![CDATA[<p>По этому поводу есть подробный <a href="https://help.ubuntu.com/community/Fstab">мануал на сайте Ubuntu</a>. Ниже короткая выжимка на его основе. Плюс данного способа в том, что нет привязки к типу графической оболочки.</p>
+<p>Открываем консоль и узнаем UUID интересующего устройства и тип его файловой системы:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo blkid
+</span></span></code></pre></div><p>В моем случае это жесткий диск с файловой системой ntfs.</p>
+<p>Создаем точку монтирования:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo mkdir /media/trash
+</span></span></code></pre></div><p>Далее открываем <code>/etc/fstab</code>, сделав резервную копию:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo nano -Bw /etc/fstab
+</span></span></code></pre></div><p>В файл прописываем что-то вроде:</p>
+<pre tabindex="0"><code>UUID=XXXXXXXXXXX /media/trash ntfs-3g 0 0
+</code></pre><p>Столбцы слева направо: UUID устройства, точка монтирования, тип файловой системы, настройки резервного копирования, настройки проверки файловой системы.</p>
+<p>Сохраняем изменения и монтируем все что прописано в <code>fstab</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo mount -a
+</span></span></code></pre></div><p>Теперь при старте системы раздел будет автоматически смонтирован в <code>/media/trash</code>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Реализация RESTful API в Yii2</title>
@@ -109,6 +410,93 @@ $ sudo nano -Bw /etc/fstab В файл прописываем что-то вро
 Предварительная настройка Для начала работы достаточно базового шаблона Yii2. Создание проекта и настройку виртуального хоста я описывать не буду и перейду сразу к настройке REST.
 После скачивания проекта настроим компоненту user в файле web.php. Добавим туда следующие строки:
 &amp;#39;enableSession&amp;#39; =&amp;gt; false, &amp;#39;loginUrl&amp;#39; =&amp;gt; null, Первая строка отключает сохранение состояния пользователя на сервере: одно из требований архитектуры REST.</description>
+      <content:encoded><![CDATA[<p>Yii2 из коробки предоставляет удобный фреймворк для построения REST API вашего сервиса. Ниже я опишу как быстро начать его использовать.</p>
+<h2 id="предварительная-настройка">Предварительная настройка</h2>
+<p>Для начала работы достаточно <a href="https://github.com/yiisoft/yii2-app-basic">базового шаблона</a> Yii2. Создание проекта и настройку виртуального хоста я описывать не буду и перейду сразу к настройке REST.</p>
+<p>После скачивания проекта настроим компоненту <code>user</code> в файле <code>web.php</code>. Добавим туда следующие строки:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#e6db74">&#39;enableSession&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;loginUrl&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">null</span>,
+</span></span></code></pre></div><p>Первая строка отключает сохранение состояния пользователя на сервере: одно из требований архитектуры REST.</p>
+<p>Вторая строка отключает перенаправление на страницу входа после неудачной аутентификации.</p>
+<p>В <code>User.php</code> добавим следующий код:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getAll</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>   $result <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">foreach</span> (<span style="color:#a6e22e">self</span><span style="color:#f92672">::</span>$users <span style="color:#66d9ef">as</span> $user) {
+</span></span><span style="display:flex;"><span>       $result[] <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#39;id&#39;</span> <span style="color:#f92672">=&gt;</span> $user[<span style="color:#e6db74">&#39;id&#39;</span>],
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#39;username&#39;</span> <span style="color:#f92672">=&gt;</span> $user[<span style="color:#e6db74">&#39;username&#39;</span>],
+</span></span><span style="display:flex;"><span>       ];
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> $result;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="создание-контроллера">Создание контроллера</h2>
+<p>Мы не используем базу данных в нашем примере и создание контроллера займет чуть больше времени, чем в случае использования AR-моделей.</p>
+<p>В папке <code>controllers</code> создадим файл <code>UserController.php</code> со следующим содержимым:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">app\controllers</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">yii\rest\Controller</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">app\models\User</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserController</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Controller</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">actionIndex</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">User</span><span style="color:#f92672">::</span><span style="color:#a6e22e">getAll</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @inheritdoc
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">verbs</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;index&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;HEAD&#39;</span>],
+</span></span><span style="display:flex;"><span>        ];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Как видно из примера, мы наследуем свой класс от <code>yii\rest\Controller</code>. Данный класс реализует поддержку сериализации и представления массивов в форматах XML и JSON перед отправкой ответа. Дополнительно можно задать параметры аутентификации и ограничить количесто запросов к API.</p>
+<p>Метод <code>verbs</code> позволяет задать типы запросов, которые принимает каждое из действий контроллера.</p>
+<p>Чтобы контроллер заработал, нужно отредактировать настройки компоненты <code>urlManager</code> в файле <code>web.php</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#e6db74">&#39;rules&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;class&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;yii\rest\UrlRule&#39;</span>, <span style="color:#e6db74">&#39;controller&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;user&#39;</span>],
+</span></span><span style="display:flex;"><span>],
+</span></span></code></pre></div><p>Протестируем работу API, используя curl:</p>
+<pre tabindex="0"><code>$ curl -i -H &#34;Accept:application/json&#34; &#34;http://yii2-rest.dev/users&#34;
+$ curl -i -H &#34;Accept:application/xml&#34; &#34;http://yii2-rest.dev/users&#34;
+</code></pre><blockquote>
+<p>Вместо yii2-rest.dev нужно указать имя вашего хоста.</p>
+</blockquote>
+<h2 id="аутентификация">Аутентификация</h2>
+<blockquote>
+<p>При реализации любого из методов аутентификации в продакшене не забывайте об использовании https для предотвращения атаки типа &ldquo;человек посередине&rdquo;</p>
+</blockquote>
+<p>Yii2 поддерживает <a href="http://www.yiiframework.com/doc-2.0/guide-rest-authentication.html">несколько</a> типов аутентификации. Реализуем <strong>HTTP Basic Auth</strong>.</p>
+<p>В <code>UserContoller.php</code> добавим следующие строки:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">behaviors</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    $behaviors <span style="color:#f92672">=</span> <span style="color:#66d9ef">parent</span><span style="color:#f92672">::</span><span style="color:#a6e22e">behaviors</span>();
+</span></span><span style="display:flex;"><span>    $behaviors[<span style="color:#e6db74">&#39;authenticator&#39;</span>] <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;class&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">HttpBasicAuth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">className</span>(),
+</span></span><span style="display:flex;"><span>    ];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> $behaviors;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Не забываем перед объявлением класса прописать:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">yii\filters\auth\HttpBasicAuth</span>;
+</span></span></code></pre></div><p>Чтобы все заработало, модель пользователя должна реализовывать метод <code>findIdentityByAccessToken</code>. Если вы используете базовый шаблон Yii2, то он уже реализован и ничего менять не нужно.</p>
+<p>Проверям работу механизма аутентификации:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#a6e22e">curl</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">i</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">H</span> <span style="color:#e6db74">&#34;Accept:application/json&#34;</span> <span style="color:#e6db74">&#34;http://yii2-rest.dev/users&#34;</span>
+</span></span></code></pre></div><p>Выполнение кода выше должно вернуть ошибку с кодом 401.</p>
+<p>Пробуем авторизоваться, используя HTTP Basic Auth:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#a6e22e">curl</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">i</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">H</span> <span style="color:#e6db74">&#34;Accept:application/json&#34;</span> <span style="color:#e6db74">&#34;http://yii2-task_manager.dev/users&#34;</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">H</span> <span style="color:#e6db74">&#34;Authorization: Basic MTAwLXRva2VuOg==&#34;</span>
+</span></span></code></pre></div><p>Должен вернуться полный список пользователей в json-ответе.</p>
+<h2 id="заключение">Заключение</h2>
+<p>Я описал лишь один из вариантов реализации REST в Yii2. Без рассмотрения остались множество других тем, таких как версионирование, ограничение числа запросов и обработка ошибок. Многое из этого описано в <a href="http://www.yiiframework.com/doc-2.0/guide-rest-quick-start.html">документации</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Обзор книги «В работу с головой»</title>
@@ -118,6 +506,90 @@ $ sudo nano -Bw /etc/fstab В файл прописываем что-то вро
       <description>В прошлом посте обозревал книгу «Хватит мечтать, займись делом!». Теперь настало время для другой книги того же автора — «В работу с головой» (в оригинале «Deep Work: Rules for Focused Success in a Distracted World»).
 В книге поднимается тема, знакомая многим работникам умственного труда: как делать больше сложной работы сосредоточенно и не отвлекаться на разную побочную деятельность.
 Углубленная работа — путь к успеху Основная мысль: в эпоху повсеместного проникновения социальных сетей и войны корпораций за внимание потребителя, все больше ценятся люди, способные к сложной сосредоточенной деятельности.</description>
+      <content:encoded><![CDATA[<p>В <a href="/post/so-good-they-cant-ignore-you/">прошлом посте</a> обозревал книгу «Хватит мечтать, займись делом!». Теперь настало время для другой книги того же автора — «В работу с головой» (в оригинале «Deep Work: Rules for Focused Success in a Distracted World»).</p>
+<p>В книге поднимается тема, знакомая многим работникам умственного труда: как делать больше сложной работы сосредоточенно и не отвлекаться на разную побочную деятельность.</p>
+<h2 id="углубленная-работа-mdash-путь-к-успеху">Углубленная работа — путь к успеху</h2>
+<p><strong>Основная мысль</strong>: в эпоху повсеместного проникновения социальных сетей и войны корпораций за внимание потребителя, все больше ценятся люди, способные к сложной сосредоточенной деятельности. Именно такая деятельность ведет к созданию ценности.</p>
+<p>Автор вводит понятия углубленной и поверхностной работы.</p>
+<p><strong>Углубленная работа</strong> — профессиональная деятельность в состоянии концентрации, требующая предельных умственных усилий. Ведет к созданию дополнительной ценности и наиболее трудно воспроизводима.</p>
+<p><strong>Поверхностная работа</strong> — задачи вычислительного типа, выполняемые в состоянии рассеянного внимания. Легко воспроизводима и не ведет к созданию ценности.</p>
+<p>Далее приводится <em>теорема углубленной работы</em>:</p>
+<blockquote>
+<p>Способность к сосредоточенной работе встречается все реже именно тогда когда она наиболее востребована. Следовательно, успеха добьются те люди, которые смогут сделать углубленную работу основой своей профессиональной деятельности</p>
+</blockquote>
+<p>В условиях повсеместного внедрения машинного обучения и сложной автоматизации все более востребованными автор видит три категории людей:</p>
+<ul>
+<li><strong>Высококвалифицированные работники</strong> — люди, умеющие работать с умными машинами. Например, специалисты по большим данным и машинному обучению;</li>
+<li><strong>Суперзвезды</strong> — сильные специалисты, работающие на несколько разных компаний одновременно. Небольшой компании будет выгоднее взять суперзвезду на короткий контракт, чем платить штатному специалисту;</li>
+<li><strong>Владельцы капитала</strong> — в комментариях не нуждаются.</li>
+</ul>
+<p>Первые две категории работников будут объединять следующие умения:</p>
+<ul>
+<li>быстро охватывать большой объем знаний;</li>
+<li>поставлять качественный продукт в кратчайшие сроки.</li>
+</ul>
+<p>Для достижения этих целей следует повышать способность к углубленной работе.</p>
+<p>Приемам повышения этой способности посвящена вторая часть книги.</p>
+<h2 id="выбор-стиля-работы-и-ритуализация">Выбор стиля работы и ритуализация</h2>
+<p>Автор предлагает сразу определиться с тем какая система углубленной работы подходит вам больше всего. Таких он выделяет всего четыре:</p>
+<ul>
+<li><strong>Монашеская</strong> — полное посвящение своего времени углубленной работе в ущерб поверхностной. Характерна для больших ученых и писателей, которые могут заставить весь мир подождать. Конечно же, неприменима для большинства работников умственного труда;</li>
+<li><strong>Двухрежимная</strong> — выделение в году больших отрезков времени, посвященных углубленной работе. Так ученые и профессора в вузах и пишут свои книги и статьи, ведут исследования. Некоторые выделяют на работу со студентами только один семестр в году, а то и меньше;</li>
+<li><strong>Ритмическая</strong> — каждодневное уделение определенных часов углубленной работе. Чаще в одно и то же время. Требует большой дисциплины, но применима ко всем. Я сам так периодически делаю, но надолго меня не хватает;</li>
+<li><strong>Журналистская</strong> — выделение времени на углубленную работу в любой подходящий момент. Хороша, когда есть одна большая цель (например, книга) и вы постоянно о ней думаете. Требует умения быстро менять контекст и погружаться в работу.</li>
+</ul>
+<p>Облегчить погружение в работу призваны ритуалы — стереотипный набор действий, выполняемых перед погружением и настраивающий мозг на нужный лад.</p>
+<p>Чтобы создавать ритуалы было легче предлагается ответить на следующие вопросы:</p>
+<ol>
+<li>Где и как долго собираетесь работать?</li>
+<li>Что конкретно собираетесь делать во время рабочей сессии?</li>
+<li>Как собираетесь поддерживать рабочий ритм?</li>
+</ol>
+<p>Ответив на эти вопросы, можно создать подходящие для вас условия работы.</p>
+<h2 id="отказ-от-социальных-сетей">Отказ от социальных сетей</h2>
+<p>Автор очень не любит социальные сети и предлагает десять раз подумать перед тем как заводить там аккаунт.</p>
+<p>Большинство людей при выборе технологии руководствуются принципом <em>минимальной полезности</em>. Они видят только плюсы технологии, но не замечают ее минусов. Например, если вы писатель, то, возможно, используя регулярно Twitter, вы и сделаете больше продаж, но необходимость присутствия там сильно подорвет вашу концентрацию на главной своей задаче — написании хороших книг.</p>
+<p>Автор рекомендует для начала определиться, что является главным содержанием вашей работы. Затем подумать как социальные сети влияют на эффективность выполнения этой задачи и только потом принимать решение так ли они вам нужны.</p>
+<blockquote>
+<p>Помнится, на Lifehacker один автор писал почему он не смог отказаться от социальных сетей. Он не заходил в аккаунт три недели, а потом внезапно обнаружил, что почти вся его рабочая переписка ведется там. Хороший пример того, как редко люди задаются вопросом о влиянии социальных сетей на их профессиональную жизнь</p>
+</blockquote>
+<p>В конце-концов, можно и не удалять свои аккаунты, а просто не посещать социальные сети. Со временем можно сделать вывод так ли они для вас критичны.</p>
+<h2 id="интернет-по-расписанию">Интернет по расписанию</h2>
+<p>Еще одной интересной идеей автора мне показалось составление расписания для выхода в Интернет.</p>
+<p>Некоторые периодически устраивают себе цифровой детокс или интернет-шаббат, отказываясь на день, неделю или месяц от Интернета. Автор же предлагает вместо того, чтобы планировать дни <em>без</em> Интернета, планировать заранее время, когда Интернет <em>разрешен</em>.</p>
+<blockquote>
+<p>Мне эта идея показалась интересной, так как меня интернет порой сильно затягивает. Сейчас я стараюсь перехватить первый стимул узнать какую-нибудь информацию. Если мне что-то нужно &ldquo;срочно&rdquo; узнать во время работы, я просто делаю пометку в xpad (программа-стикер для Ubuntu), который всегда открыт у меня на рабочем столе. Это помогает победить первый порыв и работать дальше. Так как информация записана и быстро доступна при желании, я о ней больше не думаю и сохраняю фокус.</p>
+</blockquote>
+<p>Еще одно хорошее решение задаваться целью посещения сети до самой сессии, чтобы в процессе по минимуму отвлекаться на постороннее. Про <a href="/post/distraction-free-youtube/">плагины для YouTube</a> и резчики рекламы думаю многие в курсе. Они тоже сильно помогают не растрачивать внимание.</p>
+<h2 id="работаем-с-почтой-правильно">Работаем с почтой правильно</h2>
+<p>Мало кто любит переписываться по электронной почте. Автор предлагает радикально сократить количество писем путем развернутого ответа на них, называя это <em>процесс-ориентированным подходом к переписке</em>.</p>
+<p>Например, вам предлагают встречу, задавая по почте невинный вопрос: &ldquo;Встретимся?&rdquo;. Можно согласиться, но это повлечет кучу уточняющих вопросов и вот в ящике уже десяток писем на тему встречи, а это значит, что десять раз вы отвлеклись, отвечая на них. Вместо этого можно поработать чуть больше и помимо согласия предложить автору сразу варианты времени, места, запросить описание примерной темы встречи и т.д. В конце можно написать, что ответное письмо с выбором варианта вы будете считать договоренностью и поставите встречу в свой календарь. В итоге вместо десяти писем, ожидаем только одно — с выбором варианта встречи.</p>
+<p><strong>Входящие фильтры</strong> — идея для занятых и влиятельных людей у которых задач больше, чем времени.</p>
+<p>Например, в своем блоге вы предлагаете электронный адрес для связи. В форме обратной связи можно уточнить, что вы ответите только на те письма, которые вам интересны, либо только на предложения, либо только на вопросы, которых нет в списке часто задаваемых вопросов и т.д.</p>
+<p>У такого подхода сразу два преимущества:</p>
+<ul>
+<li>он сильно сокращает число сообщений в ящике;</li>
+<li>вы всегда имеете право не отвечать на письма.</li>
+</ul>
+<h2 id="постоянное-планирование-и-приоритеты">Постоянное планирование и приоритеты</h2>
+<p>Планировать свой день не просто, но полезно. Главное здесь <em>не зацикливаться на том, что запланированное непременно должно исполниться</em>. Важен осознанный подход к своему времени.</p>
+<p>Эффективной техникой планирования рабочего дня автор считает разбиение его на блоки. Это позволяет выделить больше ничем не прерываемых отрезков времени для углубленной работы.</p>
+<p>Мелкие задачи лучше объединять в отдельные <em>блоки задач</em>. Если у вас много мелких дел на протяжении всего дня, то можно завести несколько таких блоков.</p>
+<p>Для оценки приоритета той или иной задачи автор предлагает задаться вопросом:</p>
+<blockquote>
+<p>Сколько требуется времени для обучения специалиста, способного выполнить эту задачу?</p>
+</blockquote>
+<p>Если ответ включает несколько лет (рецензия научной статьи или сложный программный проект), то задача важная и приоритетная. Если несколько месяцев (встречи, рисование презентаций), то не важная.</p>
+<h2 id="разговоры-с-руководством">Разговоры с руководством</h2>
+<p>В теории выделять больше времени на углубленную деятельность звучит красиво, но на практике часто бывает наоборот. Большая часть дня уходит на что угодно, только не углубленную работу. Часто это связано с процессами в компаниях, где люди безответственно относятся к своему и чужому времени.</p>
+<p>Автор предлагает не отчаиваться и взять инициативу в свои руки. Если вы замечаете, что много времени уходит на работу, которая приносит мало результатов в будущем, то спросите руководителя:</p>
+<blockquote>
+<p>Сколько времени из своего рабочего дня я должен тратить на побочную деятельность?</p>
+</blockquote>
+<p>Вряд ли руководитель назовет цифру более 50%, что позволит легитимно выделять на углубленную деятельность четыре часа рабочего дня. Таков ежедневный максимум продуктивной углубленной работы, согласно исследованиям.</p>
+<h2 id="в-заключение">В заключение</h2>
+<p>В обзоре я осветил только те идеи, которые показались интересными лично мне. Для полноты впечатления лучше прочесть книгу и почерпнуть что-то для себя. В этом поможет <a href="https://drive.google.com/file/d/1sEtD26SKxfBUfhv8iLwLKOB8CqDpR16C/view">ментальная карта</a>, которую я составил на досуге.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Обзор книги «Хватит мечтать, займись делом!»</title>
@@ -126,6 +598,35 @@ $ sudo nano -Bw /etc/fstab В файл прописываем что-то вро
       <guid>https://www.marinin.pw/ru/posts/so-good-they-cant-ignore-you/</guid>
       <description>С праздниками осовободилось время на чтение, к чему незамедлительно приступил. На книгу «Хватит мечтать, займись делом!» (в оригинале «So Good They Can&amp;rsquo;t Ignore You») наткнулся отчасти случайно по ссылкам на нее из другой книги автора и ряда других книг. Если бы не знал, что за автор написал книгу и не слышал о ней раньше, не открыл бы. Заголовок, выдуманный нашим издателем, сильно напоминает &amp;ldquo;еще одну книгу на тему мотивации&amp;rdquo;.
 Автор высказывает непопулярную сегодня мысль: к удовлетворению работой ведет не поиск &amp;ldquo;работы мечты&amp;rdquo;, а рост мастерства в том виде деятельности, который интересен прямо сейчас и умение грамотно распорядиться накопленным опытом и навыками (карьерным капиталом в терминологии автора).</description>
+      <content:encoded><![CDATA[<p>С праздниками осовободилось время на чтение, к чему незамедлительно приступил. На книгу «Хватит мечтать, займись делом!» (в оригинале «So Good They Can&rsquo;t Ignore You») наткнулся отчасти случайно по ссылкам на нее из другой книги автора и ряда других книг. Если бы не знал, что за автор написал книгу и не слышал о ней раньше, не открыл бы. Заголовок, выдуманный нашим издателем, сильно напоминает &ldquo;еще одну книгу на тему мотивации&rdquo;.</p>
+<p>Автор высказывает непопулярную сегодня мысль: к удовлетворению работой ведет не поиск &ldquo;работы мечты&rdquo;, а рост мастерства в том виде деятельности, который интересен прямо сейчас и умение грамотно распорядиться накопленным опытом и навыками (карьерным капиталом в терминологии автора). Путем накопления карьерного капитала и умелого управления карьерой можно получить более интересную работу. Этот посыл автор неустанно доказывает на протяжении пятнадцати глав, а в заключение приводит еще и собственный опыт.</p>
+<p>Книга разбита на четыре части. В первой части автор показывает несостоятельность посыла о том, что есть некая работа мечты. Во второй предлагает вместо поисков работы мечты заняться повышением уровня собственного мастерства и дает рекомендации по этому поводу. В третьей и четвертой частях книги доказывается важность свободы действий и принятия решений на работе, а так же наличия личной миссии.</p>
+<h2 id="работа-мечты-mdash-утопия">Работа мечты — утопия</h2>
+<p>В первой же главе высказывается крамольная мысль: Стив Джобс был не прав, когда призывал неустанно искать свое призвание. На основе биографии Джобса автор доказывает, что сам Стив в молодости не торопился следовать собственному совету.</p>
+<p>Далее приводятся выкладки исследований и опросов ученых, говорящие о том, что работа и увлечения вещи часто разные и каждую работу легко полюбить, достигнув в ней большого уровня мастерства. Поэтому не стоит менять работы и сферы деятельности слишком часто.</p>
+<p>Наконец, в третьей главе, автор сообщает, что мечты о лучшей работе ведут скорее к разочарованию и потери времени, нежели к обретению этой работы.</p>
+<h2 id="вместо-мечтаний-mdash-поработай-сверхурочно">Вместо мечтаний — поработай сверхурочно</h2>
+<p>Сняв с читателя розовые очки в первой части книги, автор показывает как происходит профессиональный рост на самом деле.</p>
+<p>Подход, ведущий к профессиональному росту, автор называет подходом мастера.</p>
+<p>Мастер думает о том, что он дает миру. Мечтатель же думает о том, что мир (новая работа) дает ему. Так же мастера отличает хорошая восприимчивость к критике и усердие.</p>
+<p>Далее автор вводит понятие карьерного капитала как набора ценных и уникальных профессиональных навыков и приводит ряд мыслей по поводу его накопления и дальнейшей конвертации в более интересные варианты работы.</p>
+<p>Во-первых, интересную и творческую работу с большой свободой действий просто так не дают. Ее нужно обменять на накопленный ранее карьерный капитал. Поэтому не стоит бросаться в новую сферу деятельности, не имея в ней опыта, а только сильное желание.</p>
+<p>Во-вторых, чтобы быстро накопить карьерный капитал мало хорошо и добросовестно работать. Нужно действовать на опережение и заниматься продуманной подготовкой. Так автор называет часы, которые необходимо выделять на профессиональное развитие дополнительно к уже имеющейся работе. Это доказывает старую истину, что тот кто работает лучше просто работал больше и разнообразнее других до этого (для мира ИТ это точно верно).</p>
+<p>В-третьих, не всякая работа является продуманной подготовкой, ведь можно по вечерам разгребать почту, писать отчеты и заниматься другой побочной деятельностью. Вряд ли такая работа ведет к профессиональному росту. Важно расширять свой кругозор и набор навыков. Автор приводит в пример ужасающие сравнения с растяжкой для мышц: мозг должен физически страдать от такой дополнительной работы. No pain, no gain.</p>
+<p>Для повышения мотивации предлагается вести учет часов затраченных на продуманную подготовку в каждом месяце. Если в конце месяца часов мало, то сразу ясно, что нечего ждать большого прироста карьерного капитала.</p>
+<p>Правильно сформированный набор навыков автор считает ключом к получению большего удовлетворения от работы. Кроме того, скопив немалый карьерный капитал, уже вы диктуете условия и заставляете компании предлагать вам работу в соответствии с вашими ожиданиями.</p>
+<h2 id="свобода-действий-и-миссия-в-работе">Свобода действий и миссия в работе</h2>
+<p>В последних двух частях книги автор пишет о важности свободы действий и миссии в работе.</p>
+<p>Касательно свободы действий автор приводит пример двух ловушек независимости. Первая ловушка заключается в том, что поддавшись на призывы тренеров-мотиваторов люди резко меняют сферу деятельности, забывая, что без соответствующего карьерного капитала это трудно сделать.</p>
+<p>Вторая ловушка независимости заключается в том, что наработав достаточный карьерный капитал, работник становится ценным сотрудником и сталкивается с сопротивлением внешней среды (компании, близких и т.д.) при попытке конвертировать опыт в новую работу. В этом случае как раз и нужна смелость, чтобы гнуть свою линию.</p>
+<p>Для избежания ловушек независимости предлагается простейший совет: не менять работу до тех пор, пока не начнешь зарабатывать на новой работе хотя бы столько же, сколько на текущей. В первом случае это оградит от безрассудных поступков, а во втором придаст дополнительную уверенность.</p>
+<p>Наличие же миссии придает дополнительную мотивацию и решимость в наращивании карьерного капитала и повышает качество жизни.</p>
+<p>Хорошая миссия рождается на стыке смежных возможностей. Чтобы видеть эти возможности нужны две вещи: быть на переднем крае отрасли и владеть большим карьерным капиталом.</p>
+<p>Для поиска миссии предлагается использовать метод &ldquo;мелких ставок&rdquo; (последовательность мелких шагов в желаемом направлении) с целью быстро получать обратную связь и выстраивать дальнейшую стратегию, ведущую к значительным результатам.</p>
+<p>Так же желательно чтобы проект, движимый миссией, вызывал желание говорить о нем, а запускать проект следует так чтобы он не прошел не замеченным.</p>
+<h2 id="в-заключение">В заключение</h2>
+<p>Подкупает стиль изложения. Автор не просто писатель на тему мотивации и &ldquo;дизайна жизни&rdquo;, а профессор компьютерных наук Джорджтаунского университета, то есть зарабатывает не написанием книжек о своем образе жизни, а вполне благородным делом. В книге минимум восклицательных знаков и призывов к чему либо, зато много историй, их анализа, изложения опыта различных исследований на тему мотивации. Видно, что человек писал по зову сердца, желая лично разобраться в теме. Даже глоссарий не поленился составить. Я же не поленился нарисовать ментальную карту по книге, так она мне понравилась. Скачать карту можно <a href="https://drive.google.com/file/d/1SDHzD1yj7tnpU6g9Sgg1fNO1kQ9d8z7B/view">здесь</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Скрытие рекомендаций YouTube при просмотре видео</title>
@@ -136,6 +637,11 @@ $ sudo nano -Bw /etc/fstab В файл прописываем что-то вро
 Аналога для Firefox найти не смог, а писать собственное расширение лень. В итоге ограничился написанием скрипта для Greasemonkey. Забрать можно здесь.
 Скрипт работает только на странице просмотра видео и скрывает панель с рекомендациями в правой части экрана.
 Если у кого-то есть предложения по доработке, пишите.</description>
+      <content:encoded><![CDATA[<p>C недавних пор заменил Chrome на Firefox. Для первого есть отличное расширение Distraction Free Youtube, которое позволяет скрывать рекомендации YouTube при просмотре видео, чтобы меньше отвлекаться :).</p>
+<p>Аналога для Firefox найти не смог, а писать собственное расширение лень. В итоге ограничился написанием скрипта для Greasemonkey. Забрать можно <a href="https://gist.github.com/ilmarin/6fcc8dc0cab2b193640488b6b133b32c/raw/f83fb234695ecc88dbe5dc818b7ee5b92a8d196d/distraction-free-youtube.user.js">здесь</a>.</p>
+<p>Скрипт работает только на странице просмотра видео и скрывает панель с рекомендациями в правой части экрана.</p>
+<p>Если у кого-то есть предложения по доработке, пишите.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Добавление тегов к постам в Hugo</title>
@@ -147,6 +653,28 @@ $ sudo nano -Bw /etc/fstab В файл прописываем что-то вро
 Первым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:
 [taxonomies] tag = &amp;#34;tags&amp;#34; Для YAML-конфига соответственно нужно написать:
 taxonomies: tag: &amp;#34;tags&amp;#34; Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами +++, пишем:</description>
+      <content:encoded><![CDATA[<p><a href="https://gohugo.io">Hugo</a> - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал <a href="/post/hugo-blog">здесь</a>.</p>
+<p>Ниже я опишу как добавить к постам теги.</p>
+<p>Первым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[<span style="color:#a6e22e">taxonomies</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">tag</span> = <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span></code></pre></div><p>Для YAML-конфига соответственно нужно написать:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">taxonomies</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tag</span>: <span style="color:#e6db74">&#34;tags&#34;</span>
+</span></span></code></pre></div><p>Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами <code>+++</code>, пишем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">tags</span> = [<span style="color:#e6db74">&#34;first&#34;</span>, <span style="color:#e6db74">&#34;second&#34;</span>, <span style="color:#e6db74">&#34;third&#34;</span>]
+</span></span></code></pre></div><p>Для вывода тегов (например, на странице списка постов) можно использовать что-то вроде:</p>
+<pre tabindex="0"><code>{if .Params.tags }}
+    &amp;middot;
+    {{ range $index, $tag := .Params.tags }}
+        &lt;a href=&#34;{{ .Site.BaseURL }}tags/{{ $tag | urlize }}/&#34;&gt;{{ $tag }}&lt;/a&gt;
+    {{ end }}
+{{ end }}
+</code></pre><p>После этого можно протестировать сайт, выполнив в командной строке в папке с проектом</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ hugo server -w
+</span></span></code></pre></div><p>Открываем страницу по адресу http://localhost:1313 и смотрим результат.</p>
+<p>Подробнее про теги в Hugo можно прочесть <a href="https://gohugo.io/content-management/taxonomies/">здесь</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Примитивный скрипт закачки файлов на сервер</title>
@@ -158,6 +686,21 @@ taxonomies: tag: &amp;#34;tags&amp;#34; Теперь мы можем добав�
 #/bin/bash HOST=&amp;#39;hostname&amp;#39; USER=&amp;#39;username&amp;#39; PASSWD=&amp;#39;password&amp;#39; LOCALPATH=&amp;#39;/path_to_my_local_folder&amp;#39; DIR=&amp;#39;/path_to_my_server_folder&amp;#39; sshpass -p &amp;#34;$PASSWD&amp;#34; scp -r $LOCALPATH $USER@$HOST:$DIR Не забываем дать скрипту права на исполнение:
 $ chmod +x ./deploy.sh Скрипт рекурсивно закачивает указанную папку на сервер. Если настроить ключи (что мне пока делать лень), то можно обойтись без sshpass и пароля соответственно.
 Свой блог теперь закачиваю на сервер именно таким образом.</description>
+      <content:encoded><![CDATA[<p>Очень лень закачивать блог на сервер, тыкая в GUI FileZilla.</p>
+<p>После некоторого гугления получился такой код:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#/bin/bash</span>
+</span></span><span style="display:flex;"><span>HOST<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;hostname&#39;</span>
+</span></span><span style="display:flex;"><span>USER<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;username&#39;</span>
+</span></span><span style="display:flex;"><span>PASSWD<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;password&#39;</span>
+</span></span><span style="display:flex;"><span>LOCALPATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/path_to_my_local_folder&#39;</span>
+</span></span><span style="display:flex;"><span>DIR<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/path_to_my_server_folder&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sshpass -p <span style="color:#e6db74">&#34;</span>$PASSWD<span style="color:#e6db74">&#34;</span> scp -r $LOCALPATH $USER@$HOST:$DIR
+</span></span></code></pre></div><p>Не забываем дать скрипту права на исполнение:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ chmod +x ./deploy.sh
+</span></span></code></pre></div><p>Скрипт рекурсивно закачивает указанную папку на сервер. Если настроить ключи (что мне пока делать лень), то можно обойтись без <code>sshpass</code> и пароля соответственно.</p>
+<p>Свой блог теперь закачиваю на сервер именно таким образом.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Основы PHP_CodeSniffer</title>
@@ -167,6 +710,49 @@ $ chmod +x ./deploy.sh Скрипт рекурсивно закачивает у
       <description>В некоторых компаниях есть большая база долгоиграющих и постоянно изменяющихся проектов. Без неусыпного контроля база кода рискует превратиться в месиво из малочитаемых файлов. Вручную проверять код на соответствие стандартам занятие достаточно утомительное. Быстро появляется потребность в атоматизации процесса.
 PHP_CodeSniffer - это инструмент для проверки кода на соответствие принятым соглашениям и (в некоторых случаях) автоматического его исправления после проверки.
 Установка и запуск В самом простом случае можно выполнить такой код в папке с исходниками проекта:</description>
+      <content:encoded><![CDATA[<p>В некоторых компаниях есть большая база долгоиграющих и постоянно изменяющихся проектов. Без неусыпного контроля база кода рискует превратиться в месиво из малочитаемых файлов. Вручную проверять код на соответствие стандартам занятие достаточно утомительное. Быстро появляется потребность в атоматизации процесса.</p>
+<p><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a> - это инструмент для проверки кода на соответствие принятым соглашениям и (в некоторых случаях) автоматического его исправления после проверки.</p>
+<h2 id="установка-и-запуск">Установка и запуск</h2>
+<p>В самом простом случае можно выполнить такой код в папке с исходниками проекта:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+</span></span><span style="display:flex;"><span>$ php phpcs.phar -h
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
+</span></span><span style="display:flex;"><span>$ php phpcbf.phar -h
+</span></span></code></pre></div><p>Так же поддерживается установка через composer. Далее будет рассматриваться именно этот вариант.</p>
+<p>Пропишем в composer.json следующий код:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;require-dev&#34;</span>: {
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;squizlabs/php_codesniffer&#34;</span>: <span style="color:#e6db74">&#34;3.*&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>После обновления composer пробуем выполнить</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./vendor/bin/phpcs -h
+</span></span><span style="display:flex;"><span>$ ./vendor/bin/phpcbf -h
+</span></span></code></pre></div><p>Первый скрипт проверяет код на соответствие стандартам и выдает отчет. Второй - исправляет, то что можно исправить автоматически.</p>
+<p>Чтобы посмотреть перечень доступных стандартов, можно выполнить</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./vendor/bin/phpcs -i
+</span></span></code></pre></div><p>Для вывода списка проверок интересующего стандарта (в данном случае PSR-2) выполняем:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./vendor/bin/phpcs --standard<span style="color:#f92672">=</span>PSR2 -e
+</span></span></code></pre></div><h2 id="проверка-кода">Проверка кода</h2>
+<p>К примеру, при кодировании мы хотим следовать стандарту <a href="http://www.php-fig.org/psr/psr-2/">PSR-2</a>.</p>
+<p>Выполняем в консоли:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./vendor/bin/phpcs --standard<span style="color:#f92672">=</span>PSR2 -p ./
+</span></span></code></pre></div><p>Данная команда проверит все файлы проекта на соответствие PSR-2. Все файлы нам не нужны, поэтому некоторые мы можем смело исключить:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./vendor/bin/phpcs --standard<span style="color:#f92672">=</span>PSR2 -p --ignore<span style="color:#f92672">=</span>*/vendor/*,*/tests/*,*.css,*.js ./
+</span></span></code></pre></div><p>В примере выше я исключил папки с тестами проекта, а так же третьесторонние модули и файлы js-скриптов и стилей css (PHP_CodeSniffer знает некоторые проверки для css и js-файлов тоже).</p>
+<p>Если до первого запуска скрипта код никаким стандартам не соответствовал, то в логе нас ждет большая куча сообщений.</p>
+<p>Быстро исправить некоторые простые вещи поможет выполнение следующего кода:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./vendor/bin/phpcbf --standard<span style="color:#f92672">=</span>PSR2 -p --ignore<span style="color:#f92672">=</span>*/vendor/*,*/tests/*,*.css,*.js ./
+</span></span></code></pre></div><p>Затем можно снова вызвать <code>phpcs</code> и доправить остальные замечания вручную.</p>
+<h2 id="что-дальше">Что дальше?</h2>
+<p>В идеале PHP_CodeSniffer должен запускаться с определенной периодичностью. Желательно перед сдачей кода в master-ветку проекта. Оставим этот вопрос за пределами данной заметки.</p>
+<p>Если в вашей компании есть свой ни на что не похожий code-style, то здесь вам поможет <a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-ruleset.xml">написание собственного набора правил</a> в формате xml.</p>
+<p>В данном файле можно описать какие проверки следует выполнять, с какими параметрами запускать скрипты PHP_CodeSniffer и прочее.</p>
+<p>После написания собственного набора правил, подключить его можно просто:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./vendor/bin/phpcs --standard<span style="color:#f92672">=</span>path_to_my_ruleset/ruleset.xml
+</span></span></code></pre></div><p>Желаю успеха в борьбе с беспорядком в коде!</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Про рефакторинг</title>
@@ -176,6 +762,29 @@ PHP_CodeSniffer - это инструмент для проверки кода �
       <description>Никто не любит плохо написанные программные продукты. Огромное количество сильно связанного, ригидного кода из которого состоит большинство проектов. Особенно плачевная ситуация там, где мало внимания уделяется тестированию в пользу внедрения новых фич в результате чего накапливается технический долг. Часто в таких условиях тяжело себя мотивировать на изменение ситуации. Мне помогает подход пропагандируемый Бобом Мартином, который выражается в правиле бойскаута:
 Оставь место стоянки чище, чем оно было до твоего прихода.
 У многих программистов есть мнение, что рефакторинг это что-то объемное, на что нужно регулярно выделять отдельный большой кусок времени (которого нет, так как с новой неделей уже нужно внедрять новые фичи).</description>
+      <content:encoded><![CDATA[<p>Никто не любит плохо написанные программные продукты. Огромное количество сильно связанного, ригидного кода из которого состоит большинство проектов. Особенно плачевная ситуация там, где мало внимания уделяется тестированию в пользу внедрения новых фич в результате чего накапливается технический долг. Часто в таких условиях тяжело себя мотивировать на изменение ситуации. Мне помогает подход пропагандируемый Бобом Мартином, который выражается в правиле бойскаута:</p>
+<blockquote>
+<p>Оставь место стоянки чище, чем оно было до твоего прихода.</p>
+</blockquote>
+<p>У многих программистов есть мнение, что рефакторинг это что-то объемное, на что нужно регулярно выделять отдельный большой кусок времени (которого нет, так как с новой неделей уже нужно внедрять новые фичи). В итоге долг растет (как и количество ошибок), ничего не предпринимается и все демотивированы. Хотя, именно регулярные маленькие изменения часто вносят решающий вклад. Что-то вроде ныне модного <em>кайдзен</em>. При выполнении задачи всегда можно сделать чуть больше и добавить коду гибкости.</p>
+<p>При этом важно ничего не сломать. Помогает простой алгоритм:</p>
+<ol>
+<li>Удостовериться, что функционал работает (написать автотесты);</li>
+<li>Произвести мелкие улучшения;</li>
+<li>Проверить, что ничего не сломалось.</li>
+</ol>
+<p>В идеальном мире перед тем как применять алгоритм выше, следует предпринять меры к тому чтобы бардак не накапливался. Однако никто не мешает начать с малого и сделать код проще без вероятности его сломать. Скорее всего можно:</p>
+<ol>
+<li>Переименовать методы и классы в более семантичные;</li>
+<li>Уменьшить связность в коде;</li>
+<li>Написать комментарии там где их нет, чтобы другим программистам в будущем было проще;</li>
+<li>Побить классы на более мелкие по принципу единственной ответственности;</li>
+<li>Вынести повторяющийся код в отдельные методы;</li>
+<li>Просто описать какой-то модуль или код в документации;</li>
+<li>Удалить неиспользуемый код.</li>
+</ol>
+<p>Тем кто хочет встать на нелегкий путь борьбы с бардаком полезно полистать такие книги как &ldquo;Чистый код&rdquo; Боба Мартина, &ldquo;Совершенный код&rdquo; Стива Макконнелла. Если читать много лень, то есть куча ресурсов с описанием таких популярных концепций как DRY, SOLID, GRASP, KISS, YAGNI. Этого вполне хватит на первых порах.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Установка Selenium Server на Ubuntu 16.04</title>
@@ -183,6 +792,31 @@ PHP_CodeSniffer - это инструмент для проверки кода �
       <pubDate>Sat, 01 Jul 2017 13:41:35 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/selenium_ubuntu/</guid>
       <description>Для разработки простых сайтов часто написание модульных и функциональных тестов становится излишним. Иногда нужно просто удостовериться, что с точки зрения конечного пользователя все работает корректно: кнопки кликаются, всплывающие окна появляются, индикаторы меняют состояние, клиентская валидация срабатывает как нужно, а скрипт не валится с ошибкой при отправке формы. Функциональные тесты такой уверенности не дают, так как не умеют тестировать js-код, а тестировать форму в сотый раз руками занятие неблагодарное (особенно когда у нас много важной клиентской логики).</description>
+      <content:encoded><![CDATA[<p>Для разработки простых сайтов часто написание модульных и функциональных тестов становится излишним. Иногда нужно просто удостовериться, что с точки зрения конечного пользователя все работает корректно: кнопки кликаются, всплывающие окна появляются, индикаторы меняют состояние, клиентская валидация срабатывает как нужно, а скрипт не валится с ошибкой при отправке формы. Функциональные тесты такой уверенности не дают, так как не умеют тестировать js-код, а тестировать форму в сотый раз руками занятие неблагодарное (особенно когда у нас много важной клиентской логики). Самую критичную и часто используемую логику сайта лучше дополнительно протестировать с помощью приемочных тестов.</p>
+<p>Как мы знаем, для php существует <a href="http://codeception.com">Codeception</a>, который прекрасно интегрируются с таким чудесным инструментом как <a href="http://www.seleniumhq.org/">Selenium</a>.</p>
+<p>В данной заметке я опишу, как установить и запустить Selenium Server на свой машине для облегчения разработки и запуска приемочных тестов.</p>
+<p>Чтобы не отвелкаться на дополнительные инструкции примем за основу, что все необходимое окружение (веб-сервер, php, composer, jdk) уже установлено, а в самом composer.json проекта прописана зависимость от &ldquo;codeception/codeception&rdquo;. Тестировать проект будем в Chrome (желательно обновиться до последней версии браузера).</p>
+<h2 id="установка-недостающего-по">Установка недостающего ПО</h2>
+<ol>
+<li>Первым делом удостоверимся, что установлены необходимые расширения php: <code>sudo apt-get install php-curl php-dom php-mbstring</code>;</li>
+<li>Скачиваем последнюю версию Selenium Server <a href="http://www.seleniumhq.org/download/">здесь</a> и копируем в удобную для себя папку;</li>
+<li>Забираем последнюю версию ChromeDriver <a href="https://sites.google.com/a/chromium.org/chromedriver/downloads">тут</a> и распаковываем в папку с Selenium Server;</li>
+</ol>
+<h2 id="запуск">Запуск</h2>
+<p>В accceptance.suite.yml прописываем необходимые параметры примерно так:</p>
+<pre tabindex="0"><code>class_name: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+            url: https://test.dev
+            host: 127.0.0.1
+            browser: chrome
+</code></pre><p>Запускаем сервер Selenium:</p>
+<pre tabindex="0"><code>java -Dwebdriver.chrome.driver=&lt;selenium_server_dir&gt;/chromedriver -jar &lt;selenium_server_dir&gt;/selenium-server-standalone-3.4.0.jar
+</code></pre><p><strong>selenium_server_dir</strong> следует заменить на путь до папки с Selenium Server.</p>
+<p>Идем в папку проекта и выполняем что-то вроде <code>vendor/bin/codecept run</code> . Данная команда попытается выполнить модульные, функциональные, а затем и приемочные тесты. В последнем случае откроется браузер Chrome в котором Selenium будет умело имитировать действия пользователя.</p>
+<p><a href="http://codeception.com/docs/modules/WebDriver">Здесь</a> представлен API модуля WebDriver для Codeception, который можно использовать для написания собственных приемочных тестов.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Редактирование кода в NetBeans</title>
@@ -195,6 +829,53 @@ NetBeans IDE мой основной рабочий инструмент. Ниж
 Alt+Left/Alt+Right/Ctrl+Q — навигация по предыдущему/следующему редактированным фрагментам.
 Ctrl+Q — перейти к последнему отредактированному фрагменту.
 Ctrl+Shift+1 — найти текущий файл в дереве проектов и поставить на него фокус. Удобно чтобы не рыться долго в папках.</description>
+      <content:encoded><![CDATA[<p><strong>Обновлено 26.01.2018</strong></p>
+<p>NetBeans IDE мой основной рабочий инструмент. Ниже представлен список горячих клавиш, которые я использую наиболее часто, а так же дан поверхностный обзор шаблонов кода и макросов.</p>
+<h2 id="горчие-клавиши">Горчие клавиши</h2>
+<h3 id="навигация">Навигация</h3>
+<p><strong>Alt+Up/Down</strong> — следующая/предыдущая позиция установки курсора.</p>
+<p><strong>Alt+Left/Alt+Right/Ctrl+Q</strong> — навигация по предыдущему/следующему редактированным фрагментам.</p>
+<p><strong>Ctrl+Q</strong> — перейти к последнему отредактированному фрагменту.</p>
+<p><strong>Ctrl+Shift+1</strong> — найти текущий файл в дереве проектов и поставить на него фокус. Удобно чтобы не рыться долго в папках.</p>
+<p><strong>Alt+Shift+O</strong> — перейти к файлу по имени. Есть нечеткий поиск.</p>
+<p><strong>Ctrl+O</strong> — перейти к классу по имени.</p>
+<p><strong>Cltr+Alt+Shift+O</strong> — перейти к символу (например, функция). Полезно когда имя функции в проекте уникальное и помнишь название.</p>
+<p><strong>Ctrl+B</strong> — перейти к объявлению переменной/класса и т.д. Курсор должен быть установлен на переменной/классе и т.д.</p>
+<p><strong>Ctrl+Shift+M</strong> — поставить/удалить закладку. Когда нужно переходить в ходе рефакторинга в три-пять мест, чтобы не запоминать строки.</p>
+<p><strong>Ctrl+Shift+&gt;</strong>, <strong>Ctrl+Shift+&lt;</strong> — навигация по закладкам.</p>
+<p><strong>Ctrl+G</strong> — перейти к строке.</p>
+<p><strong>Ctrl+Tab</strong> — навигация по открытым файлам.</p>
+<h3 id="редактирование">Редактирование</h3>
+<p><strong>Ctrl+E</strong> — удалить текущую строку.</p>
+<p><strong>Ctrl+R</strong> — переименовать класс/метод/переменную.</p>
+<p><strong>Shift+Enter</strong> — вставка новой строки ниже, из любого места текущей строки. Чтобы не нажимать End.</p>
+<p><strong>Ctrl+Shift+Down/Up</strong> — копирование строки вниз/вверх соответственно.</p>
+<p><strong>Ctrl+Space</strong> — подсказка по функции, методу и т.д.</p>
+<p><strong>Ctrl+Shift+C</strong> — быстро закомментировать/раскомментировать код.</p>
+<p><strong>Alt+Shift+F</strong> — отформатировать код.</p>
+<p><strong>Ctrl+Shift+I</strong> — добавляет use для класса в начало файла.</p>
+<h3 id="окна">Окна</h3>
+<p><strong>Ctrl+Shift+W/F4</strong> — закрыть все вкладки.</p>
+<p><strong>Shift+Esc</strong> — развернуть окно редактирования кода на весь экран, скрыв другие окна.</p>
+<p><strong>Alt+Shift+Enter</strong> — полноэкранный режим.</p>
+<h2 id="шаблоны-кода">Шаблоны кода</h2>
+<p>Доступны по пути <strong>Сервис → Параметры → Редактор → Шаблоны кода</strong>. Эта особенность становится нужной, когда набирать код руками уже лень. :) Если кратко, то шаблоны кода это набор команд, которые разворачиваются в целые фрагменты кода. Обычно это различные рутинные конструкции вроде циклов, ветвлений, обработчиков исключений и прочего.</p>
+<p>Шаблоны кода деляется на два типа: те что можно вызвать, набрав заранее известную комбинацию символов и нажав <strong>Tab</strong> (это действие называется разыменовыванием шаблона) и те что работают с выделенным кодом по нажатию комбинации <strong>Alt+Enter</strong>.</p>
+<p>В редакторе уже предусмотрено множество встроенных шаблонов кода на все случаи жизни. Неплохо их распечатать и иметь под рукой, чтобы не набирать рутинный код.</p>
+<p>Например, набрав <strong>vdoc</strong> можно добавить комментарий к ниже расположенной переменной. Или, набрав <strong>cls</strong>, получить сигнатуру класса с конструктором внутри. Причем NetBeans сам предложит в случае необходимости заполнить недостающие данные.</p>
+<p>Шаблоны кода можно писать самому. Я, например, добавил себе в раздел HTML конструкции для тегов <code>&lt;?php ?&gt;</code> и <code>&lt;?= ?&gt;</code></p>
+<pre tabindex="0"><code>ph - &lt;?= ${cursor} ?&gt;
+php - &lt;?php ${cursor} ?&gt;
+</code></pre><p>Интересующихся темой ждет <a href="https://netbeans.org/kb/docs/php/code-templates_ru.html">подробная документация</a> на сайте NetBeans. Прочитав материал, а так же изучив существующие шаблоны кода, можно научится писать собственные варианты на все случаи жизни.</p>
+<p>Кстати, данную заметку я написал прямо в NetBeans с использованием плагина поддержки <strong>Markdown</strong> и шаблоны кода, идущие в комплекте с плагином, здорово ускоряют оформление поста.</p>
+<h2 id="макросы">Макросы</h2>
+<p>Думаю, что такое макрос объяснять не нужно. В NetBeans можно писать свои макросы и навешивать их использование на горячие клавиши. Настройки можно найти по пути <strong>Сервис → Параметры → Редактор → Макросы</strong>.</p>
+<p>Например, многие знают, что NetBeans умеет добавлять комментарии <strong>phpdoc</strong> к методу. Для этого нужно набрать <code>/**</code> над объявлением метода и нажать Enter. Все бы ничего, но эти символы неудобно расположены на клавиатуре.</p>
+<p>Чтобы не мучаться можно написать макрос, который проделывает то же самое по нажатию одной комбинации клавиш. Вот его код:</p>
+<pre tabindex="0"><code>&#34;/**&#34; insert-break
+</code></pre><p>Можно не писать макросы руками, а записывать их по старинке как, например, в Excel. Для этого предусмотрены пункты меню <strong>Правка → Начать запись макроса</strong> и <strong>Правка → Завершить запись макроса</strong>.</p>
+<p>Подробный обзор доступных команд есть, например, в <a href="http://rmcreative.ru/playground/netbeans_macro/">статье</a>  Александра Макарова. Либо <a href="http://wiki.netbeans.org/FaqEditorMacros">здесь</a>, но уже на английском.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Заработок и влияние для программиста</title>
@@ -203,59 +884,29 @@ Ctrl+Shift+1 — найти текущий файл в дереве проект
       <guid>https://www.marinin.pw/ru/posts/earnings_and_influence/</guid>
       <description>Программист создает новую информацию и получает за это деньги. Особенность труда программиста в том, что в идеале он пишет код один раз, а потом этот код работает годами и приносит ценность.
 Плохая новость в том, что обычно на работе весь заработок программиста ограничивается зарплатой, хотя компания извлекает прибыль из его кода множество раз. Порой годами. Хорошая новость: никто не мешает программисту работать на себя и снимать все сливки. Очевидные варианты по созданию своей компании/стартапа я здесь не рассматриваю, а беру за основу факт наличия у программиста основной работы.</description>
-    </item>
-    <item>
-      <title>Закончилось место на сервере</title>
-      <link>https://www.marinin.pw/ru/posts/cannot-create-temp/</link>
-      <pubDate>Sun, 16 Apr 2017 11:19:59 +0500</pubDate>
-      <guid>https://www.marinin.pw/ru/posts/cannot-create-temp/</guid>
-      <description>Начал замечать странности в поведении динамических сайтов на своем сервере. Залогинился и увидел, что перестало работать автодополнение команд. bash ругался таким текстом:
-cannot create temp file for here-document: No space left on device
-Первым делом решил посмотреть какие папки сколько места занимают. Перейдя в корневой раздел, выполнил:
-$ sudo du -h --max-depth=1 ./ Папка tmp не разрослась и в целом все в пределах нормы.
-В итоге выполнил
-$ sudo apt-get autoremove -y Оказалось, что лишних зависимостей в сумме набежало почти на гигабайт.</description>
-    </item>
-    <item>
-      <title>Установка пустого пароля для root-пользователя в MySQL 5.7</title>
-      <link>https://www.marinin.pw/ru/posts/mysql57-empty-root/</link>
-      <pubDate>Thu, 02 Mar 2017 21:34:25 +0500</pubDate>
-      <guid>https://www.marinin.pw/ru/posts/mysql57-empty-root/</guid>
-      <description>Для локальной разработки с MySQL очень удобно использовать пустой пароль root-пользователя. Раньше его можно было задать пустым сразу при установке и спокойно работать. Начиная с версии MySQL 5.7 поведение изменилось.
-Теперь, если при установке указывается пустой пароль пользователя root, то изменяется схема подключения для него с TCP/IP на локальный socket. Сделано это, как не трудно догадаться, в целях безопасности.
-Выражается, например, в том, что команды вроде
-$ mysql -uroot отказываются работать.</description>
-    </item>
-    <item>
-      <title>Русская раскладка в NetBeans под Ubuntu</title>
-      <link>https://www.marinin.pw/ru/posts/ubuntu-netbeans/</link>
-      <pubDate>Sun, 26 Feb 2017 12:45:41 +0500</pubDate>
-      <guid>https://www.marinin.pw/ru/posts/ubuntu-netbeans/</guid>
-      <description>В Ubuntu Linux есть старый баг, который не дает пользоваться горячими клавишами в некоторых приложениях, если используешь русскую раскладку. Для меня он особенно неприятен при работе с NetBeans.
-На счастье, для ряда приложений на основе Java есть фикс.
-На странице фикса не описан процесс установки для NetBeans. Восполню этот пробел и опишу процесс для версии NetBeans 8.2.
-Шаг 1. Скачать фикс Тут ничего сложного. Идем на страницу фикса, скачиваем и распаковываем, например, в домашнюю папку.</description>
-    </item>
-    <item>
-      <title>Неочевидные моменты при работе с assets в Yii2</title>
-      <link>https://www.marinin.pw/ru/posts/yii2-assets/</link>
-      <pubDate>Fri, 24 Feb 2017 15:29:39 +0500</pubDate>
-      <guid>https://www.marinin.pw/ru/posts/yii2-assets/</guid>
-      <description>Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс. Работа с ним вкратце описана в документации.
-Ниже перечислен ряд моментов, которые для меня оказались не очевидны.
-Advanced-шаблон и алиас @app В проекте я использую advanced-шаблон. Он позволяет разделять проект на три части:
-Для пользователя (frontend) Для администраторов и контент-менеджеров (backend) Для работы с cli-интерфейсом приложения (console) Для каждой из частей проекта так же предусмотрены алиасы @frontend, @backend и @console соответственно.</description>
-    </item>
-    <item>
-      <title>Блог на Hugo за пару минут</title>
-      <link>https://www.marinin.pw/ru/posts/hugo-blog/</link>
-      <pubDate>Tue, 21 Feb 2017 15:29:39 +0500</pubDate>
-      <guid>https://www.marinin.pw/ru/posts/hugo-blog/</guid>
-      <description>Что и зачем Hugo - это генератор статических сайтов, написанный на языке Go.
-Я нашел его чрезвычайно удобным для ведения собственного блога.
-Для меня преимущества перед устаревшими системами вроде Wordpress очевидны:
-Низкие требования к хостингу (не нужен ни php, ни mysql) Безопасность Для написания постов не обязательно быть online Скорость работы Написание постов в разметке Markdown, а не html Преимущества перед другими генераторами статических сайтов вроде Jekyll:
-Не нужно настраивать дополнительное окружение Реально высокая скорость генерации сайта Итак, поехали.</description>
+      <content:encoded><![CDATA[<p>Программист создает новую информацию и получает за это деньги. Особенность труда программиста в том, что в идеале он пишет код один раз, а потом этот код работает годами и приносит ценность.</p>
+<p>Плохая новость в том, что обычно на работе весь заработок программиста ограничивается зарплатой, хотя компания извлекает прибыль из его кода множество раз. Порой годами. Хорошая новость: никто не мешает программисту работать на себя и снимать все сливки. Очевидные варианты по созданию своей компании/стартапа я здесь не рассматриваю, а беру за основу факт наличия у программиста основной работы.</p>
+<p>Какие способы капитализации труда программиста вижу я:</p>
+<ul>
+<li><strong>Написание и продажа своих скриптов, приложений, сервисов с подпиской и т.д.</strong> Самый трудный вариант. Во-первых, нужно умело выявить проблему или потребность. Затем нужно тщательно разработать тему, дать людям ценность и заработать на этом деньги. Дальнейшая детализация процесса - тема множества статей.</li>
+<li><strong>Мобильные приложения.</strong> Вынес отдельно от первого пункта из-за популярности этого направления. Стоит помнить несколько вещей. Во-первых, рынок мобильных приложений весьма насыщен и пробиться без рекламного бюджета совсем непросто. Во-вторых, по статистике пользователи iOS примерно в пять раз более щедры, чем Android пользователи. Это если хочется сделать платное приложение. В-третьих, с мотивацией быстро заработать малыми усилиями лезть сюда не стоит: может постигнуть жестокое разочарование.</li>
+<li><strong>Создание игр.</strong> С распространением цифровой дистрибьюции многие начали делать игры. Тема игр весьма обширна и требует от программиста немалого объема специфических знаний. Опыт многих indie-разработчиков показывает: чтобы сделать игру, которая понравится многим, нужно самому быть фанатом игр с большим стажем и быть готовым работать на энтузиазме годами до первого коммерческого успеха. Риск высок, порог вхождения тоже.</li>
+<li><strong>Блог или канал на YouTube.</strong> Блог повышает твою ценность как профессионала. Люди видят, что ты любишь то что делаешь. Это подкупает. Люди читают статьи, узнают больше о тебе и твоих умениях. Видеоблог требует больше времени и вложений. Штатив с камерой как минимум, но на первом этапе можно вести запись прямо со своего MacBook. Хороший контент помогает собрать преданную аудиторию и повысить свою узнаваемость.</li>
+<li><strong>Оптимизация своего труда.</strong> Имеется в виду свой набор библиотек, скриптов и приемов, помогающих зарабатывать больше денег меньшими усилиями. Если ты программируешь давно, то у тебя наверняка есть свой &ldquo;ящик с инструментами&rdquo;, который сильно повышает твою продуктивность.</li>
+<li><strong>Фриланс</strong>. Поможет найти новые связи и клиентов. Я думаю, что делать ставку только на фриланс не нужно. Придется искать заказы и зависеть от притока денег с них, а это лишний стресс. Более выгодна консервативная стратегия: неплохие деньги на работе плюс подработка на фрилансе в свободное время. То что Нассим Талеб назвал &ldquo;стратегией штанги&rdquo;. В итоге имеем некоторый заработок, набиваем портфолио, но при этом не испытывам стресс из-за вынужденного поиска заказов. Плюс не страдает социализация. Общение с другими программистами, опыт работы в команде различных людей и разрешения конфликтов очень важен, а его фриланс в своей самой распространенной форме либо не дает вовсе, либо дает недостаточно.</li>
+<li><strong>Создание курсов по какой-либо технологии.</strong> Требуется экспертиза в технологии и личное время. Отличная мотивация выучить новую &ldquo;горячую&rdquo; технологию или закрыть пробелы в знаниях по технологии уже известной. Минус в большой конкуренции, если выходить на глобальный рынок. В России, как всегда, поле непаханное и можно делать курсы почти на любую тему. Стоит рассмотреть вариант с размещением курсов сразу на нескольких обучающих ресурсах.</li>
+<li><strong>Написание книги по технологии</strong>. Технология должна быть относительно новая, либо твой взгляд на нее и подход к обучению должны выделяться. Способ требует массы времени. Если пишешь на английском, хороший стимул для лучшего освоения языка. Кроме того так ты расширяешь рынок сбыта своей книги.</li>
+</ul>
+<p>Кроме заработка программисту важно оказывать влияние на индустрию и быть заметным в сообществе. Для этого полезны следующие вещи:</p>
+<ul>
+<li><strong>Посещение конференций и неформальных собраний.</strong> Я не случайно поставил этот пункт на первое место. Если такие собрания есть в твоем городе или в компании, стоит обязательно поприсутствовать, а еще лучше подготовить доклад. Хотя бы для того чтобы знать своих ближайших коллег, а они знали тебя.</li>
+<li><strong>Участие в open-source.</strong> Самый простой вариант, который позволяет стать заметной фигурой в мировом сообществе. Можно стартовать свой проект, а можно присоедениться к уже существующему. Позволяет многому научиться и пополнить резюме как минимум.</li>
+<li><strong>Написание статей в блог, создание книг и курсов.</strong> Внезапно. Если владеешь английским, то совсем хорошо.</li>
+<li><strong>Участие в соц. сетях</strong>. У многих it-специалистов популярен твиттер, все крутые ребята там.</li>
+<li><strong>Помощь и ответы на вопросы других программистов.</strong> Помогает углублять и шлифовать знания по технологии плюс удовлетворение от помощи другим. Найти специализированные ресурсы не составит труда. Например, Тостер в РФ и StackOverflow в остальном мире.</li>
+</ul>
+<p>А какие варианты капитализации труда или оказания влияния знаете вы?</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>

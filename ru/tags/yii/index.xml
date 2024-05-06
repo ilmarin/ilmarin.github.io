@@ -17,6 +17,93 @@
 Предварительная настройка Для начала работы достаточно базового шаблона Yii2. Создание проекта и настройку виртуального хоста я описывать не буду и перейду сразу к настройке REST.
 После скачивания проекта настроим компоненту user в файле web.php. Добавим туда следующие строки:
 &amp;#39;enableSession&amp;#39; =&amp;gt; false, &amp;#39;loginUrl&amp;#39; =&amp;gt; null, Первая строка отключает сохранение состояния пользователя на сервере: одно из требований архитектуры REST.</description>
+      <content:encoded><![CDATA[<p>Yii2 из коробки предоставляет удобный фреймворк для построения REST API вашего сервиса. Ниже я опишу как быстро начать его использовать.</p>
+<h2 id="предварительная-настройка">Предварительная настройка</h2>
+<p>Для начала работы достаточно <a href="https://github.com/yiisoft/yii2-app-basic">базового шаблона</a> Yii2. Создание проекта и настройку виртуального хоста я описывать не буду и перейду сразу к настройке REST.</p>
+<p>После скачивания проекта настроим компоненту <code>user</code> в файле <code>web.php</code>. Добавим туда следующие строки:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#e6db74">&#39;enableSession&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;loginUrl&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">null</span>,
+</span></span></code></pre></div><p>Первая строка отключает сохранение состояния пользователя на сервере: одно из требований архитектуры REST.</p>
+<p>Вторая строка отключает перенаправление на страницу входа после неудачной аутентификации.</p>
+<p>В <code>User.php</code> добавим следующий код:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getAll</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>   $result <span style="color:#f92672">=</span> [];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">foreach</span> (<span style="color:#a6e22e">self</span><span style="color:#f92672">::</span>$users <span style="color:#66d9ef">as</span> $user) {
+</span></span><span style="display:flex;"><span>       $result[] <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#39;id&#39;</span> <span style="color:#f92672">=&gt;</span> $user[<span style="color:#e6db74">&#39;id&#39;</span>],
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#39;username&#39;</span> <span style="color:#f92672">=&gt;</span> $user[<span style="color:#e6db74">&#39;username&#39;</span>],
+</span></span><span style="display:flex;"><span>       ];
+</span></span><span style="display:flex;"><span>   }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">return</span> $result;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="создание-контроллера">Создание контроллера</h2>
+<p>Мы не используем базу данных в нашем примере и создание контроллера займет чуть больше времени, чем в случае использования AR-моделей.</p>
+<p>В папке <code>controllers</code> создадим файл <code>UserController.php</code> со следующим содержимым:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">namespace</span> <span style="color:#a6e22e">app\controllers</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">yii\rest\Controller</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">app\models\User</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UserController</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">Controller</span>
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">actionIndex</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">User</span><span style="color:#f92672">::</span><span style="color:#a6e22e">getAll</span>();
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     * @inheritdoc
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">protected</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">verbs</span>()
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> [
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;index&#39;</span> <span style="color:#f92672">=&gt;</span> [<span style="color:#e6db74">&#39;GET&#39;</span>, <span style="color:#e6db74">&#39;HEAD&#39;</span>],
+</span></span><span style="display:flex;"><span>        ];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Как видно из примера, мы наследуем свой класс от <code>yii\rest\Controller</code>. Данный класс реализует поддержку сериализации и представления массивов в форматах XML и JSON перед отправкой ответа. Дополнительно можно задать параметры аутентификации и ограничить количесто запросов к API.</p>
+<p>Метод <code>verbs</code> позволяет задать типы запросов, которые принимает каждое из действий контроллера.</p>
+<p>Чтобы контроллер заработал, нужно отредактировать настройки компоненты <code>urlManager</code> в файле <code>web.php</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#e6db74">&#39;rules&#39;</span> <span style="color:#f92672">=&gt;</span> [
+</span></span><span style="display:flex;"><span>    [<span style="color:#e6db74">&#39;class&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;yii\rest\UrlRule&#39;</span>, <span style="color:#e6db74">&#39;controller&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;user&#39;</span>],
+</span></span><span style="display:flex;"><span>],
+</span></span></code></pre></div><p>Протестируем работу API, используя curl:</p>
+<pre tabindex="0"><code>$ curl -i -H &#34;Accept:application/json&#34; &#34;http://yii2-rest.dev/users&#34;
+$ curl -i -H &#34;Accept:application/xml&#34; &#34;http://yii2-rest.dev/users&#34;
+</code></pre><blockquote>
+<p>Вместо yii2-rest.dev нужно указать имя вашего хоста.</p>
+</blockquote>
+<h2 id="аутентификация">Аутентификация</h2>
+<blockquote>
+<p>При реализации любого из методов аутентификации в продакшене не забывайте об использовании https для предотвращения атаки типа &ldquo;человек посередине&rdquo;</p>
+</blockquote>
+<p>Yii2 поддерживает <a href="http://www.yiiframework.com/doc-2.0/guide-rest-authentication.html">несколько</a> типов аутентификации. Реализуем <strong>HTTP Basic Auth</strong>.</p>
+<p>В <code>UserContoller.php</code> добавим следующие строки:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">behaviors</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    $behaviors <span style="color:#f92672">=</span> <span style="color:#66d9ef">parent</span><span style="color:#f92672">::</span><span style="color:#a6e22e">behaviors</span>();
+</span></span><span style="display:flex;"><span>    $behaviors[<span style="color:#e6db74">&#39;authenticator&#39;</span>] <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;class&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">HttpBasicAuth</span><span style="color:#f92672">::</span><span style="color:#a6e22e">className</span>(),
+</span></span><span style="display:flex;"><span>    ];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> $behaviors;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Не забываем перед объявлением класса прописать:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">use</span> <span style="color:#a6e22e">yii\filters\auth\HttpBasicAuth</span>;
+</span></span></code></pre></div><p>Чтобы все заработало, модель пользователя должна реализовывать метод <code>findIdentityByAccessToken</code>. Если вы используете базовый шаблон Yii2, то он уже реализован и ничего менять не нужно.</p>
+<p>Проверям работу механизма аутентификации:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#a6e22e">curl</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">i</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">H</span> <span style="color:#e6db74">&#34;Accept:application/json&#34;</span> <span style="color:#e6db74">&#34;http://yii2-rest.dev/users&#34;</span>
+</span></span></code></pre></div><p>Выполнение кода выше должно вернуть ошибку с кодом 401.</p>
+<p>Пробуем авторизоваться, используя HTTP Basic Auth:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">$</span> <span style="color:#a6e22e">curl</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">i</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">H</span> <span style="color:#e6db74">&#34;Accept:application/json&#34;</span> <span style="color:#e6db74">&#34;http://yii2-task_manager.dev/users&#34;</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">H</span> <span style="color:#e6db74">&#34;Authorization: Basic MTAwLXRva2VuOg==&#34;</span>
+</span></span></code></pre></div><p>Должен вернуться полный список пользователей в json-ответе.</p>
+<h2 id="заключение">Заключение</h2>
+<p>Я описал лишь один из вариантов реализации REST в Yii2. Без рассмотрения остались множество других тем, таких как версионирование, ограничение числа запросов и обработка ошибок. Многое из этого описано в <a href="http://www.yiiframework.com/doc-2.0/guide-rest-quick-start.html">документации</a>.</p>
+]]></content:encoded>
     </item>
     <item>
       <title>Неочевидные моменты при работе с assets в Yii2</title>
@@ -27,6 +114,36 @@
 Ниже перечислен ряд моментов, которые для меня оказались не очевидны.
 Advanced-шаблон и алиас @app В проекте я использую advanced-шаблон. Он позволяет разделять проект на три части:
 Для пользователя (frontend) Для администраторов и контент-менеджеров (backend) Для работы с cli-интерфейсом приложения (console) Для каждой из частей проекта так же предусмотрены алиасы @frontend, @backend и @console соответственно.</description>
+      <content:encoded><![CDATA[<p>Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс. Работа с ним вкратце описана в <a href="http://www.yiiframework.com/doc-2.0/guide-structure-assets.html#combining-compressing-assets">документации</a>.</p>
+<p>Ниже перечислен ряд моментов, которые для меня оказались не очевидны.</p>
+<h2 id="advanced-шаблон-и-алиас-app">Advanced-шаблон и алиас @app</h2>
+<p>В проекте я использую <a href="https://github.com/yiisoft/yii2-app-advanced">advanced-шаблон</a>. Он позволяет разделять проект на три части:</p>
+<ul>
+<li>Для пользователя (frontend)</li>
+<li>Для администраторов и контент-менеджеров (backend)</li>
+<li>Для работы с cli-интерфейсом приложения (console)</li>
+</ul>
+<p>Для каждой из частей проекта так же предусмотрены алиасы <code>@frontend</code>, <code>@backend</code> и <code>@console</code> соответственно.</p>
+<p>Однако у моих ассетов во frontend-части в свойстве <code>sourcePath</code> был прописан алиас <code>@app</code> вместо <code>@frontend</code>.</p>
+<p>В этом не было ничего страшного до тех пор, пока не стало нужно выполнить минификацию ресурсов с помощью предоставляемого фреймворком инструментария.</p>
+<p>Как выяснилось, алиас <code>@app</code> для консоли в случае с advanced-шаблоном указывает на алиас <code>@console</code> и ассеты пытались распаковаться туда, что и сбивало с толку инструмент. Тот случай, когда неплохо бы лишний раз читать <a href="https://github.com/yiisoft/yii2-app-advanced/blob/master/docs/guide/structure-path-aliases.md">доки</a>. :)</p>
+<p><strong>Вывод:</strong> в случае использования advanced-шаблона, нужно проверить, что ассеты, расположенные во frontend/assets используют в <code>sourcePath</code> алиас <code>@frontend</code> вместо <code>@app</code>. Аналогично и для backend-части приложения.</p>
+<h2 id="ошибка-file_put_contents">Ошибка file_put_contents</h2>
+<p>Функция file_put_contents падает с ошибкой в случае несуществующего пути до папки.</p>
+<p><strong>Вывод:</strong> следует проверять, что все пути к папкам в конфиге сжатия ассетов верные.</p>
+<h2 id="невозможность-доступа-к-baseurl-ассета-после-минификации">Невозможность доступа к baseUrl ассета после минификации</h2>
+<p>На заре создания проекта я хранил всю frontend-статику в папке assets. Путь до папки с финальными ассетами я получал комбинацией:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$asset <span style="color:#f92672">=</span> <span style="color:#a6e22e">frontend\assets\AppAsset</span><span style="color:#f92672">::</span><span style="color:#a6e22e">register</span>($this);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> $asset<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">baseUrl</span>;
+</span></span></code></pre></div><p>Оказалось, это плохая практика. После сжатия свойство <code>baseUrl</code> у ассетов зануляется и картинки, шрифты и прочие вещи, которые до этого прекрасно отображались, перестают работать в production-окружении (в dev-окружении все в порядке).</p>
+<p>Пришлось вынести папки со шрифтами и картинками в публичную часть сайта, а относительные пути в css переделать на абсолютные.</p>
+<p><strong>Вывод:</strong> в assets лучше хранить только то, что будем сжимать. Остальное выносить в публичную часть. К тому же так лишний раз не копируются большие объемы данных.</p>
+<h2 id="не-все-расширения-фреймворка-совместимы-с-инструментом-сжатия-ассетов">Не все расширения фреймворка совместимы с инструментом сжатия ассетов</h2>
+<p>Об этом прямо указывается в <a href="http://www.yiiframework.com/doc-2.0/guide-structure-assets.html#combining-compressing-assets">документации</a> в желтой сноске в конце параграфа <em>An Example</em>, но я помучался с этой ошибкой.</p>
+<p>Выглядит это так: ассеты прекрасно сжимаются, но на странице подключаются дважды (минифицированная версия и еще раз несовместимые ассеты из отдельной папки).</p>
+<p>В итоге эти расширения пришлось исключить из минификации, а подключаются они на странице отдельно как и раньше, что, конечно же, увеличивает число запросов к серверу.</p>
+<p><strong>Вывод:</strong> иметь в виду эту особенность при работе с расширениями использующими динамическое задание параметров ассетов в методе <code>init()</code>.</p>
+]]></content:encoded>
     </item>
   </channel>
 </rss>
