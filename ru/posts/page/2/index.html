@@ -170,6 +170,22 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">Как связать два docker-контейнера
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.
+Для этого в docker есть функционал по работе с сетью — docker network.
+Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.
+Пишем:
+$ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть....</p>
+  </div>
+  <footer class="entry-footer"><span title='2018-02-27 15:54:49 +0500 +0500'>27 февраля 2018 г.</span></footer>
+  <a class="entry-link" aria-label="post link to Как связать два docker-контейнера" href="https://www.marinin.pw/ru/posts/docker-network/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Допиливание Vim
     </h2>
   </header>
@@ -227,20 +243,6 @@ $ sudo nano -Bw /etc/fstab В файл прописываем что-то вро
   </div>
   <footer class="entry-footer"><span title='2018-01-07 15:40:09 +0500 +0500'>7 января 2018 г.</span></footer>
   <a class="entry-link" aria-label="post link to Реализация RESTful API в Yii2" href="https://www.marinin.pw/ru/posts/yii2-rest/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Обзор книги «В работу с головой»
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>В прошлом посте обозревал книгу «Хватит мечтать, займись делом!». Теперь настало время для другой книги того же автора — «В работу с головой» (в оригинале «Deep Work: Rules for Focused Success in a Distracted World»).
-В книге поднимается тема, знакомая многим работникам умственного труда: как делать больше сложной работы сосредоточенно и не отвлекаться на разную побочную деятельность.
-Углубленная работа — путь к успеху Основная мысль: в эпоху повсеместного проникновения социальных сетей и войны корпораций за внимание потребителя, все больше ценятся люди, способные к сложной сосредоточенной деятельности....</p>
-  </div>
-  <footer class="entry-footer"><span title='2018-01-06 14:05:04 +0500 +0500'>6 января 2018 г.</span></footer>
-  <a class="entry-link" aria-label="post link to Обзор книги «В работу с головой»" href="https://www.marinin.pw/ru/posts/deep-work/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
