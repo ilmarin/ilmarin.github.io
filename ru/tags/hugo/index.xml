@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hugo on Илья Маринин</title>
+    <link>https://www.marinin.pw/ru/tags/hugo/</link>
+    <description>Recent content in Hugo on Илья Маринин</description>
+    <generator>Hugo -- 0.125.6</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Sat, 25 Nov 2017 10:00:24 +0500</lastBuildDate>
+    <atom:link href="https://www.marinin.pw/ru/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Добавление тегов к постам в Hugo</title>
+      <link>https://www.marinin.pw/ru/posts/hugo_tags/</link>
+      <pubDate>Sat, 25 Nov 2017 10:00:24 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/hugo_tags/</guid>
+      <description>Hugo - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал здесь.
+Ниже я опишу как добавить к постам теги.
+Первым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:
+[taxonomies] tag = &amp;#34;tags&amp;#34; Для YAML-конфига соответственно нужно написать:
+taxonomies: tag: &amp;#34;tags&amp;#34; Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами +++, пишем:</description>
+    </item>
+    <item>
+      <title>Блог на Hugo за пару минут</title>
+      <link>https://www.marinin.pw/ru/posts/hugo-blog/</link>
+      <pubDate>Tue, 21 Feb 2017 15:29:39 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/hugo-blog/</guid>
+      <description>Что и зачем Hugo - это генератор статических сайтов, написанный на языке Go.
+Я нашел его чрезвычайно удобным для ведения собственного блога.
+Для меня преимущества перед устаревшими системами вроде Wordpress очевидны:
+Низкие требования к хостингу (не нужен ни php, ни mysql) Безопасность Для написания постов не обязательно быть online Скорость работы Написание постов в разметке Markdown, а не html Преимущества перед другими генераторами статических сайтов вроде Jekyll:
+Не нужно настраивать дополнительное окружение Реально высокая скорость генерации сайта Итак, поехали.</description>
+    </item>
+  </channel>
+</rss>

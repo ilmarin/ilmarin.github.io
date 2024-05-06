@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bash on Илья Маринин</title>
+    <link>https://www.marinin.pw/ru/tags/bash/</link>
+    <description>Recent content in Bash on Илья Маринин</description>
+    <generator>Hugo -- 0.125.6</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Sat, 18 Nov 2017 23:30:13 +0500</lastBuildDate>
+    <atom:link href="https://www.marinin.pw/ru/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Примитивный скрипт закачки файлов на сервер</title>
+      <link>https://www.marinin.pw/ru/posts/simple_deploy/</link>
+      <pubDate>Sat, 18 Nov 2017 23:30:13 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/simple_deploy/</guid>
+      <description>Очень лень закачивать блог на сервер, тыкая в GUI FileZilla.
+После некоторого гугления получился такой код:
+#/bin/bash HOST=&amp;#39;hostname&amp;#39; USER=&amp;#39;username&amp;#39; PASSWD=&amp;#39;password&amp;#39; LOCALPATH=&amp;#39;/path_to_my_local_folder&amp;#39; DIR=&amp;#39;/path_to_my_server_folder&amp;#39; sshpass -p &amp;#34;$PASSWD&amp;#34; scp -r $LOCALPATH $USER@$HOST:$DIR Не забываем дать скрипту права на исполнение:
+$ chmod +x ./deploy.sh Скрипт рекурсивно закачивает указанную папку на сервер. Если настроить ключи (что мне пока делать лень), то можно обойтись без sshpass и пароля соответственно.
+Свой блог теперь закачиваю на сервер именно таким образом.</description>
+    </item>
+    <item>
+      <title>Закончилось место на сервере</title>
+      <link>https://www.marinin.pw/ru/posts/cannot-create-temp/</link>
+      <pubDate>Sun, 16 Apr 2017 11:19:59 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/cannot-create-temp/</guid>
+      <description>Начал замечать странности в поведении динамических сайтов на своем сервере. Залогинился и увидел, что перестало работать автодополнение команд. bash ругался таким текстом:
+cannot create temp file for here-document: No space left on device
+Первым делом решил посмотреть какие папки сколько места занимают. Перейдя в корневой раздел, выполнил:
+$ sudo du -h --max-depth=1 ./ Папка tmp не разрослась и в целом все в пределах нормы.
+В итоге выполнил
+$ sudo apt-get autoremove -y Оказалось, что лишних зависимостей в сумме набежало почти на гигабайт.</description>
+    </item>
+  </channel>
+</rss>

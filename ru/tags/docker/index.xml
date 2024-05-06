@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on Илья Маринин</title>
+    <link>https://www.marinin.pw/ru/tags/docker/</link>
+    <description>Recent content in Docker on Илья Маринин</description>
+    <generator>Hugo -- 0.125.6</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Tue, 27 Feb 2018 15:54:49 +0500</lastBuildDate>
+    <atom:link href="https://www.marinin.pw/ru/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Как связать два docker-контейнера</title>
+      <link>https://www.marinin.pw/ru/posts/docker-network/</link>
+      <pubDate>Tue, 27 Feb 2018 15:54:49 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/docker-network/</guid>
+      <description>Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.
+Для этого в docker есть функционал по работе с сетью — docker network.
+Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.
+Пишем:
+$ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть.</description>
+    </item>
+    <item>
+      <title>Отладка кода в docker-контейнере из NetBeans</title>
+      <link>https://www.marinin.pw/ru/posts/netbeans-docker-xdebug/</link>
+      <pubDate>Sat, 27 Jan 2018 20:36:21 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/netbeans-docker-xdebug/</guid>
+      <description>Я уже немного писал о NetBeans тут . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, здесь.
+Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.
+Для успешной отладки следует:
+Настроить docker-контейнер с Xdebug внутри; Настроить Xdebug внутри контейнера; Настроить NetBeans. При обычной отладке с использованием браузера и при отладке cli-скрипта настройки будут слегка отличаться.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Личное on Илья Маринин</title>
+    <link>https://www.marinin.pw/ru/tags/%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B5/</link>
+    <description>Recent content in Личное on Илья Маринин</description>
+    <generator>Hugo -- 0.125.6</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Sun, 05 May 2024 10:37:17 +0200</lastBuildDate>
+    <atom:link href="https://www.marinin.pw/ru/tags/%D0%BB%D0%B8%D1%87%D0%BD%D0%BE%D0%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Новое начало</title>
+      <link>https://www.marinin.pw/ru/posts/changes/</link>
+      <pubDate>Sun, 05 May 2024 10:37:17 +0200</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/changes/</guid>
+      <description>Давно ничего сюда не писал.
+За последние три с лишним года в моей жизни произошли изменения и на блог оставалось не так много времени.
+Я успел сменить две страны проживания, жениться, поменять работу и уйти с работы. На горизонте смена стека разработки и выход на работу уже за рубежом.
+Иногда я думал как вернуться к написанию статей и заметок, но чувствовал себя заложником формата. Раньше я хотел писать здесь сугубо о программировании, но быстро понял, что мне тесно в этих рамках.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Selenium on Илья Маринин</title>
+    <link>https://www.marinin.pw/ru/tags/selenium/</link>
+    <description>Recent content in Selenium on Илья Маринин</description>
+    <generator>Hugo -- 0.125.6</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Sat, 01 Jul 2017 13:41:35 +0500</lastBuildDate>
+    <atom:link href="https://www.marinin.pw/ru/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Установка Selenium Server на Ubuntu 16.04</title>
+      <link>https://www.marinin.pw/ru/posts/selenium_ubuntu/</link>
+      <pubDate>Sat, 01 Jul 2017 13:41:35 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/selenium_ubuntu/</guid>
+      <description>Для разработки простых сайтов часто написание модульных и функциональных тестов становится излишним. Иногда нужно просто удостовериться, что с точки зрения конечного пользователя все работает корректно: кнопки кликаются, всплывающие окна появляются, индикаторы меняют состояние, клиентская валидация срабатывает как нужно, а скрипт не валится с ошибкой при отправке формы. Функциональные тесты такой уверенности не дают, так как не умеют тестировать js-код, а тестировать форму в сотый раз руками занятие неблагодарное (особенно когда у нас много важной клиентской логики).</description>
+    </item>
+  </channel>
+</rss>

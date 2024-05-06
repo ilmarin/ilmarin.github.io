@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Netbeans on Илья Маринин</title>
+    <link>https://www.marinin.pw/ru/tags/netbeans/</link>
+    <description>Recent content in Netbeans on Илья Маринин</description>
+    <generator>Hugo -- 0.125.6</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Sat, 27 Jan 2018 20:36:21 +0500</lastBuildDate>
+    <atom:link href="https://www.marinin.pw/ru/tags/netbeans/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Отладка кода в docker-контейнере из NetBeans</title>
+      <link>https://www.marinin.pw/ru/posts/netbeans-docker-xdebug/</link>
+      <pubDate>Sat, 27 Jan 2018 20:36:21 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/netbeans-docker-xdebug/</guid>
+      <description>Я уже немного писал о NetBeans тут . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, здесь.
+Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.
+Для успешной отладки следует:
+Настроить docker-контейнер с Xdebug внутри; Настроить Xdebug внутри контейнера; Настроить NetBeans. При обычной отладке с использованием браузера и при отладке cli-скрипта настройки будут слегка отличаться.</description>
+    </item>
+    <item>
+      <title>Редактирование кода в NetBeans</title>
+      <link>https://www.marinin.pw/ru/posts/netbeans_hotkeys/</link>
+      <pubDate>Tue, 23 May 2017 20:20:03 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/netbeans_hotkeys/</guid>
+      <description>Обновлено 26.01.2018
+NetBeans IDE мой основной рабочий инструмент. Ниже представлен список горячих клавиш, которые я использую наиболее часто, а так же дан поверхностный обзор шаблонов кода и макросов.
+Горчие клавиши Навигация Alt+Up/Down — следующая/предыдущая позиция установки курсора.
+Alt+Left/Alt+Right/Ctrl+Q — навигация по предыдущему/следующему редактированным фрагментам.
+Ctrl+Q — перейти к последнему отредактированному фрагменту.
+Ctrl+Shift+1 — найти текущий файл в дереве проектов и поставить на него фокус. Удобно чтобы не рыться долго в папках.</description>
+    </item>
+    <item>
+      <title>Русская раскладка в NetBeans под Ubuntu</title>
+      <link>https://www.marinin.pw/ru/posts/ubuntu-netbeans/</link>
+      <pubDate>Sun, 26 Feb 2017 12:45:41 +0500</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/ubuntu-netbeans/</guid>
+      <description>В Ubuntu Linux есть старый баг, который не дает пользоваться горячими клавишами в некоторых приложениях, если используешь русскую раскладку. Для меня он особенно неприятен при работе с NetBeans.
+На счастье, для ряда приложений на основе Java есть фикс.
+На странице фикса не описан процесс установки для NetBeans. Восполню этот пробел и опишу процесс для версии NetBeans 8.2.
+Шаг 1. Скачать фикс Тут ничего сложного. Идем на страницу фикса, скачиваем и распаковываем, например, в домашнюю папку.</description>
+    </item>
+  </channel>
+</rss>

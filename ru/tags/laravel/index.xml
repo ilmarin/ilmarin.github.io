@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Laravel on Илья Маринин</title>
+    <link>https://www.marinin.pw/ru/tags/laravel/</link>
+    <description>Recent content in Laravel on Илья Маринин</description>
+    <generator>Hugo -- 0.125.6</generator>
+    <language>ru-RU</language>
+    <lastBuildDate>Sat, 21 Mar 2020 17:19:07 +0300</lastBuildDate>
+    <atom:link href="https://www.marinin.pw/ru/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Добавление новых php-расширений в Homestead</title>
+      <link>https://www.marinin.pw/ru/posts/homestead_extend/</link>
+      <pubDate>Sat, 21 Mar 2020 17:19:07 +0300</pubDate>
+      <guid>https://www.marinin.pw/ru/posts/homestead_extend/</guid>
+      <description>Homestead — это набор конфигов от сообщества Laravel виртуальной машины на базе Vagrant.
+Новичкам иногда сложно сходу добавить новый функционал в виртуальную машину на базе Homestead.
+Для примера дан простой набор шагов по добавлению php-расширения APCu в Homestead. Оно используется, например, в Symfony.
+Настраиваем Homestead Находим в папке с Homestead файл after.sh и добавляем нужные строки:
+#Install APCu sudo apt-get -y \ -o Dpkg::Options::=&amp;#34;--force-confdef&amp;#34; \ -o Dpkg::Options::=&amp;#34;--force-confold&amp;#34; \ install php-apcu Пересобираем виртуальную машину В терминале в папке с Homestead выполянем:</description>
+    </item>
+  </channel>
+</rss>
