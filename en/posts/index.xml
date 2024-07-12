@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ilia Marinin</title>
+    <link>http://localhost:1313/en/posts/</link>
+    <description>Recent content on Ilia Marinin</description>
+    <generator>Hugo -- 0.125.6</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 04 May 2024 19:57:00 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What I&#39;m going to write about</title>
+      <link>http://localhost:1313/en/posts/first_post/</link>
+      <pubDate>Sat, 04 May 2024 19:57:00 +0200</pubDate>
+      <guid>http://localhost:1313/en/posts/first_post/</guid>
+      <description>This is my first post in English here. So I should tell you what it all will be about.
+I&amp;rsquo;m trying to achieve several goals.
+Firstly, is to practice my English storytelling skills and to tell some about me.
+Second, to write my experiences from living abroad which will allow me to get new connections or even friends around. In this case, blog is an excellent possibility to allow somebody to know basic information about me and my life and not to repeat some things with every new acquaintance.</description>
+      <content:encoded><![CDATA[<p>This is my first post in English here. So I should tell you what it all will be about.</p>
+<p>I&rsquo;m trying to achieve several goals.</p>
+<p>Firstly, is to practice my English storytelling skills and to tell some about me.</p>
+<p>Second, to write my experiences from living abroad which will allow me to get new connections or even friends around. In this case, blog is an excellent possibility to allow somebody to know basic information about me and my life and not to repeat some things with every new acquaintance.</p>
+<p>And last but not least, is to write down interesting insights about programming. Hope this stuff will be useful for someone.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
