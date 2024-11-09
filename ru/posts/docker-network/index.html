@@ -11,10 +11,13 @@
 Для этого в docker есть функционал по работе с сетью — docker network.
 Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.
 Пишем:
-$ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть.">
+$ docker network create -d bridge api
+$ docker network connect --alias app api 53
+$ docker network connect --alias service api 4с
+Первая команда создает новую сеть. Вторая и третья команды по очереди добавляют в нее существующие контейнеры. Параметр alias задает имя контейнера по которому к нему можно будет легко обратиться.">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.marinin.pw/ru/posts/docker-network/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.marinin.pw/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.marinin.pw/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.marinin.pw/favicon-32x32.png">
@@ -59,44 +62,30 @@ $ docker network create -d bridge api $ docker network connect --alias app api 5
         }
 
     </style>
-</noscript>
-  
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TYB9D8NSM"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-0TYB9D8NSM');
-        }
-      </script>
-    
-  
-
-<meta property="og:title" content="Как связать два docker-контейнера" />
-<meta property="og:description" content="Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.
+</noscript><meta property="og:url" content="https://www.marinin.pw/ru/posts/docker-network/">
+  <meta property="og:site_name" content="Илья Маринин">
+  <meta property="og:title" content="Как связать два docker-контейнера">
+  <meta property="og:description" content="Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.
 Для этого в docker есть функционал по работе с сетью — docker network.
 Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.
 Пишем:
-$ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.marinin.pw/ru/posts/docker-network/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2018-02-27T15:54:49+05:00" />
-<meta property="article:modified_time" content="2018-02-27T15:54:49+05:00" /><meta property="og:site_name" content="Ilia Marinin" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Как связать два docker-контейнера"/>
+$ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть. Вторая и третья команды по очереди добавляют в нее существующие контейнеры. Параметр alias задает имя контейнера по которому к нему можно будет легко обратиться.">
+  <meta property="og:locale" content="ru-RU">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-02-27T15:54:49+05:00">
+    <meta property="article:modified_time" content="2018-02-27T15:54:49+05:00">
+    <meta property="article:tag" content="Docker">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Как связать два docker-контейнера">
 <meta name="twitter:description" content="Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.
 Для этого в docker есть функционал по работе с сетью — docker network.
 Например, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.
 Пишем:
-$ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть."/>
+$ docker network create -d bridge api
+$ docker network connect --alias app api 53
+$ docker network connect --alias service api 4с
+Первая команда создает новую сеть. Вторая и третья команды по очереди добавляют в нее существующие контейнеры. Параметр alias задает имя контейнера по которому к нему можно будет легко обратиться.">
 
 
 <script type="application/ld+json">
@@ -125,7 +114,7 @@ $ docker network create -d bridge api $ docker network connect --alias app api 5
   "@type": "BlogPosting",
   "headline": "Как связать два docker-контейнера",
   "name": "Как связать два docker-контейнера",
-  "description": "Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.\nДля этого в docker есть функционал по работе с сетью — docker network.\nНапример, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.\nПишем:\n$ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть.",
+  "description": "Порой при разработке возникает необходимость связать два ранее не связанных контейнера в одну сеть, чтобы быстро что-то протестировать. При этом не хочется писать новые файлы конфигурации.\nДля этого в docker есть функционал по работе с сетью — docker network.\nНапример, из контейнера app мы хотим получить доступ к контейнеру service по имени, чтобы осуществить вызов API.\nПишем:\n$ docker network create -d bridge api $ docker network connect --alias app api 53 $ docker network connect --alias service api 4с Первая команда создает новую сеть. Вторая и третья команды по очереди добавляют в нее существующие контейнеры. Параметр alias задает имя контейнера по которому к нему можно будет легко обратиться.\n",
   "keywords": [
     "docker"
   ],

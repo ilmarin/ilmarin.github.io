@@ -4,7 +4,7 @@
     <title>Netbeans on Илья Маринин</title>
     <link>https://www.marinin.pw/ru/tags/netbeans/</link>
     <description>Recent content in Netbeans on Илья Маринин</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.138.0</generator>
     <language>ru-RU</language>
     <lastBuildDate>Sat, 27 Jan 2018 20:36:21 +0500</lastBuildDate>
     <atom:link href="https://www.marinin.pw/ru/tags/netbeans/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,15 @@
       <link>https://www.marinin.pw/ru/posts/netbeans-docker-xdebug/</link>
       <pubDate>Sat, 27 Jan 2018 20:36:21 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/netbeans-docker-xdebug/</guid>
-      <description>Я уже немного писал о NetBeans тут . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, здесь.
-Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.
-Для успешной отладки следует:
-Настроить docker-контейнер с Xdebug внутри; Настроить Xdebug внутри контейнера; Настроить NetBeans. При обычной отладке с использованием браузера и при отладке cli-скрипта настройки будут слегка отличаться.</description>
+      <description>&lt;p&gt;Я уже немного писал о NetBeans &lt;a href=&#34;https://www.marinin.pw/post/netbeans_hotkeys&#34;&gt;тут&lt;/a&gt; . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, &lt;a href=&#34;https://netbeans.org/kb/docs/php/debugging_ru.html&#34;&gt;здесь&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.&lt;/p&gt;
+&lt;p&gt;Для успешной отладки следует:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Настроить docker-контейнер с Xdebug внутри;&lt;/li&gt;
+&lt;li&gt;Настроить Xdebug внутри контейнера;&lt;/li&gt;
+&lt;li&gt;Настроить NetBeans.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;При обычной отладке с использованием браузера и при отладке cli-скрипта настройки будут слегка отличаться. Итак, поехали.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Я уже немного писал о NetBeans <a href="/post/netbeans_hotkeys">тут</a> . Данная IDE умеет хорошо дружить с Xdebug, в связке с которым очень удобно отлаживать php-код. Основы успешно описаны, например, <a href="https://netbeans.org/kb/docs/php/debugging_ru.html">здесь</a>.</p>
 <p>Все интереснее, когда код приходится отлаживать не на локальной машине, а внутри docker-контейнера. Особенно, если нужно отладить cli-скрипт внутри контейнера.</p>
 <p>Для успешной отладки следует:</p>
@@ -66,12 +71,14 @@
       <link>https://www.marinin.pw/ru/posts/netbeans_hotkeys/</link>
       <pubDate>Tue, 23 May 2017 20:20:03 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/netbeans_hotkeys/</guid>
-      <description>Обновлено 26.01.2018
-NetBeans IDE мой основной рабочий инструмент. Ниже представлен список горячих клавиш, которые я использую наиболее часто, а так же дан поверхностный обзор шаблонов кода и макросов.
-Горчие клавиши Навигация Alt+Up/Down — следующая/предыдущая позиция установки курсора.
-Alt+Left/Alt+Right/Ctrl+Q — навигация по предыдущему/следующему редактированным фрагментам.
-Ctrl+Q — перейти к последнему отредактированному фрагменту.
-Ctrl+Shift+1 — найти текущий файл в дереве проектов и поставить на него фокус. Удобно чтобы не рыться долго в папках.</description>
+      <description>&lt;p&gt;&lt;strong&gt;Обновлено 26.01.2018&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;NetBeans IDE мой основной рабочий инструмент. Ниже представлен список горячих клавиш, которые я использую наиболее часто, а так же дан поверхностный обзор шаблонов кода и макросов.&lt;/p&gt;
+&lt;h2 id=&#34;горчие-клавиши&#34;&gt;Горчие клавиши&lt;/h2&gt;
+&lt;h3 id=&#34;навигация&#34;&gt;Навигация&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Alt+Up/Down&lt;/strong&gt; — следующая/предыдущая позиция установки курсора.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Alt+Left/Alt+Right/Ctrl+Q&lt;/strong&gt; — навигация по предыдущему/следующему редактированным фрагментам.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+Q&lt;/strong&gt; — перейти к последнему отредактированному фрагменту.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ctrl+Shift+1&lt;/strong&gt; — найти текущий файл в дереве проектов и поставить на него фокус. Удобно чтобы не рыться долго в папках.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><strong>Обновлено 26.01.2018</strong></p>
 <p>NetBeans IDE мой основной рабочий инструмент. Ниже представлен список горячих клавиш, которые я использую наиболее часто, а так же дан поверхностный обзор шаблонов кода и макросов.</p>
 <h2 id="горчие-клавиши">Горчие клавиши</h2>
@@ -125,10 +132,11 @@ php - &lt;?php ${cursor} ?&gt;
       <link>https://www.marinin.pw/ru/posts/ubuntu-netbeans/</link>
       <pubDate>Sun, 26 Feb 2017 12:45:41 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/ubuntu-netbeans/</guid>
-      <description>В Ubuntu Linux есть старый баг, который не дает пользоваться горячими клавишами в некоторых приложениях, если используешь русскую раскладку. Для меня он особенно неприятен при работе с NetBeans.
-На счастье, для ряда приложений на основе Java есть фикс.
-На странице фикса не описан процесс установки для NetBeans. Восполню этот пробел и опишу процесс для версии NetBeans 8.2.
-Шаг 1. Скачать фикс Тут ничего сложного. Идем на страницу фикса, скачиваем и распаковываем, например, в домашнюю папку.</description>
+      <description>&lt;p&gt;В Ubuntu Linux есть старый баг, который не дает пользоваться горячими клавишами в некоторых приложениях, если используешь русскую раскладку. Для меня он особенно неприятен при работе с NetBeans.&lt;/p&gt;
+&lt;p&gt;На счастье, для ряда приложений на основе Java есть &lt;a href=&#34;https://github.com/zheludkovm/LinuxJavaFixes&#34;&gt;фикс&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;На странице фикса не описан процесс установки для NetBeans. Восполню этот пробел и опишу процесс для версии NetBeans 8.2.&lt;/p&gt;
+&lt;h2 id=&#34;шаг-1-скачать-фикс&#34;&gt;Шаг 1. Скачать фикс&lt;/h2&gt;
+&lt;p&gt;Тут ничего сложного. Идем на &lt;a href=&#34;https://github.com/zheludkovm/LinuxJavaFixes&#34;&gt;страницу фикса&lt;/a&gt;, скачиваем и распаковываем, например, в домашнюю папку.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>В Ubuntu Linux есть старый баг, который не дает пользоваться горячими клавишами в некоторых приложениях, если используешь русскую раскладку. Для меня он особенно неприятен при работе с NetBeans.</p>
 <p>На счастье, для ряда приложений на основе Java есть <a href="https://github.com/zheludkovm/LinuxJavaFixes">фикс</a>.</p>
 <p>На странице фикса не описан процесс установки для NetBeans. Восполню этот пробел и опишу процесс для версии NetBeans 8.2.</p>

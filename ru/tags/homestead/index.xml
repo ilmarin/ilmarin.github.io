@@ -4,7 +4,7 @@
     <title>Homestead on Илья Маринин</title>
     <link>https://www.marinin.pw/ru/tags/homestead/</link>
     <description>Recent content in Homestead on Илья Маринин</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.138.0</generator>
     <language>ru-RU</language>
     <lastBuildDate>Sat, 21 Mar 2020 17:19:07 +0300</lastBuildDate>
     <atom:link href="https://www.marinin.pw/ru/tags/homestead/index.xml" rel="self" type="application/rss+xml" />
@@ -13,11 +13,18 @@
       <link>https://www.marinin.pw/ru/posts/homestead_extend/</link>
       <pubDate>Sat, 21 Mar 2020 17:19:07 +0300</pubDate>
       <guid>https://www.marinin.pw/ru/posts/homestead_extend/</guid>
-      <description>Homestead — это набор конфигов от сообщества Laravel виртуальной машины на базе Vagrant.
-Новичкам иногда сложно сходу добавить новый функционал в виртуальную машину на базе Homestead.
-Для примера дан простой набор шагов по добавлению php-расширения APCu в Homestead. Оно используется, например, в Symfony.
-Настраиваем Homestead Находим в папке с Homestead файл after.sh и добавляем нужные строки:
-#Install APCu sudo apt-get -y \ -o Dpkg::Options::=&amp;#34;--force-confdef&amp;#34; \ -o Dpkg::Options::=&amp;#34;--force-confold&amp;#34; \ install php-apcu Пересобираем виртуальную машину В терминале в папке с Homestead выполянем:</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://laravel.com/docs/6.x/homestead&#34;&gt;Homestead&lt;/a&gt; — это набор конфигов от сообщества &lt;a href=&#34;https://laravel.com/&#34;&gt;Laravel&lt;/a&gt; виртуальной машины на базе &lt;a href=&#34;https://www.vagrantup.com/&#34;&gt;Vagrant&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Новичкам иногда сложно сходу добавить новый функционал в виртуальную машину на базе Homestead.&lt;/p&gt;
+&lt;p&gt;Для примера дан простой набор шагов по добавлению php-расширения &lt;a href=&#34;https://www.php.net/manual/ru/book.apcu.php&#34;&gt;APCu&lt;/a&gt; в Homestead. Оно используется, например, в &lt;a href=&#34;https://symfony.com/&#34;&gt;Symfony&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;настраиваем-homestead&#34;&gt;Настраиваем Homestead&lt;/h2&gt;
+&lt;p&gt;Находим в папке с Homestead файл &lt;code&gt;after.sh&lt;/code&gt; и добавляем нужные строки:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#Install APCu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get -y &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    -o Dpkg::Options::&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;--force-confdef&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    -o Dpkg::Options::&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;--force-confold&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;    install php-apcu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;пересобираем-виртуальную-машину&#34;&gt;Пересобираем виртуальную машину&lt;/h2&gt;
+&lt;p&gt;В терминале в папке с Homestead выполянем:&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p><a href="https://laravel.com/docs/6.x/homestead">Homestead</a> — это набор конфигов от сообщества <a href="https://laravel.com/">Laravel</a> виртуальной машины на базе <a href="https://www.vagrantup.com/">Vagrant</a>.</p>
 <p>Новичкам иногда сложно сходу добавить новый функционал в виртуальную машину на базе Homestead.</p>
 <p>Для примера дан простой набор шагов по добавлению php-расширения <a href="https://www.php.net/manual/ru/book.apcu.php">APCu</a> в Homestead. Оно используется, например, в <a href="https://symfony.com/">Symfony</a>.</p>

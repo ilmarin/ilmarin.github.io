@@ -4,7 +4,7 @@
     <title>Bash on Илья Маринин</title>
     <link>https://www.marinin.pw/ru/tags/bash/</link>
     <description>Recent content in Bash on Илья Маринин</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.138.0</generator>
     <language>ru-RU</language>
     <lastBuildDate>Sat, 18 Nov 2017 23:30:13 +0500</lastBuildDate>
     <atom:link href="https://www.marinin.pw/ru/tags/bash/index.xml" rel="self" type="application/rss+xml" />
@@ -13,11 +13,20 @@
       <link>https://www.marinin.pw/ru/posts/simple_deploy/</link>
       <pubDate>Sat, 18 Nov 2017 23:30:13 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/simple_deploy/</guid>
-      <description>Очень лень закачивать блог на сервер, тыкая в GUI FileZilla.
-После некоторого гугления получился такой код:
-#/bin/bash HOST=&amp;#39;hostname&amp;#39; USER=&amp;#39;username&amp;#39; PASSWD=&amp;#39;password&amp;#39; LOCALPATH=&amp;#39;/path_to_my_local_folder&amp;#39; DIR=&amp;#39;/path_to_my_server_folder&amp;#39; sshpass -p &amp;#34;$PASSWD&amp;#34; scp -r $LOCALPATH $USER@$HOST:$DIR Не забываем дать скрипту права на исполнение:
-$ chmod +x ./deploy.sh Скрипт рекурсивно закачивает указанную папку на сервер. Если настроить ключи (что мне пока делать лень), то можно обойтись без sshpass и пароля соответственно.
-Свой блог теперь закачиваю на сервер именно таким образом.</description>
+      <description>&lt;p&gt;Очень лень закачивать блог на сервер, тыкая в GUI FileZilla.&lt;/p&gt;
+&lt;p&gt;После некоторого гугления получился такой код:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#/bin/bash&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;HOST&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;hostname&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;USER&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PASSWD&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LOCALPATH&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/path_to_my_local_folder&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;DIR&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/path_to_my_server_folder&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sshpass -p &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$PASSWD&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; scp -r $LOCALPATH $USER@$HOST:$DIR
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Не забываем дать скрипту права на исполнение:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ chmod +x ./deploy.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Скрипт рекурсивно закачивает указанную папку на сервер. Если настроить ключи (что мне пока делать лень), то можно обойтись без &lt;code&gt;sshpass&lt;/code&gt; и пароля соответственно.&lt;/p&gt;
+&lt;p&gt;Свой блог теперь закачиваю на сервер именно таким образом.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Очень лень закачивать блог на сервер, тыкая в GUI FileZilla.</p>
 <p>После некоторого гугления получился такой код:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#/bin/bash</span>
@@ -39,12 +48,14 @@ $ chmod +x ./deploy.sh Скрипт рекурсивно закачивает у
       <link>https://www.marinin.pw/ru/posts/cannot-create-temp/</link>
       <pubDate>Sun, 16 Apr 2017 11:19:59 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/cannot-create-temp/</guid>
-      <description>Начал замечать странности в поведении динамических сайтов на своем сервере. Залогинился и увидел, что перестало работать автодополнение команд. bash ругался таким текстом:
-cannot create temp file for here-document: No space left on device
-Первым делом решил посмотреть какие папки сколько места занимают. Перейдя в корневой раздел, выполнил:
-$ sudo du -h --max-depth=1 ./ Папка tmp не разрослась и в целом все в пределах нормы.
-В итоге выполнил
-$ sudo apt-get autoremove -y Оказалось, что лишних зависимостей в сумме набежало почти на гигабайт.</description>
+      <description>&lt;p&gt;Начал замечать странности в поведении динамических сайтов на своем сервере. Залогинился и увидел, что перестало работать автодополнение команд. bash ругался таким текстом:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;cannot create temp file for here-document: No space left on device&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Первым делом решил посмотреть какие папки сколько места занимают. Перейдя в корневой раздел, выполнил:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo du -h --max-depth&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt; ./
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Папка tmp не разрослась и в целом все в пределах нормы.&lt;/p&gt;
+&lt;p&gt;В итоге выполнил&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo apt-get autoremove -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Оказалось, что лишних зависимостей в сумме набежало почти на гигабайт.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Начал замечать странности в поведении динамических сайтов на своем сервере. Залогинился и увидел, что перестало работать автодополнение команд. bash ругался таким текстом:</p>
 <p><strong>cannot create temp file for here-document: No space left on device</strong></p>
 <p>Первым делом решил посмотреть какие папки сколько места занимают. Перейдя в корневой раздел, выполнил:</p>

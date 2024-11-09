@@ -4,7 +4,7 @@
     <title>Yii on Илья Маринин</title>
     <link>https://www.marinin.pw/ru/tags/yii/</link>
     <description>Recent content in Yii on Илья Маринин</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.138.0</generator>
     <language>ru-RU</language>
     <lastBuildDate>Sun, 07 Jan 2018 15:40:09 +0500</lastBuildDate>
     <atom:link href="https://www.marinin.pw/ru/tags/yii/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,13 @@
       <link>https://www.marinin.pw/ru/posts/yii2-rest/</link>
       <pubDate>Sun, 07 Jan 2018 15:40:09 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/yii2-rest/</guid>
-      <description>Yii2 из коробки предоставляет удобный фреймворк для построения REST API вашего сервиса. Ниже я опишу как быстро начать его использовать.
-Предварительная настройка Для начала работы достаточно базового шаблона Yii2. Создание проекта и настройку виртуального хоста я описывать не буду и перейду сразу к настройке REST.
-После скачивания проекта настроим компоненту user в файле web.php. Добавим туда следующие строки:
-&amp;#39;enableSession&amp;#39; =&amp;gt; false, &amp;#39;loginUrl&amp;#39; =&amp;gt; null, Первая строка отключает сохранение состояния пользователя на сервере: одно из требований архитектуры REST.</description>
+      <description>&lt;p&gt;Yii2 из коробки предоставляет удобный фреймворк для построения REST API вашего сервиса. Ниже я опишу как быстро начать его использовать.&lt;/p&gt;
+&lt;h2 id=&#34;предварительная-настройка&#34;&gt;Предварительная настройка&lt;/h2&gt;
+&lt;p&gt;Для начала работы достаточно &lt;a href=&#34;https://github.com/yiisoft/yii2-app-basic&#34;&gt;базового шаблона&lt;/a&gt; Yii2. Создание проекта и настройку виртуального хоста я описывать не буду и перейду сразу к настройке REST.&lt;/p&gt;
+&lt;p&gt;После скачивания проекта настроим компоненту &lt;code&gt;user&lt;/code&gt; в файле &lt;code&gt;web.php&lt;/code&gt;. Добавим туда следующие строки:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;enableSession&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;loginUrl&amp;#39;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Первая строка отключает сохранение состояния пользователя на сервере: одно из требований архитектуры REST.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Yii2 из коробки предоставляет удобный фреймворк для построения REST API вашего сервиса. Ниже я опишу как быстро начать его использовать.</p>
 <h2 id="предварительная-настройка">Предварительная настройка</h2>
 <p>Для начала работы достаточно <a href="https://github.com/yiisoft/yii2-app-basic">базового шаблона</a> Yii2. Создание проекта и настройку виртуального хоста я описывать не буду и перейду сразу к настройке REST.</p>
@@ -110,10 +113,16 @@ $ curl -i -H &#34;Accept:application/xml&#34; &#34;http://yii2-rest.dev/users&#3
       <link>https://www.marinin.pw/ru/posts/yii2-assets/</link>
       <pubDate>Fri, 24 Feb 2017 15:29:39 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/yii2-assets/</guid>
-      <description>Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс. Работа с ним вкратце описана в документации.
-Ниже перечислен ряд моментов, которые для меня оказались не очевидны.
-Advanced-шаблон и алиас @app В проекте я использую advanced-шаблон. Он позволяет разделять проект на три части:
-Для пользователя (frontend) Для администраторов и контент-менеджеров (backend) Для работы с cli-интерфейсом приложения (console) Для каждой из частей проекта так же предусмотрены алиасы @frontend, @backend и @console соответственно.</description>
+      <description>&lt;p&gt;Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс. Работа с ним вкратце описана в &lt;a href=&#34;http://www.yiiframework.com/doc-2.0/guide-structure-assets.html#combining-compressing-assets&#34;&gt;документации&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ниже перечислен ряд моментов, которые для меня оказались не очевидны.&lt;/p&gt;
+&lt;h2 id=&#34;advanced-шаблон-и-алиас-app&#34;&gt;Advanced-шаблон и алиас @app&lt;/h2&gt;
+&lt;p&gt;В проекте я использую &lt;a href=&#34;https://github.com/yiisoft/yii2-app-advanced&#34;&gt;advanced-шаблон&lt;/a&gt;. Он позволяет разделять проект на три части:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Для пользователя (frontend)&lt;/li&gt;
+&lt;li&gt;Для администраторов и контент-менеджеров (backend)&lt;/li&gt;
+&lt;li&gt;Для работы с cli-интерфейсом приложения (console)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Для каждой из частей проекта так же предусмотрены алиасы &lt;code&gt;@frontend&lt;/code&gt;, &lt;code&gt;@backend&lt;/code&gt; и &lt;code&gt;@console&lt;/code&gt; соответственно.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Недавно пришлось настраивать сжатие ассетов Yii2 на одном из проектов. Для этого во фреймворке предусмотрен удобный cli-интерфейс. Работа с ним вкратце описана в <a href="http://www.yiiframework.com/doc-2.0/guide-structure-assets.html#combining-compressing-assets">документации</a>.</p>
 <p>Ниже перечислен ряд моментов, которые для меня оказались не очевидны.</p>
 <h2 id="advanced-шаблон-и-алиас-app">Advanced-шаблон и алиас @app</h2>

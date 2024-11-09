@@ -4,7 +4,7 @@
     <title>Mysql on Илья Маринин</title>
     <link>https://www.marinin.pw/ru/tags/mysql/</link>
     <description>Recent content in Mysql on Илья Маринин</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.138.0</generator>
     <language>ru-RU</language>
     <lastBuildDate>Thu, 02 Mar 2017 21:34:25 +0500</lastBuildDate>
     <atom:link href="https://www.marinin.pw/ru/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,11 @@
       <link>https://www.marinin.pw/ru/posts/mysql57-empty-root/</link>
       <pubDate>Thu, 02 Mar 2017 21:34:25 +0500</pubDate>
       <guid>https://www.marinin.pw/ru/posts/mysql57-empty-root/</guid>
-      <description>Для локальной разработки с MySQL очень удобно использовать пустой пароль root-пользователя. Раньше его можно было задать пустым сразу при установке и спокойно работать. Начиная с версии MySQL 5.7 поведение изменилось.
-Теперь, если при установке указывается пустой пароль пользователя root, то изменяется схема подключения для него с TCP/IP на локальный socket. Сделано это, как не трудно догадаться, в целях безопасности.
-Выражается, например, в том, что команды вроде
-$ mysql -uroot отказываются работать.</description>
+      <description>&lt;p&gt;Для локальной разработки с MySQL очень удобно использовать пустой пароль root-пользователя. Раньше его можно было задать пустым сразу при установке и спокойно работать. Начиная с версии MySQL 5.7 поведение изменилось.&lt;/p&gt;
+&lt;p&gt;Теперь, если при установке указывается пустой пароль пользователя root, то изменяется схема подключения для него с TCP/IP на локальный socket. Сделано это, как не трудно догадаться, в целях безопасности.&lt;/p&gt;
+&lt;p&gt;Выражается, например, в том, что команды вроде&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ mysql -uroot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;отказываются работать. Нужно использовать для этого &lt;code&gt;sudo&lt;/code&gt;. В том числе через &lt;code&gt;sudo&lt;/code&gt; нужно запускать MySQL Workbench, что быстро надоедает.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Для локальной разработки с MySQL очень удобно использовать пустой пароль root-пользователя. Раньше его можно было задать пустым сразу при установке и спокойно работать. Начиная с версии MySQL 5.7 поведение изменилось.</p>
 <p>Теперь, если при установке указывается пустой пароль пользователя root, то изменяется схема подключения для него с TCP/IP на локальный socket. Сделано это, как не трудно догадаться, в целях безопасности.</p>
 <p>Выражается, например, в том, что команды вроде</p>

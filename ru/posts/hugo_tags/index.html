@@ -10,11 +10,15 @@
 <meta name="description" content="Hugo - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал здесь.
 Ниже я опишу как добавить к постам теги.
 Первым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:
-[taxonomies] tag = &#34;tags&#34; Для YAML-конфига соответственно нужно написать:
-taxonomies: tag: &#34;tags&#34; Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами &#43;&#43;&#43;, пишем:">
+[taxonomies]
+  tag = &#34;tags&#34;
+Для YAML-конфига соответственно нужно написать:
+taxonomies:
+  tag: &#34;tags&#34;
+Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами &#43;&#43;&#43;, пишем:">
 <meta name="author" content="">
 <link rel="canonical" href="https://www.marinin.pw/ru/posts/hugo_tags/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.fc220c15db4aef0318bbf30adc45d33d4d7c88deff3238b23eb255afdc472ca6.css" integrity="sha256-/CIMFdtK7wMYu/MK3EXTPU18iN7/MjiyPrJVr9xHLKY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://www.marinin.pw/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.marinin.pw/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.marinin.pw/favicon-32x32.png">
@@ -59,44 +63,31 @@ taxonomies: tag: &#34;tags&#34; Теперь мы можем добавить т
         }
 
     </style>
-</noscript>
-  
-    
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TYB9D8NSM"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-0TYB9D8NSM');
-        }
-      </script>
-    
-  
-
-<meta property="og:title" content="Добавление тегов к постам в Hugo" />
-<meta property="og:description" content="Hugo - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал здесь.
+</noscript><meta property="og:url" content="https://www.marinin.pw/ru/posts/hugo_tags/">
+  <meta property="og:site_name" content="Илья Маринин">
+  <meta property="og:title" content="Добавление тегов к постам в Hugo">
+  <meta property="og:description" content="Hugo - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал здесь.
 Ниже я опишу как добавить к постам теги.
 Первым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:
 [taxonomies] tag = &#34;tags&#34; Для YAML-конфига соответственно нужно написать:
-taxonomies: tag: &#34;tags&#34; Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами &#43;&#43;&#43;, пишем:" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.marinin.pw/ru/posts/hugo_tags/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2017-11-25T10:00:24+05:00" />
-<meta property="article:modified_time" content="2017-11-25T10:00:24+05:00" /><meta property="og:site_name" content="Ilia Marinin" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Добавление тегов к постам в Hugo"/>
+taxonomies: tag: &#34;tags&#34; Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами &#43;&#43;&#43;, пишем:">
+  <meta property="og:locale" content="ru-RU">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-11-25T10:00:24+05:00">
+    <meta property="article:modified_time" content="2017-11-25T10:00:24+05:00">
+    <meta property="article:tag" content="Hugo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Добавление тегов к постам в Hugo">
 <meta name="twitter:description" content="Hugo - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал здесь.
 Ниже я опишу как добавить к постам теги.
 Первым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:
-[taxonomies] tag = &#34;tags&#34; Для YAML-конфига соответственно нужно написать:
-taxonomies: tag: &#34;tags&#34; Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами &#43;&#43;&#43;, пишем:"/>
+[taxonomies]
+  tag = &#34;tags&#34;
+Для YAML-конфига соответственно нужно написать:
+taxonomies:
+  tag: &#34;tags&#34;
+Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами &#43;&#43;&#43;, пишем:">
 
 
 <script type="application/ld+json">
@@ -125,7 +116,7 @@ taxonomies: tag: &#34;tags&#34; Теперь мы можем добавить т
   "@type": "BlogPosting",
   "headline": "Добавление тегов к постам в Hugo",
   "name": "Добавление тегов к постам в Hugo",
-  "description": "Hugo - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал здесь.\nНиже я опишу как добавить к постам теги.\nПервым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:\n[taxonomies] tag = \u0026#34;tags\u0026#34; Для YAML-конфига соответственно нужно написать:\ntaxonomies: tag: \u0026#34;tags\u0026#34; Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами +++, пишем:",
+  "description": "Hugo - генератор статических сайтов на Go, который я испольую для ведения блога. Как начать с ним работать я уже писал здесь.\nНиже я опишу как добавить к постам теги.\nПервым делом следует дополнить config-файл в корне проекта (в моем случае config.toml) следующим содержимым:\n[taxonomies] tag = \u0026#34;tags\u0026#34; Для YAML-конфига соответственно нужно написать:\ntaxonomies: tag: \u0026#34;tags\u0026#34; Теперь мы можем добавить теги к постам. Открываем любой из постов и в верхней части, ограниченной символами +++, пишем:\n",
   "keywords": [
     "hugo"
   ],

@@ -4,7 +4,7 @@
     <title>Copilot on Илья Маринин</title>
     <link>https://www.marinin.pw/ru/tags/copilot/</link>
     <description>Recent content in Copilot on Илья Маринин</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo -- 0.138.0</generator>
     <language>ru-RU</language>
     <lastBuildDate>Mon, 06 May 2024 19:12:36 +0200</lastBuildDate>
     <atom:link href="https://www.marinin.pw/ru/tags/copilot/index.xml" rel="self" type="application/rss+xml" />
@@ -13,10 +13,11 @@
       <link>https://www.marinin.pw/ru/posts/copilot-workspace/</link>
       <pubDate>Mon, 06 May 2024 19:12:36 +0200</pubDate>
       <guid>https://www.marinin.pw/ru/posts/copilot-workspace/</guid>
-      <description>Еще одна вещь, произошедшая за то время пока я ничего тут не писал — революция нейросетей и больших языковых моделей, начиная с ChatGPT.
-На днях случился анонс очередного шага на пути к технологической сингулярности, а именно GitHub Copilot Workspaces.
-Если вкратце, то эта штука позволит командам программистов еще быстрее разрабатывать приложения в общем рабочем пространстве.
-Copilot здесь уже не только помогает писать код, но и составяет спецификации и план работ.</description>
+      <description>&lt;p&gt;Еще одна вещь, произошедшая за то время пока я ничего тут не писал — революция нейросетей и больших языковых моделей, начиная с ChatGPT.&lt;/p&gt;
+&lt;p&gt;На днях случился &lt;a href=&#34;https://github.blog/2024-04-29-github-copilot-workspace/&#34;&gt;анонс&lt;/a&gt; очередного шага на пути к технологической сингулярности, а именно GitHub Copilot Workspaces.&lt;/p&gt;
+&lt;p&gt;Если вкратце, то эта штука позволит командам программистов еще быстрее разрабатывать приложения в общем рабочем пространстве.&lt;/p&gt;
+&lt;p&gt;Copilot здесь уже не только помогает писать код, но и составяет спецификации и план работ.&lt;/p&gt;
+&lt;p&gt;Сам я для личных нужд вместо Copilot использую &lt;a href=&#34;https://codeium.com/&#34;&gt;Codeium&lt;/a&gt;, но выглядит крайне интересно. Ждем.&lt;/p&gt;</description>
       <content:encoded><![CDATA[<p>Еще одна вещь, произошедшая за то время пока я ничего тут не писал — революция нейросетей и больших языковых моделей, начиная с ChatGPT.</p>
 <p>На днях случился <a href="https://github.blog/2024-04-29-github-copilot-workspace/">анонс</a> очередного шага на пути к технологической сингулярности, а именно GitHub Copilot Workspaces.</p>
 <p>Если вкратце, то эта штука позволит командам программистов еще быстрее разрабатывать приложения в общем рабочем пространстве.</p>
